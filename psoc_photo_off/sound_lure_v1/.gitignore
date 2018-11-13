@@ -1,0 +1,14 @@
+.DS_Store
+*.cywrk.*
+*.cyprj.*
+*.cycdx
+*.cyfit
+*.rpt
+*.uvopt
+*.uvproj
+*_timing.html
+*.cydsn/codegentemp/
+*.cydsn/CortexM3/
+*.cydsn/CortexM0/
+*.cydsn/Generated_Source/
+*.cydsn/ARM_GCC_493/

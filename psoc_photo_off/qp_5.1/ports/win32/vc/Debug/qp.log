@@ -1,0 +1,101 @@
+﻿Build started 10/10/2013 5:22:45 PM.
+     1>Project "D:\qp\qpc\ports\win32\vc\qp.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I. /I../../../include /I../../../qep/source /I../../../qf/source /I../../../qs/source /Zi /nologo /W4 /WX- /Od /Oy- /D WIN32 /D _DEBUG /Gm- /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /wd4127 /analyze- /errorReport:prompt ..\..\..\qep\source\qep.c ..\..\..\qep\source\qfsm_dis.c ..\..\..\qep\source\qfsm_ini.c ..\..\..\qep\source\qhsm_dis.c ..\..\..\qep\source\qhsm_in.c ..\..\..\qep\source\qhsm_ini.c ..\..\..\qep\source\qhsm_top.c ..\..\..\qep\source\qmsm_dis.c ..\..\..\qep\source\qmsm_ini.c ..\..\..\qf\source\qa_ctor.c ..\..\..\qf\source\qa_defer.c ..\..\..\qf\source\qa_fifo.c ..\..\..\qf\source\qa_get_.c ..\..\..\qf\source\qa_lifo.c ..\..\..\qf\source\qa_sub.c ..\..\..\qf\source\qa_usub.c ..\..\..\qf\source\qa_usuba.c ..\..\..\qf\source\qeq_fifo.c ..\..\..\qf\source\qeq_get.c ..\..\..\qf\source\qeq_init.c ..\..\..\qf\source\qeq_lifo.c ..\..\..\qf\source\qf_act.c ..\..\..\qf\source\qf_gc.c ..\..\..\qf\source\qf_log2.c ..\..\..\qf\source\qf_new.c ..\..\..\qf\source\qf_pool.c ..\..\..\qf\source\qf_psini.c ..\..\..\qf\source\qf_pspub.c ..\..\..\qf\source\qf_pwr2.c ..\..\..\qf\source\qf_tick.c ..\..\..\qf\source\qma_ctor.c ..\..\..\qf\source\qmp_get.c ..\..\..\qf\source\qmp_init.c ..\..\..\qf\source\qmp_put.c ..\..\..\qf\source\qte_arm.c ..\..\..\qf\source\qte_ctor.c ..\..\..\qf\source\qte_ctr.c ..\..\..\qf\source\qte_darm.c ..\..\..\qf\source\qte_rarm.c qf_port.c win32_gui.c
+         qep.c
+         qfsm_dis.c
+         qfsm_ini.c
+         qhsm_dis.c
+         qhsm_in.c
+         qhsm_ini.c
+         qhsm_top.c
+         qmsm_dis.c
+         qmsm_ini.c
+         qa_ctor.c
+         qa_defer.c
+         qa_fifo.c
+         qa_get_.c
+         qa_lifo.c
+         qa_sub.c
+         qa_usub.c
+         qa_usuba.c
+         qeq_fifo.c
+         qeq_get.c
+         qeq_init.c
+         Generating Code...
+         Compiling...
+         qeq_lifo.c
+         qf_act.c
+         qf_gc.c
+         qf_log2.c
+         qf_new.c
+         qf_pool.c
+         qf_psini.c
+         qf_pspub.c
+         qf_pwr2.c
+         qf_tick.c
+         qma_ctor.c
+         qmp_get.c
+         qmp_init.c
+         qmp_put.c
+         qte_arm.c
+         qte_ctor.c
+         qte_ctr.c
+         qte_darm.c
+         qte_rarm.c
+         qf_port.c
+         Generating Code...
+         Compiling...
+         win32_gui.c
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"D:\qp\qpc\ports\win32\vc\Debug\qp.lib" /NOLOGO Debug\qep.obj
+         Debug\qfsm_dis.obj
+         Debug\qfsm_ini.obj
+         Debug\qhsm_dis.obj
+         Debug\qhsm_in.obj
+         Debug\qhsm_ini.obj
+         Debug\qhsm_top.obj
+         Debug\qmsm_dis.obj
+         Debug\qmsm_ini.obj
+         Debug\qa_ctor.obj
+         Debug\qa_defer.obj
+         Debug\qa_fifo.obj
+         Debug\qa_get_.obj
+         Debug\qa_lifo.obj
+         Debug\qa_sub.obj
+         Debug\qa_usub.obj
+         Debug\qa_usuba.obj
+         Debug\qeq_fifo.obj
+         Debug\qeq_get.obj
+         Debug\qeq_init.obj
+         Debug\qeq_lifo.obj
+         Debug\qf_act.obj
+         Debug\qf_gc.obj
+         Debug\qf_log2.obj
+         Debug\qf_new.obj
+         Debug\qf_pool.obj
+         Debug\qf_psini.obj
+         Debug\qf_pspub.obj
+         Debug\qf_pwr2.obj
+         Debug\qf_tick.obj
+         Debug\qma_ctor.obj
+         Debug\qmp_get.obj
+         Debug\qmp_init.obj
+         Debug\qmp_put.obj
+         Debug\qte_arm.obj
+         Debug\qte_ctor.obj
+         Debug\qte_ctr.obj
+         Debug\qte_darm.obj
+         Debug\qte_rarm.obj
+         Debug\qf_port.obj
+         Debug\win32_gui.obj
+         qp.vcxproj -> D:\qp\qpc\ports\win32\vc\Debug\qp.lib
+       PostBuildEvent:
+         del Debug\*.obj Debug\*.tlog Debug\*.lastbuildstate
+         :VCEnd
+     1>Done Building Project "D:\qp\qpc\ports\win32\vc\qp.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:09.34
