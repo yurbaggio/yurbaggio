@@ -1,0 +1,5 @@
+--cpu Cortex-M3 ".\rel\bsp.o" ".\rel\display96x16x1.o" ".\rel\main.o" ".\rel\mine1.o" ".\rel\mine2.o" ".\rel\missile.o" ".\rel\ship.o" ".\rel\tunnel.o" ".\rel\system_lm3s.o" ".\rel\startup_lm3s.o" D:\qp\qpc\ports\arm-cm\vanilla\arm_keil\rel\libqp_Cortex-M3.a 
+--library_type=microlib --nodebug --strict --scatter ".\rel\game.sct" 
+--entry Reset_Handler --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\rel\game.map" -o .\rel\game.axf

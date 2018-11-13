@@ -1,0 +1,1969 @@
+ARM Linker, 5.03 [Build 69] [MDK-ARM Lite]
+
+==============================================================================
+
+Section Cross References
+
+    bsp.o(i.ADCSeq3_IRQHandler) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    bsp.o(i.ADCSeq3_IRQHandler) refers to qf_new.o(i.QF_newX_) for QF_newX_
+    bsp.o(i.ADCSeq3_IRQHandler) refers to qf_pspub.o(i.QF_publish) for QF_publish
+    bsp.o(i.ADCSeq3_IRQHandler) refers to qk.o(.data) for QK_intNest_
+    bsp.o(i.ADCSeq3_IRQHandler) refers to bsp.o(.constdata) for Q_this_module_
+    bsp.o(i.ADCSeq3_IRQHandler) refers to bsp.o(.data) for adcLPS
+    bsp.o(i.ADCSeq3_IRQHandler) refers to ship.o(.constdata) for AO_Ship
+    bsp.o(i.BSP_displayOff) refers to display96x16x1.o(i.Display96x16x1DisplayOff) for Display96x16x1DisplayOff
+    bsp.o(i.BSP_displayOn) refers to display96x16x1.o(i.Display96x16x1DisplayOn) for Display96x16x1DisplayOn
+    bsp.o(i.BSP_drawBitmap) refers to display96x16x1.o(i.Display96x16x1ImageDraw) for Display96x16x1ImageDraw
+    bsp.o(i.BSP_drawBitmapXY) refers to display96x16x1.o(i.Display96x16x1ImageDraw) for Display96x16x1ImageDraw
+    bsp.o(i.BSP_drawNString) refers to display96x16x1.o(i.Display96x16x1StringDraw) for Display96x16x1StringDraw
+    bsp.o(i.BSP_init) refers to system_lm3s.o(i.SystemInit) for SystemInit
+    bsp.o(i.BSP_init) refers to display96x16x1.o(i.Display96x16x1Init) for Display96x16x1Init
+    bsp.o(i.BSP_init) refers to bsp.o(i.QS_onStartup) for QS_onStartup
+    bsp.o(i.BSP_init) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    bsp.o(i.BSP_init) refers to qs_dict.o(i.QS_obj_dict) for QS_obj_dict
+    bsp.o(i.BSP_init) refers to system_lm3s.o(.data) for SystemFrequency
+    bsp.o(i.BSP_init) refers to bsp.o(.constdata) for Q_this_module_
+    bsp.o(i.BSP_init) refers to qs.o(.bss) for QS_priv_
+    bsp.o(i.BSP_init) refers to bsp.o(.data) for l_SysTick_Handler
+    bsp.o(i.GPIOPortA_IRQHandler) refers to qf_new.o(i.QF_newX_) for QF_newX_
+    bsp.o(i.GPIOPortA_IRQHandler) refers to qk.o(.data) for QK_intNest_
+    bsp.o(i.GPIOPortA_IRQHandler) refers to tunnel.o(.constdata) for AO_Tunnel
+    bsp.o(i.GPIOPortA_IRQHandler) refers to bsp.o(.data) for l_GPIOPortA_IRQHandler
+    bsp.o(i.QF_onStartup) refers to bsp.o(i.NVIC_SetPriority) for NVIC_SetPriority
+    bsp.o(i.QF_onStartup) refers to bsp.o(i.NVIC_EnableIRQ) for NVIC_EnableIRQ
+    bsp.o(i.QF_onStartup) refers to system_lm3s.o(.data) for SystemFrequency
+    bsp.o(i.QK_onIdle) refers to qs_blk.o(i.QS_getBlock) for QS_getBlock
+    bsp.o(i.QS_onFlush) refers to qs_blk.o(i.QS_getBlock) for QS_getBlock
+    bsp.o(i.QS_onGetTime) refers to bsp.o(.data) for QS_tickTime_
+    bsp.o(i.QS_onStartup) refers to qs.o(i.QS_initBuf) for QS_initBuf
+    bsp.o(i.QS_onStartup) refers to qs.o(i.QS_filterOn) for QS_filterOn
+    bsp.o(i.QS_onStartup) refers to qs.o(i.QS_filterOff) for QS_filterOff
+    bsp.o(i.QS_onStartup) refers to bsp.o(.bss) for qsBuf
+    bsp.o(i.QS_onStartup) refers to system_lm3s.o(.data) for SystemFrequency
+    bsp.o(i.QS_onStartup) refers to bsp.o(.data) for QS_tickPeriod_
+    bsp.o(i.Q_onAssert) refers to qs.o(i.QS_beginRec) for QS_beginRec
+    bsp.o(i.Q_onAssert) refers to bsp.o(i.QS_onGetTime) for QS_onGetTime
+    bsp.o(i.Q_onAssert) refers to qs_.o(i.QS_u32_) for QS_u32_
+    bsp.o(i.Q_onAssert) refers to qs_.o(i.QS_u16_) for QS_u16_
+    bsp.o(i.Q_onAssert) refers to qs_.o(i.QS_str_ROM_) for QS_str_ROM_
+    bsp.o(i.Q_onAssert) refers to qs.o(i.QS_endRec) for QS_endRec
+    bsp.o(i.Q_onAssert) refers to bsp.o(i.QS_onFlush) for QS_onFlush
+    bsp.o(i.Q_onAssert) refers to qs.o(.bss) for QS_priv_
+    bsp.o(i.SysTick_Handler) refers to qf_tick.o(i.QF_tickX) for QF_tickX
+    bsp.o(i.SysTick_Handler) refers to qf_pspub.o(i.QF_publish) for QF_publish
+    bsp.o(i.SysTick_Handler) refers to qk.o(.data) for QK_intNest_
+    bsp.o(i.SysTick_Handler) refers to bsp.o(.data) for QS_tickTime_
+    bsp.o(i.SysTick_Handler) refers to bsp.o(.constdata) for tickEvt
+    bsp.o(i.assert_failed) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    display96x16x1.o(i.Display96x16x1Clear) refers to display96x16x1.o(i.Display96x16x1WriteFirst) for Display96x16x1WriteFirst
+    display96x16x1.o(i.Display96x16x1Clear) refers to display96x16x1.o(i.Display96x16x1WriteArray) for Display96x16x1WriteArray
+    display96x16x1.o(i.Display96x16x1Clear) refers to display96x16x1.o(i.Display96x16x1WriteByte) for Display96x16x1WriteByte
+    display96x16x1.o(i.Display96x16x1Clear) refers to display96x16x1.o(i.Display96x16x1WriteFinal) for Display96x16x1WriteFinal
+    display96x16x1.o(i.Display96x16x1Clear) refers to display96x16x1.o(.data) for g_ucDisplayIsRIT
+    display96x16x1.o(i.Display96x16x1Clear) refers to display96x16x1.o(.constdata) for g_pucRITRow1
+    display96x16x1.o(i.Display96x16x1DisplayOff) refers to display96x16x1.o(i.Display96x16x1WriteFirst) for Display96x16x1WriteFirst
+    display96x16x1.o(i.Display96x16x1DisplayOff) refers to display96x16x1.o(i.Display96x16x1WriteByte) for Display96x16x1WriteByte
+    display96x16x1.o(i.Display96x16x1DisplayOff) refers to display96x16x1.o(i.Display96x16x1WriteFinal) for Display96x16x1WriteFinal
+    display96x16x1.o(i.Display96x16x1DisplayOn) refers to display96x16x1.o(i.Display96x16x1WriteFirst) for Display96x16x1WriteFirst
+    display96x16x1.o(i.Display96x16x1DisplayOn) refers to display96x16x1.o(i.Display96x16x1WriteArray) for Display96x16x1WriteArray
+    display96x16x1.o(i.Display96x16x1DisplayOn) refers to display96x16x1.o(i.Display96x16x1WriteFinal) for Display96x16x1WriteFinal
+    display96x16x1.o(i.Display96x16x1DisplayOn) refers to display96x16x1.o(.data) for g_ucDisplayIsRIT
+    display96x16x1.o(i.Display96x16x1DisplayOn) refers to display96x16x1.o(.constdata) for g_pucRITInit
+    display96x16x1.o(i.Display96x16x1ImageDraw) refers to display96x16x1.o(i.Display96x16x1WriteFirst) for Display96x16x1WriteFirst
+    display96x16x1.o(i.Display96x16x1ImageDraw) refers to display96x16x1.o(i.Display96x16x1WriteByte) for Display96x16x1WriteByte
+    display96x16x1.o(i.Display96x16x1ImageDraw) refers to display96x16x1.o(i.Display96x16x1WriteArray) for Display96x16x1WriteArray
+    display96x16x1.o(i.Display96x16x1ImageDraw) refers to display96x16x1.o(i.Display96x16x1WriteFinal) for Display96x16x1WriteFinal
+    display96x16x1.o(i.Display96x16x1ImageDraw) refers to display96x16x1.o(.data) for g_ucColumnAdjust
+    display96x16x1.o(i.Display96x16x1Init) refers to display96x16x1.o(.emb_text) for __asm___16_display96x16x1_c_864a8f54__SysCtlDelay
+    display96x16x1.o(i.Display96x16x1Init) refers to display96x16x1.o(i.Display96x16x1WriteFirst) for Display96x16x1WriteFirst
+    display96x16x1.o(i.Display96x16x1Init) refers to display96x16x1.o(i.Display96x16x1WriteArray) for Display96x16x1WriteArray
+    display96x16x1.o(i.Display96x16x1Init) refers to display96x16x1.o(i.Display96x16x1WriteFinal) for Display96x16x1WriteFinal
+    display96x16x1.o(i.Display96x16x1Init) refers to display96x16x1.o(i.Display96x16x1Clear) for Display96x16x1Clear
+    display96x16x1.o(i.Display96x16x1Init) refers to display96x16x1.o(.data) for g_ucDisplayIsRIT
+    display96x16x1.o(i.Display96x16x1Init) refers to system_lm3s.o(.data) for SystemFrequency
+    display96x16x1.o(i.Display96x16x1Init) refers to display96x16x1.o(.constdata) for g_pucRITInit
+    display96x16x1.o(i.Display96x16x1StringDraw) refers to display96x16x1.o(i.Display96x16x1WriteFirst) for Display96x16x1WriteFirst
+    display96x16x1.o(i.Display96x16x1StringDraw) refers to display96x16x1.o(i.Display96x16x1WriteByte) for Display96x16x1WriteByte
+    display96x16x1.o(i.Display96x16x1StringDraw) refers to display96x16x1.o(i.Display96x16x1WriteArray) for Display96x16x1WriteArray
+    display96x16x1.o(i.Display96x16x1StringDraw) refers to display96x16x1.o(i.Display96x16x1WriteFinal) for Display96x16x1WriteFinal
+    display96x16x1.o(i.Display96x16x1StringDraw) refers to display96x16x1.o(.data) for g_ucColumnAdjust
+    display96x16x1.o(i.Display96x16x1StringDraw) refers to display96x16x1.o(.constdata) for g_pucFont
+    display96x16x1.o(i.Display96x16x1WriteArray) refers to display96x16x1.o(.emb_text) for __asm___16_display96x16x1_c_864a8f54__SysCtlDelay
+    display96x16x1.o(i.Display96x16x1WriteArray) refers to display96x16x1.o(.data) for g_ulDelay
+    display96x16x1.o(i.Display96x16x1WriteByte) refers to display96x16x1.o(.emb_text) for __asm___16_display96x16x1_c_864a8f54__SysCtlDelay
+    display96x16x1.o(i.Display96x16x1WriteByte) refers to display96x16x1.o(.data) for g_ulDelay
+    display96x16x1.o(i.Display96x16x1WriteFinal) refers to display96x16x1.o(.emb_text) for __asm___16_display96x16x1_c_864a8f54__SysCtlDelay
+    display96x16x1.o(i.Display96x16x1WriteFinal) refers to display96x16x1.o(.data) for g_ulDelay
+    main.o(i.main) refers to missile.o(i.Missile_ctor) for Missile_ctor
+    main.o(i.main) refers to ship.o(i.Ship_ctor) for Ship_ctor
+    main.o(i.main) refers to tunnel.o(i.Tunnel_ctor) for Tunnel_ctor
+    main.o(i.main) refers to qk.o(i.QF_init) for QF_init
+    main.o(i.main) refers to bsp.o(i.BSP_init) for BSP_init
+    main.o(i.main) refers to qf_pool.o(i.QF_poolInit) for QF_poolInit
+    main.o(i.main) refers to qf_psini.o(i.QF_psInit) for QF_psInit
+    main.o(i.main) refers to qs_dict.o(i.QS_obj_dict) for QS_obj_dict
+    main.o(i.main) refers to qs_dict.o(i.QS_sig_dict) for QS_sig_dict
+    main.o(i.main) refers to qk.o(i.QActive_start) for QActive_start
+    main.o(i.main) refers to qk.o(i.QF_run) for QF_run
+    main.o(i.main) refers to main.o(.bss) for l_smlPoolSto
+    main.o(i.main) refers to qs.o(.bss) for QS_priv_
+    main.o(i.main) refers to main.o(.constdata) for obj_name_
+    main.o(i.main) refers to main.o(.data) for l_missileQueueSto
+    main.o(i.main) refers to missile.o(.constdata) for AO_Missile
+    main.o(i.main) refers to ship.o(.constdata) for AO_Ship
+    main.o(i.main) refers to tunnel.o(.constdata) for AO_Tunnel
+    mine1.o(i.Mine1_ctor) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    mine1.o(i.Mine1_ctor) refers to qhsm_ini.o(i.QHsm_ctor) for QHsm_ctor
+    mine1.o(i.Mine1_ctor) refers to mine1.o(.constdata) for Q_this_module_
+    mine1.o(i.Mine1_ctor) refers to mine1.o(.bss) for l_mine1
+    mine1.o(i.Mine1_ctor) refers to mine1.o(i.Mine1_initial) for Mine1_initial
+    mine1.o(i.Mine1_exploding) refers to qf_new.o(i.QF_newX_) for QF_newX_
+    mine1.o(i.Mine1_exploding) refers to tunnel.o(.constdata) for AO_Tunnel
+    mine1.o(i.Mine1_exploding) refers to mine1.o(i.Mine1_unused) for Mine1_unused
+    mine1.o(i.Mine1_exploding) refers to mine1.o(i.Mine1_used) for Mine1_used
+    mine1.o(i.Mine1_initial) refers to qs_dict.o(i.QS_obj_dict) for QS_obj_dict
+    mine1.o(i.Mine1_initial) refers to qs_dict.o(i.QS_fun_dict) for QS_fun_dict
+    mine1.o(i.Mine1_initial) refers to qs_dict.o(i.QS_sig_dict) for QS_sig_dict
+    mine1.o(i.Mine1_initial) refers to mine1.o(.data) for dict_sent
+    mine1.o(i.Mine1_initial) refers to qs.o(.bss) for QS_priv_
+    mine1.o(i.Mine1_initial) refers to mine1.o(.constdata) for obj_name_
+    mine1.o(i.Mine1_initial) refers to mine1.o(.bss) for l_mine1
+    mine1.o(i.Mine1_initial) refers to mine1.o(i.Mine1_unused) for Mine1_unused
+    mine1.o(i.Mine1_initial) refers to mine1.o(i.Mine1_used) for Mine1_used
+    mine1.o(i.Mine1_initial) refers to mine1.o(i.Mine1_planted) for Mine1_planted
+    mine1.o(i.Mine1_initial) refers to mine1.o(i.Mine1_exploding) for Mine1_exploding
+    mine1.o(i.Mine1_planted) refers to qf_new.o(i.QF_newX_) for QF_newX_
+    mine1.o(i.Mine1_planted) refers to tunnel.o(i.do_bitmaps_overlap) for do_bitmaps_overlap
+    mine1.o(i.Mine1_planted) refers to tunnel.o(.constdata) for AO_Tunnel
+    mine1.o(i.Mine1_planted) refers to mine1.o(i.Mine1_unused) for Mine1_unused
+    mine1.o(i.Mine1_planted) refers to ship.o(.constdata) for AO_Ship
+    mine1.o(i.Mine1_planted) refers to mine1.o(.constdata) for mine1_hit
+    mine1.o(i.Mine1_planted) refers to missile.o(.constdata) for AO_Missile
+    mine1.o(i.Mine1_planted) refers to mine1.o(i.Mine1_exploding) for Mine1_exploding
+    mine1.o(i.Mine1_planted) refers to mine1.o(i.Mine1_used) for Mine1_used
+    mine1.o(i.Mine1_unused) refers to mine1.o(i.Mine1_planted) for Mine1_planted
+    mine1.o(i.Mine1_unused) refers to qhsm_top.o(i.QHsm_top) for QHsm_top
+    mine1.o(i.Mine1_used) refers to qf_new.o(i.QF_newX_) for QF_newX_
+    mine1.o(i.Mine1_used) refers to mine1.o(.bss) for l_mine1
+    mine1.o(i.Mine1_used) refers to tunnel.o(.constdata) for AO_Tunnel
+    mine1.o(i.Mine1_used) refers to mine1.o(i.Mine1_unused) for Mine1_unused
+    mine1.o(i.Mine1_used) refers to qhsm_top.o(i.QHsm_top) for QHsm_top
+    mine2.o(i.Mine2_ctor) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    mine2.o(i.Mine2_ctor) refers to qhsm_ini.o(i.QHsm_ctor) for QHsm_ctor
+    mine2.o(i.Mine2_ctor) refers to mine2.o(.constdata) for Q_this_module_
+    mine2.o(i.Mine2_ctor) refers to mine2.o(.bss) for l_mine2
+    mine2.o(i.Mine2_ctor) refers to mine2.o(i.Mine2_initial) for Mine2_initial
+    mine2.o(i.Mine2_exploding) refers to qf_new.o(i.QF_newX_) for QF_newX_
+    mine2.o(i.Mine2_exploding) refers to tunnel.o(.constdata) for AO_Tunnel
+    mine2.o(i.Mine2_exploding) refers to mine2.o(i.Mine2_unused) for Mine2_unused
+    mine2.o(i.Mine2_exploding) refers to mine2.o(i.Mine2_used) for Mine2_used
+    mine2.o(i.Mine2_initial) refers to qs_dict.o(i.QS_obj_dict) for QS_obj_dict
+    mine2.o(i.Mine2_initial) refers to qs_dict.o(i.QS_fun_dict) for QS_fun_dict
+    mine2.o(i.Mine2_initial) refers to qs_dict.o(i.QS_sig_dict) for QS_sig_dict
+    mine2.o(i.Mine2_initial) refers to mine2.o(.data) for dict_sent
+    mine2.o(i.Mine2_initial) refers to qs.o(.bss) for QS_priv_
+    mine2.o(i.Mine2_initial) refers to mine2.o(.constdata) for obj_name_
+    mine2.o(i.Mine2_initial) refers to mine2.o(.bss) for l_mine2
+    mine2.o(i.Mine2_initial) refers to mine2.o(i.Mine2_unused) for Mine2_unused
+    mine2.o(i.Mine2_initial) refers to mine2.o(i.Mine2_used) for Mine2_used
+    mine2.o(i.Mine2_initial) refers to mine2.o(i.Mine2_planted) for Mine2_planted
+    mine2.o(i.Mine2_initial) refers to mine2.o(i.Mine2_exploding) for Mine2_exploding
+    mine2.o(i.Mine2_planted) refers to qf_new.o(i.QF_newX_) for QF_newX_
+    mine2.o(i.Mine2_planted) refers to tunnel.o(i.do_bitmaps_overlap) for do_bitmaps_overlap
+    mine2.o(i.Mine2_planted) refers to tunnel.o(.constdata) for AO_Tunnel
+    mine2.o(i.Mine2_planted) refers to mine2.o(i.Mine2_unused) for Mine2_unused
+    mine2.o(i.Mine2_planted) refers to ship.o(.constdata) for AO_Ship
+    mine2.o(i.Mine2_planted) refers to mine2.o(.constdata) for mine1_hit
+    mine2.o(i.Mine2_planted) refers to missile.o(.constdata) for AO_Missile
+    mine2.o(i.Mine2_planted) refers to mine2.o(i.Mine2_exploding) for Mine2_exploding
+    mine2.o(i.Mine2_planted) refers to mine2.o(i.Mine2_used) for Mine2_used
+    mine2.o(i.Mine2_unused) refers to mine2.o(i.Mine2_planted) for Mine2_planted
+    mine2.o(i.Mine2_unused) refers to qhsm_top.o(i.QHsm_top) for QHsm_top
+    mine2.o(i.Mine2_used) refers to qf_new.o(i.QF_newX_) for QF_newX_
+    mine2.o(i.Mine2_used) refers to mine2.o(.bss) for l_mine2
+    mine2.o(i.Mine2_used) refers to tunnel.o(.constdata) for AO_Tunnel
+    mine2.o(i.Mine2_used) refers to mine2.o(i.Mine2_unused) for Mine2_unused
+    mine2.o(i.Mine2_used) refers to qhsm_top.o(i.QHsm_top) for QHsm_top
+    missile.o(i.Missile_armed) refers to missile.o(i.Missile_flying) for Missile_flying
+    missile.o(i.Missile_armed) refers to qhsm_top.o(i.QHsm_top) for QHsm_top
+    missile.o(i.Missile_ctor) refers to qa_ctor.o(i.QActive_ctor) for QActive_ctor
+    missile.o(i.Missile_ctor) refers to missile.o(.bss) for l_missile
+    missile.o(i.Missile_ctor) refers to missile.o(i.Missile_initial) for Missile_initial
+    missile.o(i.Missile_exploding) refers to qf_new.o(i.QF_newX_) for QF_newX_
+    missile.o(i.Missile_exploding) refers to tunnel.o(.constdata) for AO_Tunnel
+    missile.o(i.Missile_exploding) refers to missile.o(i.Missile_armed) for Missile_armed
+    missile.o(i.Missile_exploding) refers to qhsm_top.o(i.QHsm_top) for QHsm_top
+    missile.o(i.Missile_flying) refers to qf_new.o(i.QF_newX_) for QF_newX_
+    missile.o(i.Missile_flying) refers to tunnel.o(.constdata) for AO_Tunnel
+    missile.o(i.Missile_flying) refers to missile.o(i.Missile_armed) for Missile_armed
+    missile.o(i.Missile_flying) refers to missile.o(i.Missile_exploding) for Missile_exploding
+    missile.o(i.Missile_flying) refers to ship.o(.constdata) for AO_Ship
+    missile.o(i.Missile_flying) refers to qhsm_top.o(i.QHsm_top) for QHsm_top
+    missile.o(i.Missile_initial) refers to qa_sub.o(i.QActive_subscribe) for QActive_subscribe
+    missile.o(i.Missile_initial) refers to qs_dict.o(i.QS_obj_dict) for QS_obj_dict
+    missile.o(i.Missile_initial) refers to qs_dict.o(i.QS_fun_dict) for QS_fun_dict
+    missile.o(i.Missile_initial) refers to qs_dict.o(i.QS_sig_dict) for QS_sig_dict
+    missile.o(i.Missile_initial) refers to qs.o(.bss) for QS_priv_
+    missile.o(i.Missile_initial) refers to missile.o(.constdata) for obj_name_
+    missile.o(i.Missile_initial) refers to missile.o(.bss) for l_missile
+    missile.o(i.Missile_initial) refers to missile.o(i.Missile_armed) for Missile_armed
+    missile.o(i.Missile_initial) refers to missile.o(i.Missile_flying) for Missile_flying
+    missile.o(i.Missile_initial) refers to missile.o(i.Missile_exploding) for Missile_exploding
+    missile.o(.constdata) refers to missile.o(.bss) for l_missile
+    ship.o(i.Ship_active) refers to ship.o(i.Ship_parked) for Ship_parked
+    ship.o(i.Ship_active) refers to qhsm_top.o(i.QHsm_top) for QHsm_top
+    ship.o(i.Ship_ctor) refers to qa_ctor.o(i.QActive_ctor) for QActive_ctor
+    ship.o(i.Ship_ctor) refers to ship.o(.bss) for l_ship
+    ship.o(i.Ship_ctor) refers to ship.o(i.Ship_initial) for Ship_initial
+    ship.o(i.Ship_exploding) refers to qf_new.o(i.QF_newX_) for QF_newX_
+    ship.o(i.Ship_exploding) refers to tunnel.o(.constdata) for AO_Tunnel
+    ship.o(i.Ship_exploding) refers to ship.o(i.Ship_parked) for Ship_parked
+    ship.o(i.Ship_exploding) refers to ship.o(i.Ship_active) for Ship_active
+    ship.o(i.Ship_flying) refers to qf_new.o(i.QF_newX_) for QF_newX_
+    ship.o(i.Ship_flying) refers to tunnel.o(.constdata) for AO_Tunnel
+    ship.o(i.Ship_flying) refers to missile.o(.constdata) for AO_Missile
+    ship.o(i.Ship_flying) refers to ship.o(i.Ship_exploding) for Ship_exploding
+    ship.o(i.Ship_flying) refers to ship.o(i.Ship_active) for Ship_active
+    ship.o(i.Ship_initial) refers to qa_sub.o(i.QActive_subscribe) for QActive_subscribe
+    ship.o(i.Ship_initial) refers to qs_dict.o(i.QS_obj_dict) for QS_obj_dict
+    ship.o(i.Ship_initial) refers to qs_dict.o(i.QS_fun_dict) for QS_fun_dict
+    ship.o(i.Ship_initial) refers to qs_dict.o(i.QS_sig_dict) for QS_sig_dict
+    ship.o(i.Ship_initial) refers to qs.o(.bss) for QS_priv_
+    ship.o(i.Ship_initial) refers to ship.o(.constdata) for obj_name_
+    ship.o(i.Ship_initial) refers to ship.o(.bss) for l_ship
+    ship.o(i.Ship_initial) refers to ship.o(i.Ship_active) for Ship_active
+    ship.o(i.Ship_initial) refers to ship.o(i.Ship_parked) for Ship_parked
+    ship.o(i.Ship_initial) refers to ship.o(i.Ship_flying) for Ship_flying
+    ship.o(i.Ship_initial) refers to ship.o(i.Ship_exploding) for Ship_exploding
+    ship.o(i.Ship_parked) refers to ship.o(i.Ship_flying) for Ship_flying
+    ship.o(i.Ship_parked) refers to ship.o(i.Ship_active) for Ship_active
+    ship.o(.constdata) refers to ship.o(.bss) for l_ship
+    tunnel.o(i.Tunnel_active) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    tunnel.o(i.Tunnel_active) refers to tunnel.o(.constdata) for Q_this_module_
+    tunnel.o(i.Tunnel_active) refers to tunnel.o(i.Tunnel_final) for Tunnel_final
+    tunnel.o(i.Tunnel_active) refers to qhsm_top.o(i.QHsm_top) for QHsm_top
+    tunnel.o(i.Tunnel_addImageAt) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    tunnel.o(i.Tunnel_addImageAt) refers to tunnel.o(.constdata) for Q_this_module_
+    tunnel.o(i.Tunnel_addImageAt) refers to tunnel.o(.bss) for l_frame
+    tunnel.o(i.Tunnel_advance) refers to tunnel.o(i.random) for random
+    tunnel.o(i.Tunnel_advance) refers to rt_memmove_v6.o(.text) for __aeabi_memmove
+    tunnel.o(i.Tunnel_advance) refers to rt_memcpy_w.o(.text) for __aeabi_memcpy4
+    tunnel.o(i.Tunnel_advance) refers to tunnel.o(.bss) for l_walls
+    tunnel.o(i.Tunnel_ctor) refers to qa_ctor.o(i.QActive_ctor) for QActive_ctor
+    tunnel.o(i.Tunnel_ctor) refers to qte_ctor.o(i.QTimeEvt_ctorX) for QTimeEvt_ctorX
+    tunnel.o(i.Tunnel_ctor) refers to mine1.o(i.Mine1_ctor) for Mine1_ctor
+    tunnel.o(i.Tunnel_ctor) refers to mine2.o(i.Mine2_ctor) for Mine2_ctor
+    tunnel.o(i.Tunnel_ctor) refers to tunnel.o(.bss) for l_tunnel
+    tunnel.o(i.Tunnel_ctor) refers to tunnel.o(i.Tunnel_initial) for Tunnel_initial
+    tunnel.o(i.Tunnel_demo) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    tunnel.o(i.Tunnel_demo) refers to qte_arm.o(i.QTimeEvt_armX) for QTimeEvt_armX
+    tunnel.o(i.Tunnel_demo) refers to qte_darm.o(i.QTimeEvt_disarm) for QTimeEvt_disarm
+    tunnel.o(i.Tunnel_demo) refers to tunnel.o(i.Tunnel_advance) for Tunnel_advance
+    tunnel.o(i.Tunnel_demo) refers to tunnel.o(i.Tunnel_addImageAt) for Tunnel_addImageAt
+    tunnel.o(i.Tunnel_demo) refers to bsp.o(i.BSP_drawBitmap) for BSP_drawBitmap
+    tunnel.o(i.Tunnel_demo) refers to tunnel.o(.bss) for l_walls
+    tunnel.o(i.Tunnel_demo) refers to tunnel.o(i.Tunnel_screen_saver) for Tunnel_screen_saver
+    tunnel.o(i.Tunnel_demo) refers to tunnel.o(i.Tunnel_playing) for Tunnel_playing
+    tunnel.o(i.Tunnel_demo) refers to tunnel.o(i.Tunnel_active) for Tunnel_active
+    tunnel.o(i.Tunnel_dispatchToAllMines) refers to qhsm_dis.o(i.QHsm_dispatch) for QHsm_dispatch
+    tunnel.o(i.Tunnel_final) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    tunnel.o(i.Tunnel_final) refers to bsp.o(i.BSP_drawBitmap) for BSP_drawBitmap
+    tunnel.o(i.Tunnel_final) refers to qk.o(i.QF_stop) for QF_stop
+    tunnel.o(i.Tunnel_final) refers to tunnel.o(.bss) for l_frame
+    tunnel.o(i.Tunnel_final) refers to qhsm_top.o(i.QHsm_top) for QHsm_top
+    tunnel.o(i.Tunnel_game_over) refers to qte_arm.o(i.QTimeEvt_armX) for QTimeEvt_armX
+    tunnel.o(i.Tunnel_game_over) refers to bsp.o(i.BSP_drawNString) for BSP_drawNString
+    tunnel.o(i.Tunnel_game_over) refers to qte_darm.o(i.QTimeEvt_disarm) for QTimeEvt_disarm
+    tunnel.o(i.Tunnel_game_over) refers to bsp.o(i.BSP_updateScore) for BSP_updateScore
+    tunnel.o(i.Tunnel_game_over) refers to tunnel.o(i.Tunnel_demo) for Tunnel_demo
+    tunnel.o(i.Tunnel_game_over) refers to tunnel.o(i.Tunnel_active) for Tunnel_active
+    tunnel.o(i.Tunnel_initial) refers to qhsm_ini.o(i.QHsm_init) for QHsm_init
+    tunnel.o(i.Tunnel_initial) refers to tunnel.o(i.randomSeed) for randomSeed
+    tunnel.o(i.Tunnel_initial) refers to qa_sub.o(i.QActive_subscribe) for QActive_subscribe
+    tunnel.o(i.Tunnel_initial) refers to qs_dict.o(i.QS_obj_dict) for QS_obj_dict
+    tunnel.o(i.Tunnel_initial) refers to qs_dict.o(i.QS_fun_dict) for QS_fun_dict
+    tunnel.o(i.Tunnel_initial) refers to qs_dict.o(i.QS_sig_dict) for QS_sig_dict
+    tunnel.o(i.Tunnel_initial) refers to qs.o(.bss) for QS_priv_
+    tunnel.o(i.Tunnel_initial) refers to tunnel.o(.constdata) for obj_name_
+    tunnel.o(i.Tunnel_initial) refers to tunnel.o(.bss) for l_tunnel
+    tunnel.o(i.Tunnel_initial) refers to tunnel.o(i.Tunnel_final) for Tunnel_final
+    tunnel.o(i.Tunnel_initial) refers to tunnel.o(i.Tunnel_active) for Tunnel_active
+    tunnel.o(i.Tunnel_initial) refers to tunnel.o(i.Tunnel_show_logo) for Tunnel_show_logo
+    tunnel.o(i.Tunnel_initial) refers to tunnel.o(i.Tunnel_demo) for Tunnel_demo
+    tunnel.o(i.Tunnel_initial) refers to tunnel.o(i.Tunnel_playing) for Tunnel_playing
+    tunnel.o(i.Tunnel_initial) refers to tunnel.o(i.Tunnel_game_over) for Tunnel_game_over
+    tunnel.o(i.Tunnel_initial) refers to tunnel.o(i.Tunnel_screen_saver) for Tunnel_screen_saver
+    tunnel.o(i.Tunnel_initial) refers to tunnel.o(i.Tunnel_screen_saver_hide) for Tunnel_screen_saver_hide
+    tunnel.o(i.Tunnel_initial) refers to tunnel.o(i.Tunnel_screen_saver_show) for Tunnel_screen_saver_show
+    tunnel.o(i.Tunnel_isWallHit) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    tunnel.o(i.Tunnel_isWallHit) refers to tunnel.o(.constdata) for Q_this_module_
+    tunnel.o(i.Tunnel_isWallHit) refers to tunnel.o(.bss) for l_walls
+    tunnel.o(i.Tunnel_plantMine) refers to tunnel.o(i.random) for random
+    tunnel.o(i.Tunnel_plantMine) refers to qhsm_dis.o(i.QHsm_dispatch) for QHsm_dispatch
+    tunnel.o(i.Tunnel_playing) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    tunnel.o(i.Tunnel_playing) refers to tunnel.o(i.Tunnel_dispatchToAllMines) for Tunnel_dispatchToAllMines
+    tunnel.o(i.Tunnel_playing) refers to bsp.o(i.BSP_drawBitmap) for BSP_drawBitmap
+    tunnel.o(i.Tunnel_playing) refers to tunnel.o(i.Tunnel_advance) for Tunnel_advance
+    tunnel.o(i.Tunnel_playing) refers to tunnel.o(i.Tunnel_plantMine) for Tunnel_plantMine
+    tunnel.o(i.Tunnel_playing) refers to tunnel.o(i.Tunnel_isWallHit) for Tunnel_isWallHit
+    tunnel.o(i.Tunnel_playing) refers to tunnel.o(i.Tunnel_addImageAt) for Tunnel_addImageAt
+    tunnel.o(i.Tunnel_playing) refers to bsp.o(i.BSP_updateScore) for BSP_updateScore
+    tunnel.o(i.Tunnel_playing) refers to bsp.o(i.BSP_drawNString) for BSP_drawNString
+    tunnel.o(i.Tunnel_playing) refers to tunnel.o(.bss) for l_walls
+    tunnel.o(i.Tunnel_playing) refers to ship.o(.constdata) for AO_Ship
+    tunnel.o(i.Tunnel_playing) refers to tunnel.o(.constdata) for takeoff
+    tunnel.o(i.Tunnel_playing) refers to missile.o(.constdata) for AO_Missile
+    tunnel.o(i.Tunnel_playing) refers to tunnel.o(i.Tunnel_game_over) for Tunnel_game_over
+    tunnel.o(i.Tunnel_playing) refers to tunnel.o(i.Tunnel_active) for Tunnel_active
+    tunnel.o(i.Tunnel_screen_saver) refers to tunnel.o(i.Tunnel_screen_saver_hide) for Tunnel_screen_saver_hide
+    tunnel.o(i.Tunnel_screen_saver) refers to tunnel.o(i.Tunnel_demo) for Tunnel_demo
+    tunnel.o(i.Tunnel_screen_saver) refers to tunnel.o(i.Tunnel_active) for Tunnel_active
+    tunnel.o(i.Tunnel_screen_saver_hide) refers to bsp.o(i.BSP_displayOff) for BSP_displayOff
+    tunnel.o(i.Tunnel_screen_saver_hide) refers to qte_arm.o(i.QTimeEvt_armX) for QTimeEvt_armX
+    tunnel.o(i.Tunnel_screen_saver_hide) refers to qte_darm.o(i.QTimeEvt_disarm) for QTimeEvt_disarm
+    tunnel.o(i.Tunnel_screen_saver_hide) refers to bsp.o(i.BSP_displayOn) for BSP_displayOn
+    tunnel.o(i.Tunnel_screen_saver_hide) refers to tunnel.o(i.Tunnel_screen_saver_show) for Tunnel_screen_saver_show
+    tunnel.o(i.Tunnel_screen_saver_hide) refers to tunnel.o(i.Tunnel_screen_saver) for Tunnel_screen_saver
+    tunnel.o(i.Tunnel_screen_saver_show) refers to tunnel.o(i.random) for random
+    tunnel.o(i.Tunnel_screen_saver_show) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    tunnel.o(i.Tunnel_screen_saver_show) refers to tunnel.o(i.Tunnel_addImageAt) for Tunnel_addImageAt
+    tunnel.o(i.Tunnel_screen_saver_show) refers to bsp.o(i.BSP_drawBitmap) for BSP_drawBitmap
+    tunnel.o(i.Tunnel_screen_saver_show) refers to qte_arm.o(i.QTimeEvt_armX) for QTimeEvt_armX
+    tunnel.o(i.Tunnel_screen_saver_show) refers to qte_darm.o(i.QTimeEvt_disarm) for QTimeEvt_disarm
+    tunnel.o(i.Tunnel_screen_saver_show) refers to tunnel.o(.bss) for l_frame
+    tunnel.o(i.Tunnel_screen_saver_show) refers to tunnel.o(i.Tunnel_screen_saver_hide) for Tunnel_screen_saver_hide
+    tunnel.o(i.Tunnel_screen_saver_show) refers to tunnel.o(i.Tunnel_screen_saver) for Tunnel_screen_saver
+    tunnel.o(i.Tunnel_show_logo) refers to qte_arm.o(i.QTimeEvt_armX) for QTimeEvt_armX
+    tunnel.o(i.Tunnel_show_logo) refers to bsp.o(i.BSP_drawNString) for BSP_drawNString
+    tunnel.o(i.Tunnel_show_logo) refers to qte_darm.o(i.QTimeEvt_disarm) for QTimeEvt_disarm
+    tunnel.o(i.Tunnel_show_logo) refers to tunnel.o(i.Tunnel_demo) for Tunnel_demo
+    tunnel.o(i.Tunnel_show_logo) refers to tunnel.o(i.Tunnel_active) for Tunnel_active
+    tunnel.o(i.do_bitmaps_overlap) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    tunnel.o(i.do_bitmaps_overlap) refers to tunnel.o(.constdata) for Q_this_module_
+    tunnel.o(i.random) refers to tunnel.o(.data) for l_rnd
+    tunnel.o(i.randomSeed) refers to tunnel.o(.data) for l_rnd
+    tunnel.o(.constdata) refers to tunnel.o(.bss) for l_tunnel
+    system_lm3s.o(i.SystemInit) refers to system_lm3s.o(.constdata) for l_pulXtals
+    system_lm3s.o(i.SystemInit) refers to system_lm3s.o(.data) for SystemFrequency
+    startup-qk_lm3s.o(STACK) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup-qk_lm3s.o(HEAP) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup-qk_lm3s.o(RESET) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup-qk_lm3s.o(RESET) refers to startup-qk_lm3s.o(STACK) for StackMem
+    startup-qk_lm3s.o(RESET) refers to qk_port.o(.text) for SVC_Handler
+    startup-qk_lm3s.o(RESET) refers to bsp.o(i.SysTick_Handler) for SysTick_Handler
+    startup-qk_lm3s.o(RESET) refers to bsp.o(i.GPIOPortA_IRQHandler) for GPIOPortA_IRQHandler
+    startup-qk_lm3s.o(RESET) refers to bsp.o(i.ADCSeq3_IRQHandler) for ADCSeq3_IRQHandler
+    startup-qk_lm3s.o(RESET) refers to __main.o(!!!main) for __main
+    startup-qk_lm3s.o(RESET) refers to bsp.o(i.assert_failed) for assert_failed
+    startup-qk_lm3s.o(.text) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup-qk_lm3s.o(.text) refers to startup-qk_lm3s.o(HEAP) for HeapMem
+    startup-qk_lm3s.o(.text) refers to startup-qk_lm3s.o(STACK) for StackMem
+    qhsm_ini.o(i.QHsm_ctor) refers to qhsm_ini.o(.constdata) for vtbl
+    qhsm_ini.o(i.QHsm_ctor) refers to qhsm_top.o(i.QHsm_top) for QHsm_top
+    qhsm_ini.o(i.QHsm_init) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qhsm_ini.o(i.QHsm_init) refers to qs.o(i.QS_beginRec) for QS_beginRec
+    qhsm_ini.o(i.QHsm_init) refers to qs_.o(i.QS_u32_) for QS_u32_
+    qhsm_ini.o(i.QHsm_init) refers to qs.o(i.QS_endRec) for QS_endRec
+    qhsm_ini.o(i.QHsm_init) refers to bsp.o(i.QS_onGetTime) for QS_onGetTime
+    qhsm_ini.o(i.QHsm_init) refers to qhsm_top.o(i.QHsm_top) for QHsm_top
+    qhsm_ini.o(i.QHsm_init) refers to qhsm_ini.o(.constdata) for Q_this_module_
+    qhsm_ini.o(i.QHsm_init) refers to qs.o(.bss) for QS_priv_
+    qhsm_ini.o(i.QHsm_init) refers to qep.o(.constdata) for QEP_reservedEvt_
+    qhsm_ini.o(.constdata) refers to qhsm_ini.o(i.QHsm_init) for QHsm_init
+    qhsm_ini.o(.constdata) refers to qhsm_dis.o(i.QHsm_dispatch) for QHsm_dispatch
+    qhsm_dis.o(i.QHsm_dispatch) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qhsm_dis.o(i.QHsm_dispatch) refers to qs.o(i.QS_beginRec) for QS_beginRec
+    qhsm_dis.o(i.QHsm_dispatch) refers to bsp.o(i.QS_onGetTime) for QS_onGetTime
+    qhsm_dis.o(i.QHsm_dispatch) refers to qs_.o(i.QS_u32_) for QS_u32_
+    qhsm_dis.o(i.QHsm_dispatch) refers to qs_.o(i.QS_u16_) for QS_u16_
+    qhsm_dis.o(i.QHsm_dispatch) refers to qs.o(i.QS_endRec) for QS_endRec
+    qhsm_dis.o(i.QHsm_dispatch) refers to qhsm_dis.o(.constdata) for Q_this_module_
+    qhsm_dis.o(i.QHsm_dispatch) refers to qs.o(.bss) for QS_priv_
+    qhsm_dis.o(i.QHsm_dispatch) refers to qep.o(.constdata) for QEP_reservedEvt_
+    qa_ctor.o(i.QActive_ctor) refers to qhsm_ini.o(i.QHsm_ctor) for QHsm_ctor
+    qa_ctor.o(i.QActive_ctor) refers to qa_ctor.o(.constdata) for vtbl
+    qa_ctor.o(.constdata) refers to qhsm_ini.o(i.QHsm_init) for QHsm_init
+    qa_ctor.o(.constdata) refers to qhsm_dis.o(i.QHsm_dispatch) for QHsm_dispatch
+    qa_ctor.o(.constdata) refers to qk.o(i.QActive_start) for QActive_start
+    qa_ctor.o(.constdata) refers to qa_fifo.o(i.QActive_post) for QActive_post
+    qa_ctor.o(.constdata) refers to qa_lifo.o(i.QActive_postLIFO) for QActive_postLIFO
+    qa_sub.o(i.QActive_subscribe) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qa_sub.o(i.QActive_subscribe) refers to qs.o(i.QS_beginRec) for QS_beginRec
+    qa_sub.o(i.QActive_subscribe) refers to bsp.o(i.QS_onGetTime) for QS_onGetTime
+    qa_sub.o(i.QActive_subscribe) refers to qs_.o(i.QS_u32_) for QS_u32_
+    qa_sub.o(i.QActive_subscribe) refers to qs_.o(i.QS_u16_) for QS_u16_
+    qa_sub.o(i.QActive_subscribe) refers to qs.o(i.QS_endRec) for QS_endRec
+    qa_sub.o(i.QActive_subscribe) refers to qf_pwr2.o(.constdata) for QF_div8Lkup
+    qa_sub.o(i.QActive_subscribe) refers to qf_psini.o(.data) for QF_maxSignal_
+    qa_sub.o(i.QActive_subscribe) refers to qf_act.o(.bss) for QF_active_
+    qa_sub.o(i.QActive_subscribe) refers to qa_sub.o(.constdata) for Q_this_module_
+    qa_sub.o(i.QActive_subscribe) refers to qs.o(.bss) for QS_priv_
+    qf_new.o(i.QF_newX_) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qf_new.o(i.QF_newX_) refers to qs.o(i.QS_beginRec) for QS_beginRec
+    qf_new.o(i.QF_newX_) refers to bsp.o(i.QS_onGetTime) for QS_onGetTime
+    qf_new.o(i.QF_newX_) refers to qs_.o(i.QS_u32_) for QS_u32_
+    qf_new.o(i.QF_newX_) refers to qs_.o(i.QS_u16_) for QS_u16_
+    qf_new.o(i.QF_newX_) refers to qs.o(i.QS_endRec) for QS_endRec
+    qf_new.o(i.QF_newX_) refers to qmp_get.o(i.QMPool_get) for QMPool_get
+    qf_new.o(i.QF_newX_) refers to qf_pool.o(.bss) for QF_pool_
+    qf_new.o(i.QF_newX_) refers to qf_pool.o(.data) for QF_maxPool_
+    qf_new.o(i.QF_newX_) refers to qf_new.o(.constdata) for Q_this_module_
+    qf_new.o(i.QF_newX_) refers to qs.o(.bss) for QS_priv_
+    qf_pool.o(i.QF_poolInit) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qf_pool.o(i.QF_poolInit) refers to qmp_init.o(i.QMPool_init) for QMPool_init
+    qf_pool.o(i.QF_poolInit) refers to qf_pool.o(.data) for QF_maxPool_
+    qf_pool.o(i.QF_poolInit) refers to qf_pool.o(.constdata) for Q_this_module_
+    qf_pool.o(i.QF_poolInit) refers to qf_pool.o(.bss) for QF_pool_
+    qf_psini.o(i.QF_psInit) refers to qf_psini.o(.data) for QF_subscrList_
+    qf_pspub.o(i.QF_publish) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qf_pspub.o(i.QF_publish) refers to qs.o(i.QS_beginRec) for QS_beginRec
+    qf_pspub.o(i.QF_publish) refers to bsp.o(i.QS_onGetTime) for QS_onGetTime
+    qf_pspub.o(i.QF_publish) refers to qs_.o(i.QS_u32_) for QS_u32_
+    qf_pspub.o(i.QF_publish) refers to qs_.o(i.QS_u16_) for QS_u16_
+    qf_pspub.o(i.QF_publish) refers to qs_.o(i.QS_u8u8_) for QS_u8u8_
+    qf_pspub.o(i.QF_publish) refers to qs.o(i.QS_endRec) for QS_endRec
+    qf_pspub.o(i.QF_publish) refers to qf_gc.o(i.QF_gc) for QF_gc
+    qf_pspub.o(i.QF_publish) refers to qf_psini.o(.data) for QF_maxSignal_
+    qf_pspub.o(i.QF_publish) refers to qf_pspub.o(.constdata) for Q_this_module_
+    qf_pspub.o(i.QF_publish) refers to qs.o(.bss) for QS_priv_
+    qf_pspub.o(i.QF_publish) refers to qf_pwr2.o(.constdata) for QF_invPwr2Lkup
+    qf_pspub.o(i.QF_publish) refers to qf_act.o(.bss) for QF_active_
+    qf_tick.o(i.QF_noTimeEvtsActiveX) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qf_tick.o(i.QF_noTimeEvtsActiveX) refers to qf_tick.o(.constdata) for Q_this_module_
+    qf_tick.o(i.QF_noTimeEvtsActiveX) refers to qf_tick.o(.bss) for QF_timeEvtHead_
+    qf_tick.o(i.QF_tickX) refers to qs.o(i.QS_beginRec) for QS_beginRec
+    qf_tick.o(i.QF_tickX) refers to qs_.o(i.QS_u16_) for QS_u16_
+    qf_tick.o(i.QF_tickX) refers to qs_.o(i.QS_u8_) for QS_u8_
+    qf_tick.o(i.QF_tickX) refers to qs.o(i.QS_endRec) for QS_endRec
+    qf_tick.o(i.QF_tickX) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qf_tick.o(i.QF_tickX) refers to qs_.o(i.QS_u32_) for QS_u32_
+    qf_tick.o(i.QF_tickX) refers to bsp.o(i.QS_onGetTime) for QS_onGetTime
+    qf_tick.o(i.QF_tickX) refers to qf_tick.o(.bss) for QF_timeEvtHead_
+    qf_tick.o(i.QF_tickX) refers to qs.o(.bss) for QS_priv_
+    qf_tick.o(i.QF_tickX) refers to qf_tick.o(.constdata) for Q_this_module_
+    qte_ctor.o(i.QTimeEvt_ctorX) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qte_ctor.o(i.QTimeEvt_ctorX) refers to qte_ctor.o(.constdata) for Q_this_module_
+    qte_arm.o(i.QTimeEvt_armX) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qte_arm.o(i.QTimeEvt_armX) refers to qs.o(i.QS_beginRec) for QS_beginRec
+    qte_arm.o(i.QTimeEvt_armX) refers to bsp.o(i.QS_onGetTime) for QS_onGetTime
+    qte_arm.o(i.QTimeEvt_armX) refers to qs_.o(i.QS_u32_) for QS_u32_
+    qte_arm.o(i.QTimeEvt_armX) refers to qs_.o(i.QS_u16_) for QS_u16_
+    qte_arm.o(i.QTimeEvt_armX) refers to qs_.o(i.QS_u8_) for QS_u8_
+    qte_arm.o(i.QTimeEvt_armX) refers to qs.o(i.QS_endRec) for QS_endRec
+    qte_arm.o(i.QTimeEvt_armX) refers to qte_arm.o(.constdata) for Q_this_module_
+    qte_arm.o(i.QTimeEvt_armX) refers to qf_tick.o(.bss) for QF_timeEvtHead_
+    qte_arm.o(i.QTimeEvt_armX) refers to qs.o(.bss) for QS_priv_
+    qte_darm.o(i.QTimeEvt_disarm) refers to qs.o(i.QS_beginRec) for QS_beginRec
+    qte_darm.o(i.QTimeEvt_disarm) refers to bsp.o(i.QS_onGetTime) for QS_onGetTime
+    qte_darm.o(i.QTimeEvt_disarm) refers to qs_.o(i.QS_u32_) for QS_u32_
+    qte_darm.o(i.QTimeEvt_disarm) refers to qs_.o(i.QS_u16_) for QS_u16_
+    qte_darm.o(i.QTimeEvt_disarm) refers to qs_.o(i.QS_u8_) for QS_u8_
+    qte_darm.o(i.QTimeEvt_disarm) refers to qs.o(i.QS_endRec) for QS_endRec
+    qte_darm.o(i.QTimeEvt_disarm) refers to qs.o(.bss) for QS_priv_
+    qk.o(i.QActive_start) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qk.o(i.QActive_start) refers to qeq_init.o(i.QEQueue_init) for QEQueue_init
+    qk.o(i.QActive_start) refers to qf_act.o(i.QF_add_) for QF_add_
+    qk.o(i.QActive_start) refers to bsp.o(i.QS_onFlush) for QS_onFlush
+    qk.o(i.QActive_start) refers to qk.o(.constdata) for Q_this_module_
+    qk.o(i.QActive_stop) refers to qf_act.o(i.QF_remove_) for QF_remove_
+    qk.o(i.QF_init) refers to qk_port.o(.text) for QK_init
+    qk.o(i.QF_run) refers to qk.o(i.initialize) for initialize
+    qk.o(i.QF_run) refers to bsp.o(i.QF_onStartup) for QF_onStartup
+    qk.o(i.QF_run) refers to bsp.o(i.QK_onIdle) for QK_onIdle
+    qk.o(i.QF_stop) refers to bsp.o(i.QF_onCleanup) for QF_onCleanup
+    qk.o(i.initialize) refers to qk_sched.o(i.QK_schedPrio_) for QK_schedPrio_
+    qk.o(i.initialize) refers to qk_sched.o(i.QK_sched_) for QK_sched_
+    qk.o(i.initialize) refers to qk.o(.data) for QK_currPrio_
+    qk_port.o(.text) refers to qk_sched.o(i.QK_schedPrio_) for QK_schedPrio_
+    qk_port.o(.text) refers to qk_sched.o(i.QK_sched_) for QK_sched_
+    qs.o(i.QS_beginRec) refers to qs.o(.bss) for .bss
+    qs.o(i.QS_endRec) refers to qs.o(.bss) for .bss
+    qs.o(i.QS_filterOff) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qs.o(i.QS_filterOff) refers to qs.o(.constdata) for .constdata
+    qs.o(i.QS_filterOff) refers to qs.o(.bss) for .bss
+    qs.o(i.QS_filterOn) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qs.o(i.QS_filterOn) refers to aeabi_memset.o(.text) for __aeabi_memset
+    qs.o(i.QS_filterOn) refers to qs.o(.bss) for .bss
+    qs.o(i.QS_filterOn) refers to qs.o(.constdata) for .constdata
+    qs.o(i.QS_initBuf) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qs.o(i.QS_initBuf) refers to qs.o(i.QS_beginRec) for QS_beginRec
+    qs.o(i.QS_initBuf) refers to qs.o(i.QS_endRec) for QS_endRec
+    qs.o(i.QS_initBuf) refers to qs.o(.constdata) for .constdata
+    qs.o(i.QS_initBuf) refers to qs.o(.bss) for .bss
+    qs.o(i.QS_u16) refers to qs.o(.bss) for .bss
+    qs.o(i.QS_u32) refers to qs.o(.bss) for .bss
+    qs.o(i.QS_u8) refers to qs.o(.bss) for .bss
+    qs_.o(i.QS_str_) refers to qs.o(.bss) for QS_priv_
+    qs_.o(i.QS_str_ROM_) refers to qs.o(.bss) for QS_priv_
+    qs_.o(i.QS_u16_) refers to qs.o(.bss) for QS_priv_
+    qs_.o(i.QS_u32_) refers to qs.o(.bss) for QS_priv_
+    qs_.o(i.QS_u8_) refers to qs.o(.bss) for QS_priv_
+    qs_.o(i.QS_u8u8_) refers to qs.o(.bss) for QS_priv_
+    qs_blk.o(i.QS_getBlock) refers to qs.o(.bss) for QS_priv_
+    qs_dict.o(i.QS_fun_dict) refers to qs.o(i.QS_beginRec) for QS_beginRec
+    qs_dict.o(i.QS_fun_dict) refers to qs_.o(i.QS_u32_) for QS_u32_
+    qs_dict.o(i.QS_fun_dict) refers to qs_.o(i.QS_str_ROM_) for QS_str_ROM_
+    qs_dict.o(i.QS_fun_dict) refers to qs.o(i.QS_endRec) for QS_endRec
+    qs_dict.o(i.QS_fun_dict) refers to bsp.o(i.QS_onFlush) for QS_onFlush
+    qs_dict.o(i.QS_obj_dict) refers to qs.o(i.QS_beginRec) for QS_beginRec
+    qs_dict.o(i.QS_obj_dict) refers to qs_.o(i.QS_u32_) for QS_u32_
+    qs_dict.o(i.QS_obj_dict) refers to qs_.o(i.QS_str_ROM_) for QS_str_ROM_
+    qs_dict.o(i.QS_obj_dict) refers to qs.o(i.QS_endRec) for QS_endRec
+    qs_dict.o(i.QS_obj_dict) refers to bsp.o(i.QS_onFlush) for QS_onFlush
+    qs_dict.o(i.QS_sig_dict) refers to qs.o(i.QS_beginRec) for QS_beginRec
+    qs_dict.o(i.QS_sig_dict) refers to qs_.o(i.QS_u16_) for QS_u16_
+    qs_dict.o(i.QS_sig_dict) refers to qs_.o(i.QS_u32_) for QS_u32_
+    qs_dict.o(i.QS_sig_dict) refers to qs_.o(i.QS_str_ROM_) for QS_str_ROM_
+    qs_dict.o(i.QS_sig_dict) refers to qs.o(i.QS_endRec) for QS_endRec
+    qs_dict.o(i.QS_sig_dict) refers to bsp.o(i.QS_onFlush) for QS_onFlush
+    qs_dict.o(i.QS_usr_dict) refers to qs.o(i.QS_beginRec) for QS_beginRec
+    qs_dict.o(i.QS_usr_dict) refers to qs_.o(i.QS_u8_) for QS_u8_
+    qs_dict.o(i.QS_usr_dict) refers to qs_.o(i.QS_str_ROM_) for QS_str_ROM_
+    qs_dict.o(i.QS_usr_dict) refers to qs.o(i.QS_endRec) for QS_endRec
+    qs_dict.o(i.QS_usr_dict) refers to bsp.o(i.QS_onFlush) for QS_onFlush
+    qa_fifo.o(i.QActive_post) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qa_fifo.o(i.QActive_post) refers to qs.o(i.QS_beginRec) for QS_beginRec
+    qa_fifo.o(i.QActive_post) refers to bsp.o(i.QS_onGetTime) for QS_onGetTime
+    qa_fifo.o(i.QActive_post) refers to qs_.o(i.QS_u32_) for QS_u32_
+    qa_fifo.o(i.QActive_post) refers to qs_.o(i.QS_u16_) for QS_u16_
+    qa_fifo.o(i.QActive_post) refers to qs_.o(i.QS_u8u8_) for QS_u8u8_
+    qa_fifo.o(i.QActive_post) refers to qs_.o(i.QS_u8_) for QS_u8_
+    qa_fifo.o(i.QActive_post) refers to qs.o(i.QS_endRec) for QS_endRec
+    qa_fifo.o(i.QActive_post) refers to qk_sched.o(i.QK_schedPrio_) for QK_schedPrio_
+    qa_fifo.o(i.QActive_post) refers to qk_sched.o(i.QK_sched_) for QK_sched_
+    qa_fifo.o(i.QActive_post) refers to qa_fifo.o(.constdata) for Q_this_module_
+    qa_fifo.o(i.QActive_post) refers to qs.o(.bss) for QS_priv_
+    qa_fifo.o(i.QActive_post) refers to qf_pwr2.o(.constdata) for QF_div8Lkup
+    qa_fifo.o(i.QActive_post) refers to qk.o(.bss) for QK_readySet_
+    qa_fifo.o(i.QActive_post) refers to qk.o(.data) for QK_intNest_
+    qa_lifo.o(i.QActive_postLIFO) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qa_lifo.o(i.QActive_postLIFO) refers to qs.o(i.QS_beginRec) for QS_beginRec
+    qa_lifo.o(i.QActive_postLIFO) refers to bsp.o(i.QS_onGetTime) for QS_onGetTime
+    qa_lifo.o(i.QActive_postLIFO) refers to qs_.o(i.QS_u32_) for QS_u32_
+    qa_lifo.o(i.QActive_postLIFO) refers to qs_.o(i.QS_u16_) for QS_u16_
+    qa_lifo.o(i.QActive_postLIFO) refers to qs_.o(i.QS_u8u8_) for QS_u8u8_
+    qa_lifo.o(i.QActive_postLIFO) refers to qs_.o(i.QS_u8_) for QS_u8_
+    qa_lifo.o(i.QActive_postLIFO) refers to qs.o(i.QS_endRec) for QS_endRec
+    qa_lifo.o(i.QActive_postLIFO) refers to qk_sched.o(i.QK_schedPrio_) for QK_schedPrio_
+    qa_lifo.o(i.QActive_postLIFO) refers to qk_sched.o(i.QK_sched_) for QK_sched_
+    qa_lifo.o(i.QActive_postLIFO) refers to qa_lifo.o(.constdata) for Q_this_module_
+    qa_lifo.o(i.QActive_postLIFO) refers to qs.o(.bss) for QS_priv_
+    qa_lifo.o(i.QActive_postLIFO) refers to qf_pwr2.o(.constdata) for QF_div8Lkup
+    qa_lifo.o(i.QActive_postLIFO) refers to qk.o(.bss) for QK_readySet_
+    qa_lifo.o(i.QActive_postLIFO) refers to qk.o(.data) for QK_intNest_
+    qeq_init.o(i.QEQueue_init) refers to qs.o(i.QS_beginRec) for QS_beginRec
+    qeq_init.o(i.QEQueue_init) refers to qs_.o(i.QS_u32_) for QS_u32_
+    qeq_init.o(i.QEQueue_init) refers to qs_.o(i.QS_u8_) for QS_u8_
+    qeq_init.o(i.QEQueue_init) refers to qs.o(i.QS_endRec) for QS_endRec
+    qeq_init.o(i.QEQueue_init) refers to qs.o(.bss) for QS_priv_
+    qf_act.o(i.QF_add_) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qf_act.o(i.QF_add_) refers to qs.o(i.QS_beginRec) for QS_beginRec
+    qf_act.o(i.QF_add_) refers to bsp.o(i.QS_onGetTime) for QS_onGetTime
+    qf_act.o(i.QF_add_) refers to qs_.o(i.QS_u32_) for QS_u32_
+    qf_act.o(i.QF_add_) refers to qs_.o(i.QS_u8_) for QS_u8_
+    qf_act.o(i.QF_add_) refers to qs.o(i.QS_endRec) for QS_endRec
+    qf_act.o(i.QF_add_) refers to qf_act.o(.bss) for QF_active_
+    qf_act.o(i.QF_add_) refers to qf_act.o(.constdata) for Q_this_module_
+    qf_act.o(i.QF_add_) refers to qs.o(.bss) for QS_priv_
+    qf_act.o(i.QF_remove_) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qf_act.o(i.QF_remove_) refers to qs.o(i.QS_beginRec) for QS_beginRec
+    qf_act.o(i.QF_remove_) refers to bsp.o(i.QS_onGetTime) for QS_onGetTime
+    qf_act.o(i.QF_remove_) refers to qs_.o(i.QS_u32_) for QS_u32_
+    qf_act.o(i.QF_remove_) refers to qs_.o(i.QS_u8_) for QS_u8_
+    qf_act.o(i.QF_remove_) refers to qs.o(i.QS_endRec) for QS_endRec
+    qf_act.o(i.QF_remove_) refers to qf_act.o(.bss) for QF_active_
+    qf_act.o(i.QF_remove_) refers to qf_act.o(.constdata) for Q_this_module_
+    qf_act.o(i.QF_remove_) refers to qs.o(.bss) for QS_priv_
+    qf_gc.o(i.QF_gc) refers to qs.o(i.QS_beginRec) for QS_beginRec
+    qf_gc.o(i.QF_gc) refers to bsp.o(i.QS_onGetTime) for QS_onGetTime
+    qf_gc.o(i.QF_gc) refers to qs_.o(i.QS_u32_) for QS_u32_
+    qf_gc.o(i.QF_gc) refers to qs_.o(i.QS_u16_) for QS_u16_
+    qf_gc.o(i.QF_gc) refers to qs_.o(i.QS_u8u8_) for QS_u8u8_
+    qf_gc.o(i.QF_gc) refers to qs.o(i.QS_endRec) for QS_endRec
+    qf_gc.o(i.QF_gc) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qf_gc.o(i.QF_gc) refers to qmp_put.o(i.QMPool_put) for QMPool_put
+    qf_gc.o(i.QF_gc) refers to qs.o(.bss) for QS_priv_
+    qf_gc.o(i.QF_gc) refers to qf_pool.o(.data) for QF_maxPool_
+    qf_gc.o(i.QF_gc) refers to qf_gc.o(.constdata) for Q_this_module_
+    qf_gc.o(i.QF_gc) refers to qf_pool.o(.bss) for QF_pool_
+    qmp_get.o(i.QF_getPoolMin) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qmp_get.o(i.QF_getPoolMin) refers to qf_pool.o(.data) for QF_maxPool_
+    qmp_get.o(i.QF_getPoolMin) refers to qmp_get.o(.constdata) for Q_this_module_
+    qmp_get.o(i.QF_getPoolMin) refers to qf_pool.o(.bss) for QF_pool_
+    qmp_get.o(i.QMPool_get) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qmp_get.o(i.QMPool_get) refers to qs.o(i.QS_beginRec) for QS_beginRec
+    qmp_get.o(i.QMPool_get) refers to bsp.o(i.QS_onGetTime) for QS_onGetTime
+    qmp_get.o(i.QMPool_get) refers to qs_.o(i.QS_u32_) for QS_u32_
+    qmp_get.o(i.QMPool_get) refers to qs_.o(i.QS_u16_) for QS_u16_
+    qmp_get.o(i.QMPool_get) refers to qs.o(i.QS_endRec) for QS_endRec
+    qmp_get.o(i.QMPool_get) refers to qmp_get.o(.constdata) for Q_this_module_
+    qmp_get.o(i.QMPool_get) refers to qs.o(.bss) for QS_priv_
+    qmp_init.o(i.QMPool_init) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qmp_init.o(i.QMPool_init) refers to qs.o(i.QS_beginRec) for QS_beginRec
+    qmp_init.o(i.QMPool_init) refers to qs_.o(i.QS_u32_) for QS_u32_
+    qmp_init.o(i.QMPool_init) refers to qs_.o(i.QS_u16_) for QS_u16_
+    qmp_init.o(i.QMPool_init) refers to qs.o(i.QS_endRec) for QS_endRec
+    qmp_init.o(i.QMPool_init) refers to qmp_init.o(.constdata) for Q_this_module_
+    qmp_init.o(i.QMPool_init) refers to qs.o(.bss) for QS_priv_
+    qk_sched.o(i.QK_schedPrio_) refers to qk.o(.bss) for QK_readySet_
+    qk_sched.o(i.QK_schedPrio_) refers to qk.o(.data) for QK_currPrio_
+    qk_sched.o(i.QK_schedPrio_) refers to qk_mutex.o(.data) for QK_ceilingPrio_
+    qk_sched.o(i.QK_sched_) refers to qs.o(i.QS_beginRec) for QS_beginRec
+    qk_sched.o(i.QK_sched_) refers to bsp.o(i.QS_onGetTime) for QS_onGetTime
+    qk_sched.o(i.QK_sched_) refers to qs_.o(i.QS_u32_) for QS_u32_
+    qk_sched.o(i.QK_sched_) refers to qs_.o(i.QS_u8_) for QS_u8_
+    qk_sched.o(i.QK_sched_) refers to qs.o(i.QS_endRec) for QS_endRec
+    qk_sched.o(i.QK_sched_) refers to qa_get_.o(i.QActive_get_) for QActive_get_
+    qk_sched.o(i.QK_sched_) refers to qf_gc.o(i.QF_gc) for QF_gc
+    qk_sched.o(i.QK_sched_) refers to qk.o(.data) for QK_currPrio_
+    qk_sched.o(i.QK_sched_) refers to qf_act.o(.bss) for QF_active_
+    qk_sched.o(i.QK_sched_) refers to qs.o(.bss) for QS_priv_
+    qk_sched.o(i.QK_sched_) refers to qk.o(.bss) for QK_readySet_
+    qk_sched.o(i.QK_sched_) refers to qk_mutex.o(.data) for QK_ceilingPrio_
+    qa_get_.o(i.QActive_get_) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qa_get_.o(i.QActive_get_) refers to qs.o(i.QS_beginRec) for QS_beginRec
+    qa_get_.o(i.QActive_get_) refers to bsp.o(i.QS_onGetTime) for QS_onGetTime
+    qa_get_.o(i.QActive_get_) refers to qs_.o(i.QS_u32_) for QS_u32_
+    qa_get_.o(i.QActive_get_) refers to qs_.o(i.QS_u16_) for QS_u16_
+    qa_get_.o(i.QActive_get_) refers to qs_.o(i.QS_u8u8_) for QS_u8u8_
+    qa_get_.o(i.QActive_get_) refers to qs_.o(i.QS_u8_) for QS_u8_
+    qa_get_.o(i.QActive_get_) refers to qs.o(i.QS_endRec) for QS_endRec
+    qa_get_.o(i.QActive_get_) refers to qa_get_.o(.constdata) for Q_this_module_
+    qa_get_.o(i.QActive_get_) refers to qs.o(.bss) for QS_priv_
+    qa_get_.o(i.QActive_get_) refers to qf_pwr2.o(.constdata) for QF_div8Lkup
+    qa_get_.o(i.QActive_get_) refers to qk.o(.bss) for QK_readySet_
+    qa_get_.o(i.QF_getQueueMin) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qa_get_.o(i.QF_getQueueMin) refers to qf_act.o(.bss) for QF_active_
+    qa_get_.o(i.QF_getQueueMin) refers to qa_get_.o(.constdata) for Q_this_module_
+    qmp_put.o(i.QMPool_put) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qmp_put.o(i.QMPool_put) refers to qs.o(i.QS_beginRec) for QS_beginRec
+    qmp_put.o(i.QMPool_put) refers to bsp.o(i.QS_onGetTime) for QS_onGetTime
+    qmp_put.o(i.QMPool_put) refers to qs_.o(i.QS_u32_) for QS_u32_
+    qmp_put.o(i.QMPool_put) refers to qs_.o(i.QS_u16_) for QS_u16_
+    qmp_put.o(i.QMPool_put) refers to qs.o(i.QS_endRec) for QS_endRec
+    qmp_put.o(i.QMPool_put) refers to qmp_put.o(.constdata) for Q_this_module_
+    qmp_put.o(i.QMPool_put) refers to qs.o(.bss) for QS_priv_
+    qk_mutex.o(i.QK_mutexLock) refers to qs.o(i.QS_beginRec) for QS_beginRec
+    qk_mutex.o(i.QK_mutexLock) refers to bsp.o(i.QS_onGetTime) for QS_onGetTime
+    qk_mutex.o(i.QK_mutexLock) refers to qs_.o(i.QS_u32_) for QS_u32_
+    qk_mutex.o(i.QK_mutexLock) refers to qs_.o(i.QS_u8_) for QS_u8_
+    qk_mutex.o(i.QK_mutexLock) refers to qs.o(i.QS_endRec) for QS_endRec
+    qk_mutex.o(i.QK_mutexLock) refers to qk_mutex.o(.data) for QK_ceilingPrio_
+    qk_mutex.o(i.QK_mutexLock) refers to qs.o(.bss) for QS_priv_
+    qk_mutex.o(i.QK_mutexUnlock) refers to qs.o(i.QS_beginRec) for QS_beginRec
+    qk_mutex.o(i.QK_mutexUnlock) refers to bsp.o(i.QS_onGetTime) for QS_onGetTime
+    qk_mutex.o(i.QK_mutexUnlock) refers to qs_.o(i.QS_u32_) for QS_u32_
+    qk_mutex.o(i.QK_mutexUnlock) refers to qs_.o(i.QS_u8_) for QS_u8_
+    qk_mutex.o(i.QK_mutexUnlock) refers to qs.o(i.QS_endRec) for QS_endRec
+    qk_mutex.o(i.QK_mutexUnlock) refers to qk_sched.o(i.QK_schedPrio_) for QK_schedPrio_
+    qk_mutex.o(i.QK_mutexUnlock) refers to qk_sched.o(i.QK_sched_) for QK_sched_
+    qk_mutex.o(i.QK_mutexUnlock) refers to qs.o(.bss) for QS_priv_
+    qk_mutex.o(i.QK_mutexUnlock) refers to qk_mutex.o(.data) for QK_ceilingPrio_
+    rt_memmove_v6.o(.text) refers to rt_memcpy_v6.o(.text) for __aeabi_memcpy
+    rt_memmove_v6.o(.text) refers to rt_memmove_w.o(.text) for __memmove_aligned
+    aeabi_memset.o(.text) refers to rt_memclr.o(.text) for _memset
+    __main.o(!!!main) refers to rtentry.o(.ARM.Collect$$rtentry$$00000000) for __rt_entry
+    rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for __rt_entry_li
+    rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for __rt_entry_main
+    rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to rtentry2.o(.ARM.Collect$$rtentry$$0000000C) for __rt_entry_postli_1
+    rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to rtentry2.o(.ARM.Collect$$rtentry$$00000009) for __rt_entry_postsh_1
+    rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to rtentry2.o(.ARM.Collect$$rtentry$$00000002) for __rt_entry_presh_1
+    rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to rtentry4.o(.ARM.Collect$$rtentry$$00000004) for __rt_entry_sh
+    rt_memcpy_v6.o(.text) refers to rt_memcpy_w.o(.text) for __aeabi_memcpy4
+    rt_memmove_w.o(.text) refers to rt_memcpy_w.o(.text) for __aeabi_memcpy4
+    rt_memclr.o(.text) refers to rt_memclr_w.o(.text) for _memset_w
+    rtentry2.o(.ARM.Collect$$rtentry$$00000008) refers to boardinit2.o(.text) for _platform_post_stackheap_init
+    rtentry2.o(.ARM.Collect$$rtentry$$0000000A) refers to libinit.o(.ARM.Collect$$libinit$$00000000) for __rt_lib_init
+    rtentry2.o(.ARM.Collect$$rtentry$$0000000B) refers to boardinit3.o(.text) for _platform_post_lib_init
+    rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to main.o(i.main) for main
+    rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to exit.o(.text) for exit
+    rtentry2.o(.ARM.exidx) refers to rtentry2.o(.ARM.Collect$$rtentry$$00000001) for .ARM.Collect$$rtentry$$00000001
+    rtentry2.o(.ARM.exidx) refers to rtentry2.o(.ARM.Collect$$rtentry$$00000008) for .ARM.Collect$$rtentry$$00000008
+    rtentry2.o(.ARM.exidx) refers to rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for .ARM.Collect$$rtentry$$0000000A
+    rtentry2.o(.ARM.exidx) refers to rtentry2.o(.ARM.Collect$$rtentry$$0000000B) for .ARM.Collect$$rtentry$$0000000B
+    rtentry2.o(.ARM.exidx) refers to rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for .ARM.Collect$$rtentry$$0000000D
+    rtentry4.o(.ARM.Collect$$rtentry$$00000004) refers to sys_stackheap_outer.o(.text) for __user_setup_stackheap
+    rtentry4.o(.ARM.exidx) refers to rtentry4.o(.ARM.Collect$$rtentry$$00000004) for .ARM.Collect$$rtentry$$00000004
+    sys_stackheap_outer.o(.text) refers to libspace.o(.text) for __user_perproc_libspace
+    sys_stackheap_outer.o(.text) refers to startup-qk_lm3s.o(.text) for __user_initial_stackheap
+    exit.o(.text) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for __rt_exit
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002C) for __rt_lib_init_alloca_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002A) for __rt_lib_init_argv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000019) for __rt_lib_init_atexit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001F) for __rt_lib_init_clock_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000030) for __rt_lib_init_cpp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002E) for __rt_lib_init_exceptions_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000002) for __rt_lib_init_fp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001D) for __rt_lib_init_fp_trap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000021) for __rt_lib_init_getenv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000008) for __rt_lib_init_heap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000F) for __rt_lib_init_lc_collate_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000011) for __rt_lib_init_lc_ctype_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000013) for __rt_lib_init_lc_monetary_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000015) for __rt_lib_init_lc_numeric_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000017) for __rt_lib_init_lc_time_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000C) for __rt_lib_init_rand_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000031) for __rt_lib_init_return
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001B) for __rt_lib_init_signal_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000023) for __rt_lib_init_stdio_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000A) for __rt_lib_init_user_alloc_1
+    libspace.o(.text) refers to libspace.o(.bss) for __libspace_start
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for .ARM.Collect$$rtexit$$00000000
+    libinit2.o(.ARM.Collect$$libinit$$0000000E) refers to libinit2.o(.ARM.Collect$$libinit$$0000000D) for .ARM.Collect$$libinit$$0000000D
+    libinit2.o(.ARM.Collect$$libinit$$00000010) refers to libinit2.o(.ARM.Collect$$libinit$$0000000D) for .ARM.Collect$$libinit$$0000000D
+    libinit2.o(.ARM.Collect$$libinit$$00000012) refers to libinit2.o(.ARM.Collect$$libinit$$0000000D) for .ARM.Collect$$libinit$$0000000D
+    libinit2.o(.ARM.Collect$$libinit$$00000014) refers to libinit2.o(.ARM.Collect$$libinit$$0000000D) for .ARM.Collect$$libinit$$0000000D
+    libinit2.o(.ARM.Collect$$libinit$$00000016) refers to libinit2.o(.ARM.Collect$$libinit$$0000000D) for .ARM.Collect$$libinit$$0000000D
+    libinit2.o(.ARM.Collect$$libinit$$00000024) refers to argv_veneer.o(.emb_text) for __ARM_argv_veneer
+    libinit2.o(.ARM.Collect$$libinit$$00000025) refers to argv_veneer.o(.emb_text) for __ARM_argv_veneer
+    rtexit2.o(.ARM.Collect$$rtexit$$00000003) refers to libshutdown.o(.ARM.Collect$$libshutdown$$00000000) for __rt_lib_shutdown
+    rtexit2.o(.ARM.Collect$$rtexit$$00000004) refers to sys_exit.o(.text) for _sys_exit
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000001) for .ARM.Collect$$rtexit$$00000001
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for .ARM.Collect$$rtexit$$00000003
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for .ARM.Collect$$rtexit$$00000004
+    argv_veneer.o(.emb_text) refers to no_argv.o(.text) for __ARM_get_argv
+    sys_exit.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_exit.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    _get_argv_nomalloc.o(.text) refers (Special) to hrguard.o(.text) for __heap_region$guard
+    _get_argv_nomalloc.o(.text) refers to defsig_rtmem_outer.o(.text) for __rt_SIGRTMEM
+    _get_argv_nomalloc.o(.text) refers to sys_command.o(.text) for _sys_command_string
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000006) for __rt_lib_shutdown_fp_trap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E) for __rt_lib_shutdown_heap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F) for __rt_lib_shutdown_return
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000009) for __rt_lib_shutdown_signal_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000003) for __rt_lib_shutdown_stdio_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000B) for __rt_lib_shutdown_user_alloc_1
+    sys_command.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_command.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig_rtmem_outer.o(.text) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_rtmem_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
+    defsig_rtmem_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
+    rt_raise.o(.text) refers to __raise.o(.text) for __raise
+    rt_raise.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_exit.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_rtmem_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    __raise.o(.text) refers to defsig.o(CL$$defsig) for __default_signal_handler
+    defsig_general.o(.text) refers to sys_wrch.o(.text) for _ttywrch
+    sys_wrch.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_wrch.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig.o(CL$$defsig) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_abrt_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_fpe_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtred_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_stak_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_pvfn_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_cppl_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_segv_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_other.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing bsp.o(.rev16_text), (4 bytes).
+    Removing bsp.o(.revsh_text), (4 bytes).
+    Removing bsp.o(i.BSP_drawBitmapXY), (26 bytes).
+    Removing bsp.o(i.QS_onCleanup), (2 bytes).
+    Removing display96x16x1.o(.rev16_text), (4 bytes).
+    Removing display96x16x1.o(.revsh_text), (4 bytes).
+    Removing system_lm3s.o(.rev16_text), (4 bytes).
+    Removing system_lm3s.o(.revsh_text), (4 bytes).
+    Removing qf_tick.o(i.QF_noTimeEvtsActiveX), (60 bytes).
+    Removing qk.o(i.QActive_stop), (12 bytes).
+    Removing qs.o(i.QS_u16), (224 bytes).
+    Removing qs.o(i.QS_u32), (196 bytes).
+    Removing qs.o(i.QS_u8), (160 bytes).
+    Removing qs_.o(i.QS_str_), (80 bytes).
+    Removing qs_dict.o(i.QS_usr_dict), (46 bytes).
+    Removing qf_act.o(i.QF_remove_), (124 bytes).
+    Removing qf_act.o(.data), (1 bytes).
+    Removing qmp_get.o(i.QF_getPoolMin), (68 bytes).
+    Removing qa_get_.o(i.QF_getQueueMin), (60 bytes).
+    Removing qk_mutex.o(i.QK_mutexLock), (88 bytes).
+    Removing qk_mutex.o(i.QK_mutexUnlock), (100 bytes).
+
+21 unused section(s) (total 1271 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section      328  startup-qk_lm3s.o(RESET)
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit1.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardshut.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit2.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit3.o ABSOLUTE
+    ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_zi.o ABSOLUTE
+    ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_copy.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit2.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  rtentry4.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  rtentry2.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  rtentry.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  rt_raise.o ABSOLUTE
+    ../clib/angel/scatter.s                  0x00000000   Number         0  __scatter.o ABSOLUTE
+    ../clib/angel/startup.s                  0x00000000   Number         0  __main.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  libspace.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  use_no_semi.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  indicate_semi.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  sys_stackheap_outer.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_exit.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_command.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_wrch.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  _get_argv_nomalloc.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  no_argv.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
+    ../clib/heapalloc.c                      0x00000000   Number         0  hrguard.o ABSOLUTE
+    ../clib/heapaux.c                        0x00000000   Number         0  heapauxi.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libinit.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libshutdown.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libshutdown2.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libinit2.o ABSOLUTE
+    ../clib/memcpset.s                       0x00000000   Number         0  rt_memclr.o ABSOLUTE
+    ../clib/memcpset.s                       0x00000000   Number         0  rt_memmove_w.o ABSOLUTE
+    ../clib/memcpset.s                       0x00000000   Number         0  rt_memcpy_v6.o ABSOLUTE
+    ../clib/memcpset.s                       0x00000000   Number         0  rt_memmove_v6.o ABSOLUTE
+    ../clib/memcpset.s                       0x00000000   Number         0  rt_memcpy_w.o ABSOLUTE
+    ../clib/memcpset.s                       0x00000000   Number         0  aeabi_memset.o ABSOLUTE
+    ../clib/memcpset.s                       0x00000000   Number         0  rt_memclr_w.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_segv_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtred_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_stak_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_pvfn_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_outer.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_other.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_cppl_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  __raise.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_general.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_formal.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_abrt_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_exit.o ABSOLUTE
+    ../clib/signal.s                         0x00000000   Number         0  defsig.o ABSOLUTE
+    ../clib/stdlib.c                         0x00000000   Number         0  exit.o ABSOLUTE
+    ../fplib/fpinit.s                        0x00000000   Number         0  fpinit.o ABSOLUTE
+    ..\..\..\..\qep\source\qep.c             0x00000000   Number         0  qep.o ABSOLUTE
+    ..\..\..\..\qep\source\qhsm_dis.c        0x00000000   Number         0  qhsm_dis.o ABSOLUTE
+    ..\..\..\..\qep\source\qhsm_ini.c        0x00000000   Number         0  qhsm_ini.o ABSOLUTE
+    ..\..\..\..\qep\source\qhsm_top.c        0x00000000   Number         0  qhsm_top.o ABSOLUTE
+    ..\..\..\..\qf\source\qa_ctor.c          0x00000000   Number         0  qa_ctor.o ABSOLUTE
+    ..\..\..\..\qf\source\qa_fifo.c          0x00000000   Number         0  qa_fifo.o ABSOLUTE
+    ..\..\..\..\qf\source\qa_get_.c          0x00000000   Number         0  qa_get_.o ABSOLUTE
+    ..\..\..\..\qf\source\qa_lifo.c          0x00000000   Number         0  qa_lifo.o ABSOLUTE
+    ..\..\..\..\qf\source\qa_sub.c           0x00000000   Number         0  qa_sub.o ABSOLUTE
+    ..\..\..\..\qf\source\qeq_init.c         0x00000000   Number         0  qeq_init.o ABSOLUTE
+    ..\..\..\..\qf\source\qf_act.c           0x00000000   Number         0  qf_act.o ABSOLUTE
+    ..\..\..\..\qf\source\qf_gc.c            0x00000000   Number         0  qf_gc.o ABSOLUTE
+    ..\..\..\..\qf\source\qf_new.c           0x00000000   Number         0  qf_new.o ABSOLUTE
+    ..\..\..\..\qf\source\qf_pool.c          0x00000000   Number         0  qf_pool.o ABSOLUTE
+    ..\..\..\..\qf\source\qf_psini.c         0x00000000   Number         0  qf_psini.o ABSOLUTE
+    ..\..\..\..\qf\source\qf_pspub.c         0x00000000   Number         0  qf_pspub.o ABSOLUTE
+    ..\..\..\..\qf\source\qf_pwr2.c          0x00000000   Number         0  qf_pwr2.o ABSOLUTE
+    ..\..\..\..\qf\source\qf_tick.c          0x00000000   Number         0  qf_tick.o ABSOLUTE
+    ..\..\..\..\qf\source\qmp_get.c          0x00000000   Number         0  qmp_get.o ABSOLUTE
+    ..\..\..\..\qf\source\qmp_init.c         0x00000000   Number         0  qmp_init.o ABSOLUTE
+    ..\..\..\..\qf\source\qmp_put.c          0x00000000   Number         0  qmp_put.o ABSOLUTE
+    ..\..\..\..\qf\source\qte_arm.c          0x00000000   Number         0  qte_arm.o ABSOLUTE
+    ..\..\..\..\qf\source\qte_ctor.c         0x00000000   Number         0  qte_ctor.o ABSOLUTE
+    ..\..\..\..\qf\source\qte_darm.c         0x00000000   Number         0  qte_darm.o ABSOLUTE
+    ..\..\..\..\qk\source\qk.c               0x00000000   Number         0  qk.o ABSOLUTE
+    ..\..\..\..\qk\source\qk_mutex.c         0x00000000   Number         0  qk_mutex.o ABSOLUTE
+    ..\..\..\..\qk\source\qk_sched.c         0x00000000   Number         0  qk_sched.o ABSOLUTE
+    ..\..\..\..\qs\source\qs.c               0x00000000   Number         0  qs.o ABSOLUTE
+    ..\..\..\..\qs\source\qs_.c              0x00000000   Number         0  qs_.o ABSOLUTE
+    ..\..\..\..\qs\source\qs_blk.c           0x00000000   Number         0  qs_blk.o ABSOLUTE
+    ..\..\..\..\qs\source\qs_dict.c          0x00000000   Number         0  qs_dict.o ABSOLUTE
+    bsp.c                                    0x00000000   Number         0  bsp.o ABSOLUTE
+    bsp.c                                    0x00000000   Number         0  bsp.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    display96x16x1.c                         0x00000000   Number         0  display96x16x1.o ABSOLUTE
+    display96x16x1.c                         0x00000000   Number         0  display96x16x1.o ABSOLUTE
+    main.c                                   0x00000000   Number         0  main.o ABSOLUTE
+    mine1.c                                  0x00000000   Number         0  mine1.o ABSOLUTE
+    mine2.c                                  0x00000000   Number         0  mine2.o ABSOLUTE
+    missile.c                                0x00000000   Number         0  missile.o ABSOLUTE
+    qk_port.s                                0x00000000   Number         0  qk_port.o ABSOLUTE
+    ship.c                                   0x00000000   Number         0  ship.o ABSOLUTE
+    startup-qk_lm3s.s                        0x00000000   Number         0  startup-qk_lm3s.o ABSOLUTE
+    system_lm3s.c                            0x00000000   Number         0  system_lm3s.o ABSOLUTE
+    system_lm3s.c                            0x00000000   Number         0  system_lm3s.o ABSOLUTE
+    tunnel.c                                 0x00000000   Number         0  tunnel.o ABSOLUTE
+    NMI_Handler                              0x000000f5   Thumb Code     0  startup-qk_lm3s.o(RESET)
+    HardFault_Handler                        0x00000101   Thumb Code     0  startup-qk_lm3s.o(RESET)
+    MemManage_Handler                        0x0000010d   Thumb Code     0  startup-qk_lm3s.o(RESET)
+    BusFault_Handler                         0x00000119   Thumb Code     0  startup-qk_lm3s.o(RESET)
+    UsageFault_Handler                       0x00000125   Thumb Code     0  startup-qk_lm3s.o(RESET)
+    DebugMon_Handler                         0x00000131   Thumb Code     0  startup-qk_lm3s.o(RESET)
+    Unused_IRQHandler                        0x0000013d   Thumb Code     0  startup-qk_lm3s.o(RESET)
+    !!!main                                  0x00000148   Section        8  __main.o(!!!main)
+    !!!scatter                               0x00000150   Section       52  __scatter.o(!!!scatter)
+    !!handler_copy                           0x00000184   Section       26  __scatter_copy.o(!!handler_copy)
+    !!handler_zi                             0x000001a0   Section       28  __scatter_zi.o(!!handler_zi)
+    .ARM.Collect$$libinit$$00000000          0x000001bc   Section        2  libinit.o(.ARM.Collect$$libinit$$00000000)
+    .ARM.Collect$$libinit$$00000002          0x000001be   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000002)
+    .ARM.Collect$$libinit$$00000008          0x000001be   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000008)
+    .ARM.Collect$$libinit$$0000000A          0x000001be   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000000A)
+    .ARM.Collect$$libinit$$0000000C          0x000001be   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000000C)
+    .ARM.Collect$$libinit$$0000000F          0x000001be   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000000F)
+    .ARM.Collect$$libinit$$00000011          0x000001be   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000011)
+    .ARM.Collect$$libinit$$00000013          0x000001be   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000013)
+    .ARM.Collect$$libinit$$00000015          0x000001be   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000015)
+    .ARM.Collect$$libinit$$00000017          0x000001be   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000017)
+    .ARM.Collect$$libinit$$00000019          0x000001be   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000019)
+    .ARM.Collect$$libinit$$0000001B          0x000001be   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001B)
+    .ARM.Collect$$libinit$$0000001D          0x000001be   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001D)
+    .ARM.Collect$$libinit$$0000001F          0x000001be   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001F)
+    .ARM.Collect$$libinit$$00000021          0x000001be   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000021)
+    .ARM.Collect$$libinit$$00000023          0x000001be   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000023)
+    .ARM.Collect$$libinit$$0000002A          0x000001be   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000002A)
+    .ARM.Collect$$libinit$$0000002C          0x000001be   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000002C)
+    .ARM.Collect$$libinit$$0000002E          0x000001be   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000002E)
+    .ARM.Collect$$libinit$$00000030          0x000001be   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000030)
+    .ARM.Collect$$libinit$$00000031          0x000001be   Section        2  libinit2.o(.ARM.Collect$$libinit$$00000031)
+    .ARM.Collect$$libshutdown$$00000000      0x000001c0   Section        2  libshutdown.o(.ARM.Collect$$libshutdown$$00000000)
+    .ARM.Collect$$libshutdown$$00000003      0x000001c2   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000003)
+    .ARM.Collect$$libshutdown$$00000006      0x000001c2   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000006)
+    .ARM.Collect$$libshutdown$$00000009      0x000001c2   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000009)
+    .ARM.Collect$$libshutdown$$0000000B      0x000001c2   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000B)
+    .ARM.Collect$$libshutdown$$0000000E      0x000001c2   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E)
+    .ARM.Collect$$libshutdown$$0000000F      0x000001c2   Section        2  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F)
+    .ARM.Collect$$rtentry$$00000000          0x000001c4   Section        0  rtentry.o(.ARM.Collect$$rtentry$$00000000)
+    .ARM.Collect$$rtentry$$00000002          0x000001c4   Section        0  rtentry2.o(.ARM.Collect$$rtentry$$00000002)
+    .ARM.Collect$$rtentry$$00000004          0x000001c4   Section        6  rtentry4.o(.ARM.Collect$$rtentry$$00000004)
+    .ARM.Collect$$rtentry$$00000009          0x000001ca   Section        0  rtentry2.o(.ARM.Collect$$rtentry$$00000009)
+    .ARM.Collect$$rtentry$$0000000A          0x000001ca   Section        4  rtentry2.o(.ARM.Collect$$rtentry$$0000000A)
+    .ARM.Collect$$rtentry$$0000000C          0x000001ce   Section        0  rtentry2.o(.ARM.Collect$$rtentry$$0000000C)
+    .ARM.Collect$$rtentry$$0000000D          0x000001ce   Section        8  rtentry2.o(.ARM.Collect$$rtentry$$0000000D)
+    .ARM.Collect$$rtexit$$00000000           0x000001d6   Section        2  rtexit.o(.ARM.Collect$$rtexit$$00000000)
+    .ARM.Collect$$rtexit$$00000002           0x000001d8   Section        0  rtexit2.o(.ARM.Collect$$rtexit$$00000002)
+    .ARM.Collect$$rtexit$$00000003           0x000001d8   Section        4  rtexit2.o(.ARM.Collect$$rtexit$$00000003)
+    .ARM.Collect$$rtexit$$00000004           0x000001dc   Section        6  rtexit2.o(.ARM.Collect$$rtexit$$00000004)
+    .emb_text                                0x000001e4   Section        6  display96x16x1.o(.emb_text)
+    .text                                    0x000001ec   Section       24  startup-qk_lm3s.o(.text)
+    .text                                    0x00000204   Section      104  qk_port.o(.text)
+    svc_ret                                  0x00000253   Thumb Code     0  qk_port.o(.text)
+    .text                                    0x0000026c   Section      132  rt_memmove_v6.o(.text)
+    .text                                    0x000002f0   Section      100  rt_memcpy_w.o(.text)
+    .text                                    0x00000354   Section       16  aeabi_memset.o(.text)
+    .text                                    0x00000364   Section       78  rt_memclr_w.o(.text)
+    .text                                    0x000003b2   Section        0  heapauxi.o(.text)
+    .text                                    0x000003b8   Section      138  rt_memcpy_v6.o(.text)
+    .text                                    0x00000442   Section      122  rt_memmove_w.o(.text)
+    .text                                    0x000004bc   Section       68  rt_memclr.o(.text)
+    .text                                    0x00000500   Section       74  sys_stackheap_outer.o(.text)
+    .text                                    0x0000054a   Section        0  exit.o(.text)
+    .text                                    0x00000558   Section        8  libspace.o(.text)
+    .text                                    0x00000560   Section        0  sys_exit.o(.text)
+    .text                                    0x0000056c   Section        2  use_no_semi.o(.text)
+    .text                                    0x0000056e   Section        0  indicate_semi.o(.text)
+    i.ADCSeq3_IRQHandler                     0x00000570   Section        0  bsp.o(i.ADCSeq3_IRQHandler)
+    i.BSP_displayOff                         0x000006dc   Section        0  bsp.o(i.BSP_displayOff)
+    i.BSP_displayOn                          0x000006e4   Section        0  bsp.o(i.BSP_displayOn)
+    i.BSP_drawBitmap                         0x000006ec   Section        0  bsp.o(i.BSP_drawBitmap)
+    i.BSP_drawNString                        0x00000702   Section        0  bsp.o(i.BSP_drawNString)
+    i.BSP_init                               0x00000718   Section        0  bsp.o(i.BSP_init)
+    i.BSP_updateScore                        0x00000898   Section        0  bsp.o(i.BSP_updateScore)
+    i.Display96x16x1Clear                    0x0000089c   Section        0  display96x16x1.o(i.Display96x16x1Clear)
+    i.Display96x16x1DisplayOff               0x00000914   Section        0  display96x16x1.o(i.Display96x16x1DisplayOff)
+    i.Display96x16x1DisplayOn                0x0000093c   Section        0  display96x16x1.o(i.Display96x16x1DisplayOn)
+    i.Display96x16x1ImageDraw                0x000009cc   Section        0  display96x16x1.o(i.Display96x16x1ImageDraw)
+    i.Display96x16x1Init                     0x00000a44   Section        0  display96x16x1.o(i.Display96x16x1Init)
+    i.Display96x16x1StringDraw               0x00000c30   Section        0  display96x16x1.o(i.Display96x16x1StringDraw)
+    i.Display96x16x1WriteArray               0x00000cf0   Section        0  display96x16x1.o(i.Display96x16x1WriteArray)
+    Display96x16x1WriteArray                 0x00000cf1   Thumb Code    46  display96x16x1.o(i.Display96x16x1WriteArray)
+    i.Display96x16x1WriteByte                0x00000d28   Section        0  display96x16x1.o(i.Display96x16x1WriteByte)
+    Display96x16x1WriteByte                  0x00000d29   Thumb Code    34  display96x16x1.o(i.Display96x16x1WriteByte)
+    i.Display96x16x1WriteFinal               0x00000d54   Section        0  display96x16x1.o(i.Display96x16x1WriteFinal)
+    Display96x16x1WriteFinal                 0x00000d55   Thumb Code    52  display96x16x1.o(i.Display96x16x1WriteFinal)
+    i.Display96x16x1WriteFirst               0x00000d90   Section        0  display96x16x1.o(i.Display96x16x1WriteFirst)
+    Display96x16x1WriteFirst                 0x00000d91   Thumb Code    16  display96x16x1.o(i.Display96x16x1WriteFirst)
+    i.GPIOPortA_IRQHandler                   0x00000da4   Section        0  bsp.o(i.GPIOPortA_IRQHandler)
+    i.Mine1_ctor                             0x00000e14   Section        0  mine1.o(i.Mine1_ctor)
+    i.Mine1_exploding                        0x00000e44   Section        0  mine1.o(i.Mine1_exploding)
+    Mine1_exploding                          0x00000e45   Thumb Code   138  mine1.o(i.Mine1_exploding)
+    i.Mine1_initial                          0x00000edc   Section        0  mine1.o(i.Mine1_initial)
+    Mine1_initial                            0x00000edd   Thumb Code   376  mine1.o(i.Mine1_initial)
+    i.Mine1_planted                          0x000010b0   Section        0  mine1.o(i.Mine1_planted)
+    Mine1_planted                            0x000010b1   Thumb Code   236  mine1.o(i.Mine1_planted)
+    i.Mine1_unused                           0x000011bc   Section        0  mine1.o(i.Mine1_unused)
+    Mine1_unused                             0x000011bd   Thumb Code    36  mine1.o(i.Mine1_unused)
+    i.Mine1_used                             0x000011e8   Section        0  mine1.o(i.Mine1_used)
+    Mine1_used                               0x000011e9   Thumb Code    92  mine1.o(i.Mine1_used)
+    i.Mine2_ctor                             0x00001254   Section        0  mine2.o(i.Mine2_ctor)
+    i.Mine2_exploding                        0x00001284   Section        0  mine2.o(i.Mine2_exploding)
+    Mine2_exploding                          0x00001285   Thumb Code   138  mine2.o(i.Mine2_exploding)
+    i.Mine2_initial                          0x0000131c   Section        0  mine2.o(i.Mine2_initial)
+    Mine2_initial                            0x0000131d   Thumb Code   376  mine2.o(i.Mine2_initial)
+    i.Mine2_planted                          0x000014f0   Section        0  mine2.o(i.Mine2_planted)
+    Mine2_planted                            0x000014f1   Thumb Code   236  mine2.o(i.Mine2_planted)
+    i.Mine2_unused                           0x000015fc   Section        0  mine2.o(i.Mine2_unused)
+    Mine2_unused                             0x000015fd   Thumb Code    36  mine2.o(i.Mine2_unused)
+    i.Mine2_used                             0x00001628   Section        0  mine2.o(i.Mine2_used)
+    Mine2_used                               0x00001629   Thumb Code    92  mine2.o(i.Mine2_used)
+    i.Missile_armed                          0x00001694   Section        0  missile.o(i.Missile_armed)
+    Missile_armed                            0x00001695   Thumb Code    40  missile.o(i.Missile_armed)
+    i.Missile_ctor                           0x000016c4   Section        0  missile.o(i.Missile_ctor)
+    i.Missile_exploding                      0x000016dc   Section        0  missile.o(i.Missile_exploding)
+    Missile_exploding                        0x000016dd   Thumb Code   166  missile.o(i.Missile_exploding)
+    i.Missile_flying                         0x00001790   Section        0  missile.o(i.Missile_flying)
+    Missile_flying                           0x00001791   Thumb Code   162  missile.o(i.Missile_flying)
+    i.Missile_initial                        0x00001848   Section        0  missile.o(i.Missile_initial)
+    Missile_initial                          0x00001849   Thumb Code   204  missile.o(i.Missile_initial)
+    i.NVIC_EnableIRQ                         0x0000194c   Section        0  bsp.o(i.NVIC_EnableIRQ)
+    NVIC_EnableIRQ                           0x0000194d   Thumb Code    24  bsp.o(i.NVIC_EnableIRQ)
+    i.NVIC_SetPriority                       0x00001964   Section        0  bsp.o(i.NVIC_SetPriority)
+    NVIC_SetPriority                         0x00001965   Thumb Code    32  bsp.o(i.NVIC_SetPriority)
+    i.QActive_ctor                           0x0000198c   Section        0  qa_ctor.o(i.QActive_ctor)
+    i.QActive_get_                           0x000019a4   Section        0  qa_get_.o(i.QActive_get_)
+    i.QActive_post                           0x00001ad0   Section        0  qa_fifo.o(i.QActive_post)
+    i.QActive_postLIFO                       0x00001c50   Section        0  qa_lifo.o(i.QActive_postLIFO)
+    i.QActive_start                          0x00001d5c   Section        0  qk.o(i.QActive_start)
+    i.QActive_subscribe                      0x00001dc4   Section        0  qa_sub.o(i.QActive_subscribe)
+    i.QEQueue_init                           0x00001e78   Section        0  qeq_init.o(i.QEQueue_init)
+    i.QF_add_                                0x00001ed4   Section        0  qf_act.o(i.QF_add_)
+    i.QF_gc                                  0x00001f4c   Section        0  qf_gc.o(i.QF_gc)
+    i.QF_init                                0x0000200c   Section        0  qk.o(i.QF_init)
+    i.QF_newX_                               0x00002014   Section        0  qf_new.o(i.QF_newX_)
+    i.QF_onCleanup                           0x000020d0   Section        0  bsp.o(i.QF_onCleanup)
+    i.QF_onStartup                           0x000020d4   Section        0  bsp.o(i.QF_onStartup)
+    i.QF_poolInit                            0x00002174   Section        0  qf_pool.o(i.QF_poolInit)
+    i.QF_psInit                              0x000021e8   Section        0  qf_psini.o(i.QF_psInit)
+    i.QF_publish                             0x000021fc   Section        0  qf_pspub.o(i.QF_publish)
+    i.QF_run                                 0x000022ec   Section        0  qk.o(i.QF_run)
+    i.QF_stop                                0x00002308   Section        0  qk.o(i.QF_stop)
+    i.QF_tickX                               0x00002310   Section        0  qf_tick.o(i.QF_tickX)
+    i.QHsm_ctor                              0x00002484   Section        0  qhsm_ini.o(i.QHsm_ctor)
+    i.QHsm_dispatch                          0x00002498   Section        0  qhsm_dis.o(i.QHsm_dispatch)
+    i.QHsm_init                              0x00002a9c   Section        0  qhsm_ini.o(i.QHsm_init)
+    i.QHsm_top                               0x00002c18   Section        0  qhsm_top.o(i.QHsm_top)
+    i.QK_onIdle                              0x00002c20   Section        0  bsp.o(i.QK_onIdle)
+    i.QK_schedPrio_                          0x00002c88   Section        0  qk_sched.o(i.QK_schedPrio_)
+    i.QK_sched_                              0x00002cdc   Section        0  qk_sched.o(i.QK_sched_)
+    i.QMPool_get                             0x00002db0   Section        0  qmp_get.o(i.QMPool_get)
+    i.QMPool_init                            0x00002e80   Section        0  qmp_init.o(i.QMPool_init)
+    i.QMPool_put                             0x00002f50   Section        0  qmp_put.o(i.QMPool_put)
+    i.QS_beginRec                            0x00002fdc   Section        0  qs.o(i.QS_beginRec)
+    i.QS_endRec                              0x00003048   Section        0  qs.o(i.QS_endRec)
+    i.QS_filterOff                           0x000030d0   Section        0  qs.o(i.QS_filterOff)
+    i.QS_filterOn                            0x0000312c   Section        0  qs.o(i.QS_filterOn)
+    i.QS_fun_dict                            0x00003170   Section        0  qs_dict.o(i.QS_fun_dict)
+    i.QS_getBlock                            0x000031a0   Section        0  qs_blk.o(i.QS_getBlock)
+    i.QS_initBuf                             0x000031e4   Section        0  qs.o(i.QS_initBuf)
+    i.QS_obj_dict                            0x00003228   Section        0  qs_dict.o(i.QS_obj_dict)
+    i.QS_onFlush                             0x00003258   Section        0  bsp.o(i.QS_onFlush)
+    i.QS_onGetTime                           0x000032b0   Section        0  bsp.o(i.QS_onGetTime)
+    i.QS_onStartup                           0x000032e8   Section        0  bsp.o(i.QS_onStartup)
+    i.QS_sig_dict                            0x000034d8   Section        0  qs_dict.o(i.QS_sig_dict)
+    i.QS_str_ROM_                            0x00003510   Section        0  qs_.o(i.QS_str_ROM_)
+    i.QS_u16_                                0x00003560   Section        0  qs_.o(i.QS_u16_)
+    i.QS_u32_                                0x00003604   Section        0  qs_.o(i.QS_u32_)
+    i.QS_u8_                                 0x0000366c   Section        0  qs_.o(i.QS_u8_)
+    i.QS_u8u8_                               0x000036d8   Section        0  qs_.o(i.QS_u8u8_)
+    i.QTimeEvt_armX                          0x00003778   Section        0  qte_arm.o(i.QTimeEvt_armX)
+    i.QTimeEvt_ctorX                         0x00003838   Section        0  qte_ctor.o(i.QTimeEvt_ctorX)
+    i.QTimeEvt_disarm                        0x00003870   Section        0  qte_darm.o(i.QTimeEvt_disarm)
+    i.Q_onAssert                             0x00003928   Section        0  bsp.o(i.Q_onAssert)
+    i.Ship_active                            0x00003970   Section        0  ship.o(i.Ship_active)
+    Ship_active                              0x00003971   Thumb Code    50  ship.o(i.Ship_active)
+    i.Ship_ctor                              0x000039ac   Section        0  ship.o(i.Ship_ctor)
+    i.Ship_exploding                         0x000039d0   Section        0  ship.o(i.Ship_exploding)
+    Ship_exploding                           0x000039d1   Thumb Code   188  ship.o(i.Ship_exploding)
+    i.Ship_flying                            0x00003a98   Section        0  ship.o(i.Ship_flying)
+    Ship_flying                              0x00003a99   Thumb Code   306  ship.o(i.Ship_flying)
+    i.Ship_initial                           0x00003bdc   Section        0  ship.o(i.Ship_initial)
+    Ship_initial                             0x00003bdd   Thumb Code   282  ship.o(i.Ship_initial)
+    i.Ship_parked                            0x00003d40   Section        0  ship.o(i.Ship_parked)
+    Ship_parked                              0x00003d41   Thumb Code    28  ship.o(i.Ship_parked)
+    i.SysTick_Handler                        0x00003d64   Section        0  bsp.o(i.SysTick_Handler)
+    i.SystemInit                             0x00003de0   Section        0  system_lm3s.o(i.SystemInit)
+    i.Tunnel_active                          0x00004068   Section        0  tunnel.o(i.Tunnel_active)
+    Tunnel_active                            0x00004069   Thumb Code    84  tunnel.o(i.Tunnel_active)
+    i.Tunnel_addImageAt                      0x000040c8   Section        0  tunnel.o(i.Tunnel_addImageAt)
+    Tunnel_addImageAt                        0x000040c9   Thumb Code   138  tunnel.o(i.Tunnel_addImageAt)
+    i.Tunnel_advance                         0x00004160   Section        0  tunnel.o(i.Tunnel_advance)
+    Tunnel_advance                           0x00004161   Thumb Code   238  tunnel.o(i.Tunnel_advance)
+    i.Tunnel_ctor                            0x00004258   Section        0  tunnel.o(i.Tunnel_ctor)
+    i.Tunnel_demo                            0x000042c8   Section        0  tunnel.o(i.Tunnel_demo)
+    Tunnel_demo                              0x000042c9   Thumb Code   206  tunnel.o(i.Tunnel_demo)
+    i.Tunnel_dispatchToAllMines              0x000043ac   Section        0  tunnel.o(i.Tunnel_dispatchToAllMines)
+    Tunnel_dispatchToAllMines                0x000043ad   Thumb Code    44  tunnel.o(i.Tunnel_dispatchToAllMines)
+    i.Tunnel_final                           0x000043d8   Section        0  tunnel.o(i.Tunnel_final)
+    Tunnel_final                             0x000043d9   Thumb Code    48  tunnel.o(i.Tunnel_final)
+    i.Tunnel_game_over                       0x00004410   Section        0  tunnel.o(i.Tunnel_game_over)
+    Tunnel_game_over                         0x00004411   Thumb Code   166  tunnel.o(i.Tunnel_game_over)
+    i.Tunnel_initial                         0x000044d8   Section        0  tunnel.o(i.Tunnel_initial)
+    Tunnel_initial                           0x000044d9   Thumb Code   568  tunnel.o(i.Tunnel_initial)
+    i.Tunnel_isWallHit                       0x00004794   Section        0  tunnel.o(i.Tunnel_isWallHit)
+    Tunnel_isWallHit                         0x00004795   Thumb Code   108  tunnel.o(i.Tunnel_isWallHit)
+    i.Tunnel_plantMine                       0x0000480c   Section        0  tunnel.o(i.Tunnel_plantMine)
+    Tunnel_plantMine                         0x0000480d   Thumb Code   188  tunnel.o(i.Tunnel_plantMine)
+    i.Tunnel_playing                         0x000048c8   Section        0  tunnel.o(i.Tunnel_playing)
+    Tunnel_playing                           0x000048c9   Thumb Code   500  tunnel.o(i.Tunnel_playing)
+    i.Tunnel_screen_saver                    0x00004ae8   Section        0  tunnel.o(i.Tunnel_screen_saver)
+    Tunnel_screen_saver                      0x00004ae9   Thumb Code    42  tunnel.o(i.Tunnel_screen_saver)
+    i.Tunnel_screen_saver_hide               0x00004b20   Section        0  tunnel.o(i.Tunnel_screen_saver_hide)
+    Tunnel_screen_saver_hide                 0x00004b21   Thumb Code    86  tunnel.o(i.Tunnel_screen_saver_hide)
+    i.Tunnel_screen_saver_show               0x00004b80   Section        0  tunnel.o(i.Tunnel_screen_saver_show)
+    Tunnel_screen_saver_show                 0x00004b81   Thumb Code   140  tunnel.o(i.Tunnel_screen_saver_show)
+    i.Tunnel_show_logo                       0x00004c18   Section        0  tunnel.o(i.Tunnel_show_logo)
+    Tunnel_show_logo                         0x00004c19   Thumb Code   198  tunnel.o(i.Tunnel_show_logo)
+    i.assert_failed                          0x00004d34   Section        0  bsp.o(i.assert_failed)
+    i.do_bitmaps_overlap                     0x00004d40   Section        0  tunnel.o(i.do_bitmaps_overlap)
+    i.initialize                             0x00004e38   Section        0  qk.o(i.initialize)
+    initialize                               0x00004e39   Thumb Code    24  qk.o(i.initialize)
+    i.main                                   0x00004e54   Section        0  main.o(i.main)
+    i.random                                 0x00004fe8   Section        0  tunnel.o(i.random)
+    random                                   0x00004fe9   Thumb Code    20  tunnel.o(i.random)
+    i.randomSeed                             0x00005004   Section        0  tunnel.o(i.randomSeed)
+    randomSeed                               0x00005005   Thumb Code     6  tunnel.o(i.randomSeed)
+    .constdata                               0x00005010   Section       55  bsp.o(.constdata)
+    Q_this_module_                           0x00005010   Data           6  bsp.o(.constdata)
+    tickEvt                                  0x00005016   Data           4  bsp.o(.constdata)
+    fireEvt                                  0x0000501a   Data           4  bsp.o(.constdata)
+    obj_name_                                0x0000501e   Data          19  bsp.o(.constdata)
+    obj_name_                                0x00005031   Data          22  bsp.o(.constdata)
+    .constdata                               0x00005047   Section      689  display96x16x1.o(.constdata)
+    g_pucFont                                0x00005047   Data         475  display96x16x1.o(.constdata)
+    g_pucOSRAMInit                           0x00005222   Data         113  display96x16x1.o(.constdata)
+    g_pucRITInit                             0x00005293   Data          77  display96x16x1.o(.constdata)
+    g_pucOSRAMRow1                           0x000052e0   Data           6  display96x16x1.o(.constdata)
+    g_pucOSRAMRow2                           0x000052e6   Data           6  display96x16x1.o(.constdata)
+    g_pucRITRow1                             0x000052ec   Data           6  display96x16x1.o(.constdata)
+    g_pucRITRow2                             0x000052f2   Data           6  display96x16x1.o(.constdata)
+    .constdata                               0x000052f8   Section      139  main.o(.constdata)
+    obj_name_                                0x000052f8   Data          18  main.o(.constdata)
+    obj_name_                                0x0000530a   Data          15  main.o(.constdata)
+    obj_name_                                0x00005319   Data          17  main.o(.constdata)
+    obj_name_                                0x0000532a   Data          13  main.o(.constdata)
+    obj_name_                                0x00005337   Data          13  main.o(.constdata)
+    sig_name_                                0x00005344   Data          14  main.o(.constdata)
+    sig_name_                                0x00005352   Data          19  main.o(.constdata)
+    sig_name_                                0x00005365   Data          16  main.o(.constdata)
+    sig_name_                                0x00005375   Data          14  main.o(.constdata)
+    .constdata                               0x00005384   Section      232  mine1.o(.constdata)
+    Q_this_module_                           0x00005384   Data           8  mine1.o(.constdata)
+    obj_name_                                0x0000538c   Data          12  mine1.o(.constdata)
+    obj_name_                                0x00005398   Data          12  mine1.o(.constdata)
+    obj_name_                                0x000053a4   Data          12  mine1.o(.constdata)
+    obj_name_                                0x000053b0   Data          12  mine1.o(.constdata)
+    obj_name_                                0x000053bc   Data          12  mine1.o(.constdata)
+    fun_name_                                0x000053c8   Data          15  mine1.o(.constdata)
+    fun_name_                                0x000053d7   Data          14  mine1.o(.constdata)
+    fun_name_                                0x000053e5   Data          12  mine1.o(.constdata)
+    fun_name_                                0x000053f1   Data          15  mine1.o(.constdata)
+    fun_name_                                0x00005400   Data          17  mine1.o(.constdata)
+    sig_name_                                0x00005411   Data          15  mine1.o(.constdata)
+    sig_name_                                0x00005420   Data          18  mine1.o(.constdata)
+    sig_name_                                0x00005432   Data          17  mine1.o(.constdata)
+    sig_name_                                0x00005443   Data          13  mine1.o(.constdata)
+    sig_name_                                0x00005450   Data          16  mine1.o(.constdata)
+    mine1_hit                                0x00005460   Data           6  mine1.o(.constdata)
+    mine1_destroyed                          0x00005466   Data           6  mine1.o(.constdata)
+    .constdata                               0x0000546c   Section      232  mine2.o(.constdata)
+    Q_this_module_                           0x0000546c   Data           8  mine2.o(.constdata)
+    obj_name_                                0x00005474   Data          12  mine2.o(.constdata)
+    obj_name_                                0x00005480   Data          12  mine2.o(.constdata)
+    obj_name_                                0x0000548c   Data          12  mine2.o(.constdata)
+    obj_name_                                0x00005498   Data          12  mine2.o(.constdata)
+    obj_name_                                0x000054a4   Data          12  mine2.o(.constdata)
+    fun_name_                                0x000054b0   Data          15  mine2.o(.constdata)
+    fun_name_                                0x000054bf   Data          14  mine2.o(.constdata)
+    fun_name_                                0x000054cd   Data          12  mine2.o(.constdata)
+    fun_name_                                0x000054d9   Data          15  mine2.o(.constdata)
+    fun_name_                                0x000054e8   Data          17  mine2.o(.constdata)
+    sig_name_                                0x000054f9   Data          15  mine2.o(.constdata)
+    sig_name_                                0x00005508   Data          18  mine2.o(.constdata)
+    sig_name_                                0x0000551a   Data          17  mine2.o(.constdata)
+    sig_name_                                0x0000552b   Data          13  mine2.o(.constdata)
+    sig_name_                                0x00005538   Data          16  mine2.o(.constdata)
+    mine1_hit                                0x00005548   Data           6  mine2.o(.constdata)
+    mine2_destroyed                          0x0000554e   Data           6  mine2.o(.constdata)
+    .constdata                               0x00005554   Section      131  missile.o(.constdata)
+    obj_name_                                0x00005558   Data          11  missile.o(.constdata)
+    fun_name_                                0x00005563   Data          17  missile.o(.constdata)
+    fun_name_                                0x00005574   Data          15  missile.o(.constdata)
+    fun_name_                                0x00005583   Data          16  missile.o(.constdata)
+    fun_name_                                0x00005593   Data          19  missile.o(.constdata)
+    sig_name_                                0x000055a6   Data          17  missile.o(.constdata)
+    sig_name_                                0x000055b7   Data          13  missile.o(.constdata)
+    sig_name_                                0x000055c4   Data          19  missile.o(.constdata)
+    .constdata                               0x000055d8   Section      160  ship.o(.constdata)
+    obj_name_                                0x000055dc   Data           8  ship.o(.constdata)
+    fun_name_                                0x000055e4   Data          14  ship.o(.constdata)
+    fun_name_                                0x000055f2   Data          13  ship.o(.constdata)
+    fun_name_                                0x000055ff   Data          13  ship.o(.constdata)
+    fun_name_                                0x0000560c   Data          13  ship.o(.constdata)
+    fun_name_                                0x00005619   Data          16  ship.o(.constdata)
+    sig_name_                                0x00005629   Data          21  ship.o(.constdata)
+    sig_name_                                0x0000563e   Data          13  ship.o(.constdata)
+    sig_name_                                0x0000564b   Data          13  ship.o(.constdata)
+    sig_name_                                0x00005658   Data          13  ship.o(.constdata)
+    sig_name_                                0x00005665   Data          19  ship.o(.constdata)
+    .constdata                               0x00005678   Section      574  tunnel.o(.constdata)
+    Q_this_module_                           0x00005678   Data           9  tunnel.o(.constdata)
+    press_button_bits                        0x00005688   Data          55  tunnel.o(.constdata)
+    ship_bits                                0x000056bf   Data           5  tunnel.o(.constdata)
+    missile_bits                             0x000056c4   Data           3  tunnel.o(.constdata)
+    mine1_bits                               0x000056c7   Data           3  tunnel.o(.constdata)
+    mine2_bits                               0x000056ca   Data           4  tunnel.o(.constdata)
+    mine2_missile_bits                       0x000056ce   Data           4  tunnel.o(.constdata)
+    explosion0_bits                          0x000056d2   Data           7  tunnel.o(.constdata)
+    explosion1_bits                          0x000056d9   Data           7  tunnel.o(.constdata)
+    explosion2_bits                          0x000056e0   Data           7  tunnel.o(.constdata)
+    explosion3_bits                          0x000056e7   Data           7  tunnel.o(.constdata)
+    l_bitmap                                 0x000056f0   Data          80  tunnel.o(.constdata)
+    obj_name_                                0x00005740   Data          10  tunnel.o(.constdata)
+    obj_name_                                0x0000574a   Data          23  tunnel.o(.constdata)
+    obj_name_                                0x00005761   Data          24  tunnel.o(.constdata)
+    fun_name_                                0x00005779   Data          16  tunnel.o(.constdata)
+    fun_name_                                0x00005789   Data          14  tunnel.o(.constdata)
+    fun_name_                                0x00005797   Data          15  tunnel.o(.constdata)
+    fun_name_                                0x000057a6   Data          18  tunnel.o(.constdata)
+    fun_name_                                0x000057b8   Data          13  tunnel.o(.constdata)
+    fun_name_                                0x000057c5   Data          16  tunnel.o(.constdata)
+    fun_name_                                0x000057d5   Data          18  tunnel.o(.constdata)
+    fun_name_                                0x000057e7   Data          21  tunnel.o(.constdata)
+    fun_name_                                0x000057fc   Data          26  tunnel.o(.constdata)
+    fun_name_                                0x00005816   Data          26  tunnel.o(.constdata)
+    sig_name_                                0x00005830   Data          18  tunnel.o(.constdata)
+    sig_name_                                0x00005842   Data          19  tunnel.o(.constdata)
+    sig_name_                                0x00005855   Data          13  tunnel.o(.constdata)
+    sig_name_                                0x00005862   Data          16  tunnel.o(.constdata)
+    sig_name_                                0x00005872   Data          13  tunnel.o(.constdata)
+    sig_name_                                0x0000587f   Data          18  tunnel.o(.constdata)
+    sig_name_                                0x00005891   Data          14  tunnel.o(.constdata)
+    sig_name_                                0x0000589f   Data          10  tunnel.o(.constdata)
+    takeoff                                  0x000058aa   Data           4  tunnel.o(.constdata)
+    hit                                      0x000058ae   Data           4  tunnel.o(.constdata)
+    hit                                      0x000058b2   Data           4  tunnel.o(.constdata)
+    .constdata                               0x000058b8   Section       92  system_lm3s.o(.constdata)
+    l_pulXtals                               0x000058b8   Data          92  system_lm3s.o(.constdata)
+    .constdata                               0x00005914   Section       20  qhsm_ini.o(.constdata)
+    Q_this_module_                           0x00005914   Data           9  qhsm_ini.o(.constdata)
+    vtbl                                     0x00005920   Data           8  qhsm_ini.o(.constdata)
+    .constdata                               0x00005928   Section        9  qhsm_dis.o(.constdata)
+    Q_this_module_                           0x00005928   Data           9  qhsm_dis.o(.constdata)
+    .constdata                               0x00005934   Section       20  qa_ctor.o(.constdata)
+    vtbl                                     0x00005934   Data          20  qa_ctor.o(.constdata)
+    .constdata                               0x00005948   Section        7  qa_sub.o(.constdata)
+    Q_this_module_                           0x00005948   Data           7  qa_sub.o(.constdata)
+    .constdata                               0x0000594f   Section        7  qf_new.o(.constdata)
+    Q_this_module_                           0x0000594f   Data           7  qf_new.o(.constdata)
+    .constdata                               0x00005956   Section        8  qf_pool.o(.constdata)
+    Q_this_module_                           0x00005956   Data           8  qf_pool.o(.constdata)
+    .constdata                               0x0000595e   Section        9  qf_pspub.o(.constdata)
+    Q_this_module_                           0x0000595e   Data           9  qf_pspub.o(.constdata)
+    .constdata                               0x00005967   Section        8  qf_tick.o(.constdata)
+    Q_this_module_                           0x00005967   Data           8  qf_tick.o(.constdata)
+    .constdata                               0x0000596f   Section        9  qte_ctor.o(.constdata)
+    Q_this_module_                           0x0000596f   Data           9  qte_ctor.o(.constdata)
+    .constdata                               0x00005978   Section        8  qte_arm.o(.constdata)
+    Q_this_module_                           0x00005978   Data           8  qte_arm.o(.constdata)
+    .constdata                               0x00005980   Section        3  qk.o(.constdata)
+    Q_this_module_                           0x00005980   Data           3  qk.o(.constdata)
+    .constdata                               0x00005983   Section        3  qs.o(.constdata)
+    Q_this_module_                           0x00005983   Data           3  qs.o(.constdata)
+    .constdata                               0x00005986   Section       16  qep.o(.constdata)
+    .constdata                               0x00005996   Section        8  qa_fifo.o(.constdata)
+    Q_this_module_                           0x00005996   Data           8  qa_fifo.o(.constdata)
+    .constdata                               0x0000599e   Section        8  qa_lifo.o(.constdata)
+    Q_this_module_                           0x0000599e   Data           8  qa_lifo.o(.constdata)
+    .constdata                               0x000059a6   Section        7  qf_act.o(.constdata)
+    Q_this_module_                           0x000059a6   Data           7  qf_act.o(.constdata)
+    .constdata                               0x000059ad   Section        6  qf_gc.o(.constdata)
+    Q_this_module_                           0x000059ad   Data           6  qf_gc.o(.constdata)
+    .constdata                               0x000059b3   Section      195  qf_pwr2.o(.constdata)
+    .constdata                               0x00005a76   Section        8  qmp_get.o(.constdata)
+    Q_this_module_                           0x00005a76   Data           8  qmp_get.o(.constdata)
+    .constdata                               0x00005a7e   Section        9  qmp_init.o(.constdata)
+    Q_this_module_                           0x00005a7e   Data           9  qmp_init.o(.constdata)
+    .constdata                               0x00005a87   Section        8  qa_get_.o(.constdata)
+    Q_this_module_                           0x00005a87   Data           8  qa_get_.o(.constdata)
+    .constdata                               0x00005a8f   Section        8  qmp_put.o(.constdata)
+    Q_this_module_                           0x00005a8f   Data           8  qmp_put.o(.constdata)
+    .data                                    0x20000000   Section       27  bsp.o(.data)
+    adcLPS                                   0x20000000   Data           4  bsp.o(.data)
+    wheel                                    0x20000004   Data           4  bsp.o(.data)
+    btn_debounced                            0x20000008   Data           4  bsp.o(.data)
+    debounce_state                           0x2000000c   Data           1  bsp.o(.data)
+    l_SysTick_Handler                        0x20000018   Data           1  bsp.o(.data)
+    l_ADCSeq3_IRQHandler                     0x20000019   Data           1  bsp.o(.data)
+    l_GPIOPortA_IRQHandler                   0x2000001a   Data           1  bsp.o(.data)
+    .data                                    0x2000001c   Section        8  display96x16x1.o(.data)
+    g_ucDisplayIsRIT                         0x2000001c   Data           1  display96x16x1.o(.data)
+    g_ucColumnAdjust                         0x2000001d   Data           1  display96x16x1.o(.data)
+    g_ulDelay                                0x20000020   Data           4  display96x16x1.o(.data)
+    .data                                    0x20000024   Section        8  main.o(.data)
+    l_missileQueueSto                        0x20000024   Data           8  main.o(.data)
+    .data                                    0x2000002c   Section        1  mine1.o(.data)
+    dict_sent                                0x2000002c   Data           1  mine1.o(.data)
+    .data                                    0x2000002d   Section        1  mine2.o(.data)
+    dict_sent                                0x2000002d   Data           1  mine2.o(.data)
+    .data                                    0x20000030   Section        4  tunnel.o(.data)
+    l_rnd                                    0x20000030   Data           4  tunnel.o(.data)
+    .data                                    0x20000034   Section        4  system_lm3s.o(.data)
+    .data                                    0x20000038   Section        4  qf_pool.o(.data)
+    .data                                    0x2000003c   Section        8  qf_psini.o(.data)
+    .data                                    0x20000044   Section        2  qk.o(.data)
+    .data                                    0x20000046   Section        1  qk_mutex.o(.data)
+    .bss                                     0x20000048   Section     1536  bsp.o(.bss)
+    qsBuf                                    0x20000048   Data        1536  bsp.o(.bss)
+    .bss                                     0x20000648   Section      284  main.o(.bss)
+    l_shipQueueSto                           0x20000648   Data          12  main.o(.bss)
+    l_tunnelQueueSto                         0x20000654   Data          40  main.o(.bss)
+    l_smlPoolSto                             0x2000067c   Data          40  main.o(.bss)
+    l_medPoolSto                             0x200006a4   Data         160  main.o(.bss)
+    l_subscrSto                              0x20000744   Data          32  main.o(.bss)
+    .bss                                     0x20000764   Section       80  mine1.o(.bss)
+    l_mine1                                  0x20000764   Data          80  mine1.o(.bss)
+    .bss                                     0x200007b4   Section       80  mine2.o(.bss)
+    l_mine2                                  0x200007b4   Data          80  mine2.o(.bss)
+    .bss                                     0x20000804   Section       36  missile.o(.bss)
+    l_missile                                0x20000804   Data          36  missile.o(.bss)
+    .bss                                     0x20000828   Section       40  ship.o(.bss)
+    l_ship                                   0x20000828   Data          40  ship.o(.bss)
+    .bss                                     0x20000850   Section      516  tunnel.o(.bss)
+    l_tunnel                                 0x20000850   Data         132  tunnel.o(.bss)
+    l_walls                                  0x200008d4   Data         192  tunnel.o(.bss)
+    l_frame                                  0x20000994   Data         192  tunnel.o(.bss)
+    .bss                                     0x20000a54   Section       60  qf_pool.o(.bss)
+    .bss                                     0x20000a90   Section       32  qf_tick.o(.bss)
+    .bss                                     0x20000ab0   Section        9  qk.o(.bss)
+    .bss                                     0x20000abc   Section       64  qs.o(.bss)
+    .bss                                     0x20000afc   Section      132  qf_act.o(.bss)
+    .bss                                     0x20000b80   Section       96  libspace.o(.bss)
+    HEAP                                     0x20000be0   Section        0  startup-qk_lm3s.o(HEAP)
+    STACK                                    0x20000be0   Section      512  startup-qk_lm3s.o(STACK)
+    HeapMem                                  0x20000be0   Data           0  startup-qk_lm3s.o(HEAP)
+    StackMem                                 0x20000be0   Data           0  startup-qk_lm3s.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$P$D$K$B$S$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OTIME$ROPI$EBA8$UX$STANDARDLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
+    __Vectors                                0x00000000   Data           0  startup-qk_lm3s.o(RESET)
+    __ARM_exceptions_init                     - Undefined Weak Reference
+    __alloca_initialize                       - Undefined Weak Reference
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __rt_locale                               - Undefined Weak Reference
+    __sigvec_lookup                           - Undefined Weak Reference
+    _atexit_init                              - Undefined Weak Reference
+    _call_atexit_fns                          - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _fp_trap_init                             - Undefined Weak Reference
+    _fp_trap_shutdown                         - Undefined Weak Reference
+    _get_lc_collate                           - Undefined Weak Reference
+    _get_lc_ctype                             - Undefined Weak Reference
+    _get_lc_monetary                          - Undefined Weak Reference
+    _get_lc_numeric                           - Undefined Weak Reference
+    _get_lc_time                              - Undefined Weak Reference
+    _getenv_init                              - Undefined Weak Reference
+    _handle_redirection                       - Undefined Weak Reference
+    _init_alloc                               - Undefined Weak Reference
+    _init_user_alloc                          - Undefined Weak Reference
+    _initio                                   - Undefined Weak Reference
+    _rand_init                                - Undefined Weak Reference
+    _signal_finish                            - Undefined Weak Reference
+    _signal_init                              - Undefined Weak Reference
+    _terminate_alloc                          - Undefined Weak Reference
+    _terminate_user_alloc                     - Undefined Weak Reference
+    _terminateio                              - Undefined Weak Reference
+    Reset_Handler                            0x000000f1   Thumb Code     0  startup-qk_lm3s.o(RESET)
+    __main                                   0x00000149   Thumb Code     8  __main.o(!!!main)
+    __scatterload                            0x00000151   Thumb Code     0  __scatter.o(!!!scatter)
+    __scatterload_rt2                        0x00000151   Thumb Code    44  __scatter.o(!!!scatter)
+    __scatterload_rt2_thumb_only             0x00000151   Thumb Code     0  __scatter.o(!!!scatter)
+    __scatterload_null                       0x0000015f   Thumb Code     0  __scatter.o(!!!scatter)
+    __scatterload_copy                       0x00000185   Thumb Code    26  __scatter_copy.o(!!handler_copy)
+    __scatterload_zeroinit                   0x000001a1   Thumb Code    28  __scatter_zi.o(!!handler_zi)
+    __rt_lib_init                            0x000001bd   Thumb Code     0  libinit.o(.ARM.Collect$$libinit$$00000000)
+    __rt_lib_init_alloca_1                   0x000001bf   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000002C)
+    __rt_lib_init_argv_1                     0x000001bf   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000002A)
+    __rt_lib_init_atexit_1                   0x000001bf   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000019)
+    __rt_lib_init_clock_1                    0x000001bf   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001F)
+    __rt_lib_init_cpp_1                      0x000001bf   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000030)
+    __rt_lib_init_exceptions_1               0x000001bf   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000002E)
+    __rt_lib_init_fp_1                       0x000001bf   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000002)
+    __rt_lib_init_fp_trap_1                  0x000001bf   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001D)
+    __rt_lib_init_getenv_1                   0x000001bf   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000021)
+    __rt_lib_init_heap_1                     0x000001bf   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000008)
+    __rt_lib_init_lc_collate_1               0x000001bf   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000000F)
+    __rt_lib_init_lc_ctype_1                 0x000001bf   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000011)
+    __rt_lib_init_lc_monetary_1              0x000001bf   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000013)
+    __rt_lib_init_lc_numeric_1               0x000001bf   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000015)
+    __rt_lib_init_lc_time_1                  0x000001bf   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000017)
+    __rt_lib_init_rand_1                     0x000001bf   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000000C)
+    __rt_lib_init_return                     0x000001bf   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000031)
+    __rt_lib_init_signal_1                   0x000001bf   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001B)
+    __rt_lib_init_stdio_1                    0x000001bf   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000023)
+    __rt_lib_init_user_alloc_1               0x000001bf   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000000A)
+    __rt_lib_shutdown                        0x000001c1   Thumb Code     0  libshutdown.o(.ARM.Collect$$libshutdown$$00000000)
+    __rt_lib_shutdown_fp_trap_1              0x000001c3   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000006)
+    __rt_lib_shutdown_heap_1                 0x000001c3   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E)
+    __rt_lib_shutdown_return                 0x000001c3   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F)
+    __rt_lib_shutdown_signal_1               0x000001c3   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000009)
+    __rt_lib_shutdown_stdio_1                0x000001c3   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000003)
+    __rt_lib_shutdown_user_alloc_1           0x000001c3   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000B)
+    __rt_entry                               0x000001c5   Thumb Code     0  rtentry.o(.ARM.Collect$$rtentry$$00000000)
+    __rt_entry_presh_1                       0x000001c5   Thumb Code     0  rtentry2.o(.ARM.Collect$$rtentry$$00000002)
+    __rt_entry_sh                            0x000001c5   Thumb Code     0  rtentry4.o(.ARM.Collect$$rtentry$$00000004)
+    __rt_entry_li                            0x000001cb   Thumb Code     0  rtentry2.o(.ARM.Collect$$rtentry$$0000000A)
+    __rt_entry_postsh_1                      0x000001cb   Thumb Code     0  rtentry2.o(.ARM.Collect$$rtentry$$00000009)
+    __rt_entry_main                          0x000001cf   Thumb Code     0  rtentry2.o(.ARM.Collect$$rtentry$$0000000D)
+    __rt_entry_postli_1                      0x000001cf   Thumb Code     0  rtentry2.o(.ARM.Collect$$rtentry$$0000000C)
+    __rt_exit                                0x000001d7   Thumb Code     0  rtexit.o(.ARM.Collect$$rtexit$$00000000)
+    __rt_exit_ls                             0x000001d9   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000003)
+    __rt_exit_prels_1                        0x000001d9   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000002)
+    __rt_exit_exit                           0x000001dd   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000004)
+    __asm___16_display96x16x1_c_864a8f54__SysCtlDelay 0x000001e5   Thumb Code     6  display96x16x1.o(.emb_text)
+    __user_initial_stackheap                 0x000001ed   Thumb Code     0  startup-qk_lm3s.o(.text)
+    QK_init                                  0x00000205   Thumb Code     0  qk_port.o(.text)
+    PendSV_Handler                           0x00000225   Thumb Code     0  qk_port.o(.text)
+    SVC_Handler                              0x0000025b   Thumb Code     0  qk_port.o(.text)
+    __aeabi_memmove                          0x0000026d   Thumb Code     0  rt_memmove_v6.o(.text)
+    __rt_memmove                             0x0000026d   Thumb Code   132  rt_memmove_v6.o(.text)
+    __memmove_lastfew                        0x000002cd   Thumb Code     0  rt_memmove_v6.o(.text)
+    __aeabi_memcpy4                          0x000002f1   Thumb Code     0  rt_memcpy_w.o(.text)
+    __aeabi_memcpy8                          0x000002f1   Thumb Code     0  rt_memcpy_w.o(.text)
+    __rt_memcpy_w                            0x000002f1   Thumb Code   100  rt_memcpy_w.o(.text)
+    _memcpy_lastbytes_aligned                0x00000339   Thumb Code     0  rt_memcpy_w.o(.text)
+    __aeabi_memset                           0x00000355   Thumb Code    16  aeabi_memset.o(.text)
+    __aeabi_memclr4                          0x00000365   Thumb Code     0  rt_memclr_w.o(.text)
+    __aeabi_memclr8                          0x00000365   Thumb Code     0  rt_memclr_w.o(.text)
+    __rt_memclr_w                            0x00000365   Thumb Code    78  rt_memclr_w.o(.text)
+    _memset_w                                0x00000369   Thumb Code     0  rt_memclr_w.o(.text)
+    __use_two_region_memory                  0x000003b3   Thumb Code     2  heapauxi.o(.text)
+    __rt_heap_escrow$2region                 0x000003b5   Thumb Code     2  heapauxi.o(.text)
+    __rt_heap_expand$2region                 0x000003b7   Thumb Code     2  heapauxi.o(.text)
+    __aeabi_memcpy                           0x000003b9   Thumb Code     0  rt_memcpy_v6.o(.text)
+    __rt_memcpy                              0x000003b9   Thumb Code   138  rt_memcpy_v6.o(.text)
+    _memcpy_lastbytes                        0x0000041f   Thumb Code     0  rt_memcpy_v6.o(.text)
+    __aeabi_memmove4                         0x00000443   Thumb Code     0  rt_memmove_w.o(.text)
+    __aeabi_memmove8                         0x00000443   Thumb Code     0  rt_memmove_w.o(.text)
+    __rt_memmove_w                           0x00000443   Thumb Code   122  rt_memmove_w.o(.text)
+    __memmove_aligned                        0x00000469   Thumb Code     0  rt_memmove_w.o(.text)
+    __memmove_lastfew_aligned                0x000004a1   Thumb Code     0  rt_memmove_w.o(.text)
+    __aeabi_memclr                           0x000004bd   Thumb Code     0  rt_memclr.o(.text)
+    __rt_memclr                              0x000004bd   Thumb Code    68  rt_memclr.o(.text)
+    _memset                                  0x000004c1   Thumb Code     0  rt_memclr.o(.text)
+    __user_setup_stackheap                   0x00000501   Thumb Code    74  sys_stackheap_outer.o(.text)
+    exit                                     0x0000054b   Thumb Code    12  exit.o(.text)
+    __user_libspace                          0x00000559   Thumb Code     8  libspace.o(.text)
+    __user_perproc_libspace                  0x00000559   Thumb Code     0  libspace.o(.text)
+    __user_perthread_libspace                0x00000559   Thumb Code     0  libspace.o(.text)
+    _sys_exit                                0x00000561   Thumb Code     8  sys_exit.o(.text)
+    __I$use$semihosting                      0x0000056d   Thumb Code     0  use_no_semi.o(.text)
+    __use_no_semihosting_swi                 0x0000056d   Thumb Code     2  use_no_semi.o(.text)
+    __semihosting_library_function           0x0000056f   Thumb Code     0  indicate_semi.o(.text)
+    ADCSeq3_IRQHandler                       0x00000571   Thumb Code   306  bsp.o(i.ADCSeq3_IRQHandler)
+    BSP_displayOff                           0x000006dd   Thumb Code     8  bsp.o(i.BSP_displayOff)
+    BSP_displayOn                            0x000006e5   Thumb Code     8  bsp.o(i.BSP_displayOn)
+    BSP_drawBitmap                           0x000006ed   Thumb Code    22  bsp.o(i.BSP_drawBitmap)
+    BSP_drawNString                          0x00000703   Thumb Code    20  bsp.o(i.BSP_drawNString)
+    BSP_init                                 0x00000719   Thumb Code   318  bsp.o(i.BSP_init)
+    BSP_updateScore                          0x00000899   Thumb Code     2  bsp.o(i.BSP_updateScore)
+    Display96x16x1Clear                      0x0000089d   Thumb Code   100  display96x16x1.o(i.Display96x16x1Clear)
+    Display96x16x1DisplayOff                 0x00000915   Thumb Code    40  display96x16x1.o(i.Display96x16x1DisplayOff)
+    Display96x16x1DisplayOn                  0x0000093d   Thumb Code   132  display96x16x1.o(i.Display96x16x1DisplayOn)
+    Display96x16x1ImageDraw                  0x000009cd   Thumb Code   116  display96x16x1.o(i.Display96x16x1ImageDraw)
+    Display96x16x1Init                       0x00000a45   Thumb Code   408  display96x16x1.o(i.Display96x16x1Init)
+    Display96x16x1StringDraw                 0x00000c31   Thumb Code   184  display96x16x1.o(i.Display96x16x1StringDraw)
+    GPIOPortA_IRQHandler                     0x00000da5   Thumb Code    96  bsp.o(i.GPIOPortA_IRQHandler)
+    Mine1_ctor                               0x00000e15   Thumb Code    36  mine1.o(i.Mine1_ctor)
+    Mine2_ctor                               0x00001255   Thumb Code    36  mine2.o(i.Mine2_ctor)
+    Missile_ctor                             0x000016c5   Thumb Code    14  missile.o(i.Missile_ctor)
+    QActive_ctor                             0x0000198d   Thumb Code    20  qa_ctor.o(i.QActive_ctor)
+    QActive_get_                             0x000019a5   Thumb Code   280  qa_get_.o(i.QActive_get_)
+    QActive_post                             0x00001ad1   Thumb Code   360  qa_fifo.o(i.QActive_post)
+    QActive_postLIFO                         0x00001c51   Thumb Code   242  qa_lifo.o(i.QActive_postLIFO)
+    QActive_start                            0x00001d5d   Thumb Code    98  qk.o(i.QActive_start)
+    QActive_subscribe                        0x00001dc5   Thumb Code   152  qa_sub.o(i.QActive_subscribe)
+    QEQueue_init                             0x00001e79   Thumb Code    88  qeq_init.o(i.QEQueue_init)
+    QF_add_                                  0x00001ed5   Thumb Code   108  qf_act.o(i.QF_add_)
+    QF_gc                                    0x00001f4d   Thumb Code   176  qf_gc.o(i.QF_gc)
+    QF_init                                  0x0000200d   Thumb Code     8  qk.o(i.QF_init)
+    QF_newX_                                 0x00002015   Thumb Code   172  qf_new.o(i.QF_newX_)
+    QF_onCleanup                             0x000020d1   Thumb Code     2  bsp.o(i.QF_onCleanup)
+    QF_onStartup                             0x000020d5   Thumb Code   140  bsp.o(i.QF_onStartup)
+    QF_poolInit                              0x00002175   Thumb Code   102  qf_pool.o(i.QF_poolInit)
+    QF_psInit                                0x000021e9   Thumb Code    10  qf_psini.o(i.QF_psInit)
+    QF_publish                               0x000021fd   Thumb Code   214  qf_pspub.o(i.QF_publish)
+    QF_run                                   0x000022ed   Thumb Code    28  qk.o(i.QF_run)
+    QF_stop                                  0x00002309   Thumb Code     8  qk.o(i.QF_stop)
+    QF_tickX                                 0x00002311   Thumb Code   358  qf_tick.o(i.QF_tickX)
+    QHsm_ctor                                0x00002485   Thumb Code    12  qhsm_ini.o(i.QHsm_ctor)
+    QHsm_dispatch                            0x00002499   Thumb Code  1526  qhsm_dis.o(i.QHsm_dispatch)
+    QHsm_init                                0x00002a9d   Thumb Code   362  qhsm_ini.o(i.QHsm_init)
+    QHsm_top                                 0x00002c19   Thumb Code     6  qhsm_top.o(i.QHsm_top)
+    QK_onIdle                                0x00002c21   Thumb Code    90  bsp.o(i.QK_onIdle)
+    QK_schedPrio_                            0x00002c89   Thumb Code    72  qk_sched.o(i.QK_schedPrio_)
+    QK_sched_                                0x00002cdd   Thumb Code   192  qk_sched.o(i.QK_sched_)
+    QMPool_get                               0x00002db1   Thumb Code   200  qmp_get.o(i.QMPool_get)
+    QMPool_init                              0x00002e81   Thumb Code   198  qmp_init.o(i.QMPool_init)
+    QMPool_put                               0x00002f51   Thumb Code   130  qmp_put.o(i.QMPool_put)
+    QS_beginRec                              0x00002fdd   Thumb Code   104  qs.o(i.QS_beginRec)
+    QS_endRec                                0x00003049   Thumb Code   130  qs.o(i.QS_endRec)
+    QS_filterOff                             0x000030d1   Thumb Code    82  qs.o(i.QS_filterOff)
+    QS_filterOn                              0x0000312d   Thumb Code    60  qs.o(i.QS_filterOn)
+    QS_fun_dict                              0x00003171   Thumb Code    48  qs_dict.o(i.QS_fun_dict)
+    QS_getBlock                              0x000031a1   Thumb Code    64  qs_blk.o(i.QS_getBlock)
+    QS_initBuf                               0x000031e5   Thumb Code    60  qs.o(i.QS_initBuf)
+    QS_obj_dict                              0x00003229   Thumb Code    48  qs_dict.o(i.QS_obj_dict)
+    QS_onFlush                               0x00003259   Thumb Code    82  bsp.o(i.QS_onFlush)
+    QS_onGetTime                             0x000032b1   Thumb Code    46  bsp.o(i.QS_onGetTime)
+    QS_onStartup                             0x000032e9   Thumb Code   442  bsp.o(i.QS_onStartup)
+    QS_sig_dict                              0x000034d9   Thumb Code    56  qs_dict.o(i.QS_sig_dict)
+    QS_str_ROM_                              0x00003511   Thumb Code    76  qs_.o(i.QS_str_ROM_)
+    QS_u16_                                  0x00003561   Thumb Code   158  qs_.o(i.QS_u16_)
+    QS_u32_                                  0x00003605   Thumb Code   100  qs_.o(i.QS_u32_)
+    QS_u8_                                   0x0000366d   Thumb Code   102  qs_.o(i.QS_u8_)
+    QS_u8u8_                                 0x000036d9   Thumb Code   154  qs_.o(i.QS_u8u8_)
+    QTimeEvt_armX                            0x00003779   Thumb Code   180  qte_arm.o(i.QTimeEvt_armX)
+    QTimeEvt_ctorX                           0x00003839   Thumb Code    50  qte_ctor.o(i.QTimeEvt_ctorX)
+    QTimeEvt_disarm                          0x00003871   Thumb Code   178  qte_darm.o(i.QTimeEvt_disarm)
+    Q_onAssert                               0x00003929   Thumb Code    66  bsp.o(i.Q_onAssert)
+    Ship_ctor                                0x000039ad   Thumb Code    26  ship.o(i.Ship_ctor)
+    SysTick_Handler                          0x00003d65   Thumb Code   100  bsp.o(i.SysTick_Handler)
+    SystemInit                               0x00003de1   Thumb Code   570  system_lm3s.o(i.SystemInit)
+    Tunnel_ctor                              0x00004259   Thumb Code   102  tunnel.o(i.Tunnel_ctor)
+    assert_failed                            0x00004d35   Thumb Code    12  bsp.o(i.assert_failed)
+    do_bitmaps_overlap                       0x00004d41   Thumb Code   240  tunnel.o(i.do_bitmaps_overlap)
+    main                                     0x00004e55   Thumb Code   328  main.o(i.main)
+    AO_Missile                               0x00005554   Data           4  missile.o(.constdata)
+    AO_Ship                                  0x000055d8   Data           4  ship.o(.constdata)
+    AO_Tunnel                                0x00005684   Data           4  tunnel.o(.constdata)
+    QEP_reservedEvt_                         0x00005986   Data          16  qep.o(.constdata)
+    QF_pwr2Lkup                              0x000059b3   Data          65  qf_pwr2.o(.constdata)
+    QF_invPwr2Lkup                           0x000059f4   Data          65  qf_pwr2.o(.constdata)
+    QF_div8Lkup                              0x00005a35   Data          65  qf_pwr2.o(.constdata)
+    Region$$Table$$Base                      0x00005a98   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00005ab8   Number         0  anon$$obj.o(Region$$Table)
+    QS_tickTime_                             0x20000010   Data           4  bsp.o(.data)
+    QS_tickPeriod_                           0x20000014   Data           4  bsp.o(.data)
+    SystemFrequency                          0x20000034   Data           4  system_lm3s.o(.data)
+    QF_maxPool_                              0x20000038   Data           4  qf_pool.o(.data)
+    QF_subscrList_                           0x2000003c   Data           4  qf_psini.o(.data)
+    QF_maxSignal_                            0x20000040   Data           4  qf_psini.o(.data)
+    QK_currPrio_                             0x20000044   Data           1  qk.o(.data)
+    QK_intNest_                              0x20000045   Data           1  qk.o(.data)
+    QK_ceilingPrio_                          0x20000046   Data           1  qk_mutex.o(.data)
+    QF_pool_                                 0x20000a54   Data          60  qf_pool.o(.bss)
+    QF_timeEvtHead_                          0x20000a90   Data          32  qf_tick.o(.bss)
+    QK_readySet_                             0x20000ab0   Data           9  qk.o(.bss)
+    QS_priv_                                 0x20000abc   Data          64  qs.o(.bss)
+    QF_active_                               0x20000afc   Data         132  qf_act.o(.bss)
+    __libspace_start                         0x20000b80   Data          96  libspace.o(.bss)
+    __temporary_stack_top$libspace           0x20000be0   Data           0  libspace.o(.bss)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x000000f1
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00005b00, Max: 0x00010000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x00005ab8, Max: 0x00010000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000148   Code   RO          636  * RESET               startup-qk_lm3s.o
+    0x00000148   0x00000008   Code   RO         1343  * !!!main             c_w.l(__main.o)
+    0x00000150   0x00000034   Code   RO         1503    !!!scatter          c_w.l(__scatter.o)
+    0x00000184   0x0000001a   Code   RO         1505    !!handler_copy      c_w.l(__scatter_copy.o)
+    0x0000019e   0x00000002   PAD
+    0x000001a0   0x0000001c   Code   RO         1507    !!handler_zi        c_w.l(__scatter_zi.o)
+    0x000001bc   0x00000002   Code   RO         1376    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
+    0x000001be   0x00000000   Code   RO         1383    .ARM.Collect$$libinit$$00000002  c_w.l(libinit2.o)
+    0x000001be   0x00000000   Code   RO         1386    .ARM.Collect$$libinit$$00000008  c_w.l(libinit2.o)
+    0x000001be   0x00000000   Code   RO         1388    .ARM.Collect$$libinit$$0000000A  c_w.l(libinit2.o)
+    0x000001be   0x00000000   Code   RO         1390    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
+    0x000001be   0x00000000   Code   RO         1393    .ARM.Collect$$libinit$$0000000F  c_w.l(libinit2.o)
+    0x000001be   0x00000000   Code   RO         1395    .ARM.Collect$$libinit$$00000011  c_w.l(libinit2.o)
+    0x000001be   0x00000000   Code   RO         1397    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
+    0x000001be   0x00000000   Code   RO         1399    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
+    0x000001be   0x00000000   Code   RO         1401    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
+    0x000001be   0x00000000   Code   RO         1403    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
+    0x000001be   0x00000000   Code   RO         1405    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
+    0x000001be   0x00000000   Code   RO         1407    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
+    0x000001be   0x00000000   Code   RO         1409    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
+    0x000001be   0x00000000   Code   RO         1411    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
+    0x000001be   0x00000000   Code   RO         1413    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
+    0x000001be   0x00000000   Code   RO         1417    .ARM.Collect$$libinit$$0000002A  c_w.l(libinit2.o)
+    0x000001be   0x00000000   Code   RO         1419    .ARM.Collect$$libinit$$0000002C  c_w.l(libinit2.o)
+    0x000001be   0x00000000   Code   RO         1421    .ARM.Collect$$libinit$$0000002E  c_w.l(libinit2.o)
+    0x000001be   0x00000000   Code   RO         1423    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
+    0x000001be   0x00000002   Code   RO         1424    .ARM.Collect$$libinit$$00000031  c_w.l(libinit2.o)
+    0x000001c0   0x00000002   Code   RO         1444    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
+    0x000001c2   0x00000000   Code   RO         1458    .ARM.Collect$$libshutdown$$00000003  c_w.l(libshutdown2.o)
+    0x000001c2   0x00000000   Code   RO         1461    .ARM.Collect$$libshutdown$$00000006  c_w.l(libshutdown2.o)
+    0x000001c2   0x00000000   Code   RO         1464    .ARM.Collect$$libshutdown$$00000009  c_w.l(libshutdown2.o)
+    0x000001c2   0x00000000   Code   RO         1466    .ARM.Collect$$libshutdown$$0000000B  c_w.l(libshutdown2.o)
+    0x000001c2   0x00000000   Code   RO         1469    .ARM.Collect$$libshutdown$$0000000E  c_w.l(libshutdown2.o)
+    0x000001c2   0x00000002   Code   RO         1470    .ARM.Collect$$libshutdown$$0000000F  c_w.l(libshutdown2.o)
+    0x000001c4   0x00000000   Code   RO         1345    .ARM.Collect$$rtentry$$00000000  c_w.l(rtentry.o)
+    0x000001c4   0x00000000   Code   RO         1353    .ARM.Collect$$rtentry$$00000002  c_w.l(rtentry2.o)
+    0x000001c4   0x00000006   Code   RO         1365    .ARM.Collect$$rtentry$$00000004  c_w.l(rtentry4.o)
+    0x000001ca   0x00000000   Code   RO         1355    .ARM.Collect$$rtentry$$00000009  c_w.l(rtentry2.o)
+    0x000001ca   0x00000004   Code   RO         1356    .ARM.Collect$$rtentry$$0000000A  c_w.l(rtentry2.o)
+    0x000001ce   0x00000000   Code   RO         1358    .ARM.Collect$$rtentry$$0000000C  c_w.l(rtentry2.o)
+    0x000001ce   0x00000008   Code   RO         1359    .ARM.Collect$$rtentry$$0000000D  c_w.l(rtentry2.o)
+    0x000001d6   0x00000002   Code   RO         1380    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
+    0x000001d8   0x00000000   Code   RO         1426    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
+    0x000001d8   0x00000004   Code   RO         1427    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
+    0x000001dc   0x00000006   Code   RO         1428    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
+    0x000001e2   0x00000002   PAD
+    0x000001e4   0x00000006   Code   RO          223    .emb_text           display96x16x1.o
+    0x000001ea   0x00000002   PAD
+    0x000001ec   0x00000018   Code   RO          637    .text               startup-qk_lm3s.o
+    0x00000204   0x00000068   Code   RO          957    .text               libqp_Cortex-M3.a(qk_port.o)
+    0x0000026c   0x00000084   Code   RO         1333    .text               c_w.l(rt_memmove_v6.o)
+    0x000002f0   0x00000064   Code   RO         1335    .text               c_w.l(rt_memcpy_w.o)
+    0x00000354   0x00000010   Code   RO         1337    .text               c_w.l(aeabi_memset.o)
+    0x00000364   0x0000004e   Code   RO         1339    .text               c_w.l(rt_memclr_w.o)
+    0x000003b2   0x00000006   Code   RO         1341    .text               c_w.l(heapauxi.o)
+    0x000003b8   0x0000008a   Code   RO         1346    .text               c_w.l(rt_memcpy_v6.o)
+    0x00000442   0x0000007a   Code   RO         1348    .text               c_w.l(rt_memmove_w.o)
+    0x000004bc   0x00000044   Code   RO         1350    .text               c_w.l(rt_memclr.o)
+    0x00000500   0x0000004a   Code   RO         1367    .text               c_w.l(sys_stackheap_outer.o)
+    0x0000054a   0x0000000c   Code   RO         1369    .text               c_w.l(exit.o)
+    0x00000556   0x00000002   PAD
+    0x00000558   0x00000008   Code   RO         1377    .text               c_w.l(libspace.o)
+    0x00000560   0x0000000c   Code   RO         1436    .text               c_w.l(sys_exit.o)
+    0x0000056c   0x00000002   Code   RO         1447    .text               c_w.l(use_no_semi.o)
+    0x0000056e   0x00000000   Code   RO         1449    .text               c_w.l(indicate_semi.o)
+    0x0000056e   0x00000002   PAD
+    0x00000570   0x0000016c   Code   RO            3    i.ADCSeq3_IRQHandler  bsp.o
+    0x000006dc   0x00000008   Code   RO            4    i.BSP_displayOff    bsp.o
+    0x000006e4   0x00000008   Code   RO            5    i.BSP_displayOn     bsp.o
+    0x000006ec   0x00000016   Code   RO            6    i.BSP_drawBitmap    bsp.o
+    0x00000702   0x00000014   Code   RO            8    i.BSP_drawNString   bsp.o
+    0x00000716   0x00000002   PAD
+    0x00000718   0x00000180   Code   RO            9    i.BSP_init          bsp.o
+    0x00000898   0x00000002   Code   RO           10    i.BSP_updateScore   bsp.o
+    0x0000089a   0x00000002   PAD
+    0x0000089c   0x00000078   Code   RO          224    i.Display96x16x1Clear  display96x16x1.o
+    0x00000914   0x00000028   Code   RO          225    i.Display96x16x1DisplayOff  display96x16x1.o
+    0x0000093c   0x00000090   Code   RO          226    i.Display96x16x1DisplayOn  display96x16x1.o
+    0x000009cc   0x00000078   Code   RO          227    i.Display96x16x1ImageDraw  display96x16x1.o
+    0x00000a44   0x000001ec   Code   RO          228    i.Display96x16x1Init  display96x16x1.o
+    0x00000c30   0x000000c0   Code   RO          229    i.Display96x16x1StringDraw  display96x16x1.o
+    0x00000cf0   0x00000038   Code   RO          230    i.Display96x16x1WriteArray  display96x16x1.o
+    0x00000d28   0x0000002c   Code   RO          231    i.Display96x16x1WriteByte  display96x16x1.o
+    0x00000d54   0x0000003c   Code   RO          232    i.Display96x16x1WriteFinal  display96x16x1.o
+    0x00000d90   0x00000014   Code   RO          233    i.Display96x16x1WriteFirst  display96x16x1.o
+    0x00000da4   0x00000070   Code   RO           11    i.GPIOPortA_IRQHandler  bsp.o
+    0x00000e14   0x00000030   Code   RO          318    i.Mine1_ctor        mine1.o
+    0x00000e44   0x00000098   Code   RO          319    i.Mine1_exploding   mine1.o
+    0x00000edc   0x000001d4   Code   RO          320    i.Mine1_initial     mine1.o
+    0x000010b0   0x0000010c   Code   RO          321    i.Mine1_planted     mine1.o
+    0x000011bc   0x0000002c   Code   RO          322    i.Mine1_unused      mine1.o
+    0x000011e8   0x0000006c   Code   RO          323    i.Mine1_used        mine1.o
+    0x00001254   0x00000030   Code   RO          359    i.Mine2_ctor        mine2.o
+    0x00001284   0x00000098   Code   RO          360    i.Mine2_exploding   mine2.o
+    0x0000131c   0x000001d4   Code   RO          361    i.Mine2_initial     mine2.o
+    0x000014f0   0x0000010c   Code   RO          362    i.Mine2_planted     mine2.o
+    0x000015fc   0x0000002c   Code   RO          363    i.Mine2_unused      mine2.o
+    0x00001628   0x0000006c   Code   RO          364    i.Mine2_used        mine2.o
+    0x00001694   0x00000030   Code   RO          400    i.Missile_armed     missile.o
+    0x000016c4   0x00000018   Code   RO          401    i.Missile_ctor      missile.o
+    0x000016dc   0x000000b4   Code   RO          402    i.Missile_exploding  missile.o
+    0x00001790   0x000000b8   Code   RO          403    i.Missile_flying    missile.o
+    0x00001848   0x00000104   Code   RO          404    i.Missile_initial   missile.o
+    0x0000194c   0x00000018   Code   RO           12    i.NVIC_EnableIRQ    bsp.o
+    0x00001964   0x00000028   Code   RO           13    i.NVIC_SetPriority  bsp.o
+    0x0000198c   0x00000018   Code   RO          735    i.QActive_ctor      libqp_Cortex-M3.a(qa_ctor.o)
+    0x000019a4   0x0000012c   Code   RO         1273    i.QActive_get_      libqp_Cortex-M3.a(qa_get_.o)
+    0x00001ad0   0x00000180   Code   RO         1119    i.QActive_post      libqp_Cortex-M3.a(qa_fifo.o)
+    0x00001c50   0x0000010c   Code   RO         1133    i.QActive_postLIFO  libqp_Cortex-M3.a(qa_lifo.o)
+    0x00001d5c   0x00000068   Code   RO          904    i.QActive_start     libqp_Cortex-M3.a(qk.o)
+    0x00001dc4   0x000000b4   Code   RO          756    i.QActive_subscribe  libqp_Cortex-M3.a(qa_sub.o)
+    0x00001e78   0x0000005c   Code   RO         1147    i.QEQueue_init      libqp_Cortex-M3.a(qeq_init.o)
+    0x00001ed4   0x00000078   Code   RO         1159    i.QF_add_           libqp_Cortex-M3.a(qf_act.o)
+    0x00001f4c   0x000000c0   Code   RO         1190    i.QF_gc             libqp_Cortex-M3.a(qf_gc.o)
+    0x0000200c   0x00000008   Code   RO          906    i.QF_init           libqp_Cortex-M3.a(qk.o)
+    0x00002014   0x000000bc   Code   RO          770    i.QF_newX_          libqp_Cortex-M3.a(qf_new.o)
+    0x000020d0   0x00000002   Code   RO           14    i.QF_onCleanup      bsp.o
+    0x000020d2   0x00000002   PAD
+    0x000020d4   0x000000a0   Code   RO           15    i.QF_onStartup      bsp.o
+    0x00002174   0x00000074   Code   RO          784    i.QF_poolInit       libqp_Cortex-M3.a(qf_pool.o)
+    0x000021e8   0x00000014   Code   RO          805    i.QF_psInit         libqp_Cortex-M3.a(qf_psini.o)
+    0x000021fc   0x000000f0   Code   RO          824    i.QF_publish        libqp_Cortex-M3.a(qf_pspub.o)
+    0x000022ec   0x0000001c   Code   RO          907    i.QF_run            libqp_Cortex-M3.a(qk.o)
+    0x00002308   0x00000008   Code   RO          908    i.QF_stop           libqp_Cortex-M3.a(qk.o)
+    0x00002310   0x00000174   Code   RO          839    i.QF_tickX          libqp_Cortex-M3.a(qf_tick.o)
+    0x00002484   0x00000014   Code   RO          642    i.QHsm_ctor         libqp_Cortex-M3.a(qhsm_ini.o)
+    0x00002498   0x00000604   Code   RO          709    i.QHsm_dispatch     libqp_Cortex-M3.a(qhsm_dis.o)
+    0x00002a9c   0x0000017c   Code   RO          643    i.QHsm_init         libqp_Cortex-M3.a(qhsm_ini.o)
+    0x00002c18   0x00000006   Code   RO          723    i.QHsm_top          libqp_Cortex-M3.a(qhsm_top.o)
+    0x00002c1e   0x00000002   PAD
+    0x00002c20   0x00000068   Code   RO           16    i.QK_onIdle         bsp.o
+    0x00002c88   0x00000054   Code   RO         1255    i.QK_schedPrio_     libqp_Cortex-M3.a(qk_sched.o)
+    0x00002cdc   0x000000d4   Code   RO         1256    i.QK_sched_         libqp_Cortex-M3.a(qk_sched.o)
+    0x00002db0   0x000000d0   Code   RO         1222    i.QMPool_get        libqp_Cortex-M3.a(qmp_get.o)
+    0x00002e80   0x000000d0   Code   RO         1241    i.QMPool_init       libqp_Cortex-M3.a(qmp_init.o)
+    0x00002f50   0x0000008c   Code   RO         1293    i.QMPool_put        libqp_Cortex-M3.a(qmp_put.o)
+    0x00002fdc   0x0000006c   Code   RO          960    i.QS_beginRec       libqp_Cortex-M3.a(qs.o)
+    0x00003048   0x00000088   Code   RO          961    i.QS_endRec         libqp_Cortex-M3.a(qs.o)
+    0x000030d0   0x0000005c   Code   RO          962    i.QS_filterOff      libqp_Cortex-M3.a(qs.o)
+    0x0000312c   0x00000044   Code   RO          963    i.QS_filterOn       libqp_Cortex-M3.a(qs.o)
+    0x00003170   0x00000030   Code   RO         1077    i.QS_fun_dict       libqp_Cortex-M3.a(qs_dict.o)
+    0x000031a0   0x00000044   Code   RO         1065    i.QS_getBlock       libqp_Cortex-M3.a(qs_blk.o)
+    0x000031e4   0x00000044   Code   RO          964    i.QS_initBuf        libqp_Cortex-M3.a(qs.o)
+    0x00003228   0x00000030   Code   RO         1078    i.QS_obj_dict       libqp_Cortex-M3.a(qs_dict.o)
+    0x00003258   0x00000058   Code   RO           18    i.QS_onFlush        bsp.o
+    0x000032b0   0x00000038   Code   RO           19    i.QS_onGetTime      bsp.o
+    0x000032e8   0x000001f0   Code   RO           20    i.QS_onStartup      bsp.o
+    0x000034d8   0x00000038   Code   RO         1079    i.QS_sig_dict       libqp_Cortex-M3.a(qs_dict.o)
+    0x00003510   0x00000050   Code   RO         1024    i.QS_str_ROM_       libqp_Cortex-M3.a(qs_.o)
+    0x00003560   0x000000a4   Code   RO         1025    i.QS_u16_           libqp_Cortex-M3.a(qs_.o)
+    0x00003604   0x00000068   Code   RO         1026    i.QS_u32_           libqp_Cortex-M3.a(qs_.o)
+    0x0000366c   0x0000006c   Code   RO         1027    i.QS_u8_            libqp_Cortex-M3.a(qs_.o)
+    0x000036d8   0x000000a0   Code   RO         1028    i.QS_u8u8_          libqp_Cortex-M3.a(qs_.o)
+    0x00003778   0x000000c0   Code   RO          878    i.QTimeEvt_armX     libqp_Cortex-M3.a(qte_arm.o)
+    0x00003838   0x00000038   Code   RO          864    i.QTimeEvt_ctorX    libqp_Cortex-M3.a(qte_ctor.o)
+    0x00003870   0x000000b8   Code   RO          892    i.QTimeEvt_disarm   libqp_Cortex-M3.a(qte_darm.o)
+    0x00003928   0x00000048   Code   RO           21    i.Q_onAssert        bsp.o
+    0x00003970   0x0000003c   Code   RO          440    i.Ship_active       ship.o
+    0x000039ac   0x00000024   Code   RO          441    i.Ship_ctor         ship.o
+    0x000039d0   0x000000c8   Code   RO          442    i.Ship_exploding    ship.o
+    0x00003a98   0x00000144   Code   RO          443    i.Ship_flying       ship.o
+    0x00003bdc   0x00000164   Code   RO          444    i.Ship_initial      ship.o
+    0x00003d40   0x00000024   Code   RO          445    i.Ship_parked       ship.o
+    0x00003d64   0x0000007c   Code   RO           22    i.SysTick_Handler   bsp.o
+    0x00003de0   0x00000288   Code   RO          602    i.SystemInit        system_lm3s.o
+    0x00004068   0x00000060   Code   RO          485    i.Tunnel_active     tunnel.o
+    0x000040c8   0x00000098   Code   RO          486    i.Tunnel_addImageAt  tunnel.o
+    0x00004160   0x000000f8   Code   RO          487    i.Tunnel_advance    tunnel.o
+    0x00004258   0x00000070   Code   RO          488    i.Tunnel_ctor       tunnel.o
+    0x000042c8   0x000000e4   Code   RO          489    i.Tunnel_demo       tunnel.o
+    0x000043ac   0x0000002c   Code   RO          490    i.Tunnel_dispatchToAllMines  tunnel.o
+    0x000043d8   0x00000038   Code   RO          491    i.Tunnel_final      tunnel.o
+    0x00004410   0x000000c8   Code   RO          492    i.Tunnel_game_over  tunnel.o
+    0x000044d8   0x000002bc   Code   RO          493    i.Tunnel_initial    tunnel.o
+    0x00004794   0x00000078   Code   RO          494    i.Tunnel_isWallHit  tunnel.o
+    0x0000480c   0x000000bc   Code   RO          495    i.Tunnel_plantMine  tunnel.o
+    0x000048c8   0x00000220   Code   RO          496    i.Tunnel_playing    tunnel.o
+    0x00004ae8   0x00000038   Code   RO          497    i.Tunnel_screen_saver  tunnel.o
+    0x00004b20   0x00000060   Code   RO          498    i.Tunnel_screen_saver_hide  tunnel.o
+    0x00004b80   0x00000098   Code   RO          499    i.Tunnel_screen_saver_show  tunnel.o
+    0x00004c18   0x0000011c   Code   RO          500    i.Tunnel_show_logo  tunnel.o
+    0x00004d34   0x0000000c   Code   RO           23    i.assert_failed     bsp.o
+    0x00004d40   0x000000f8   Code   RO          501    i.do_bitmaps_overlap  tunnel.o
+    0x00004e38   0x0000001c   Code   RO          909    i.initialize        libqp_Cortex-M3.a(qk.o)
+    0x00004e54   0x00000194   Code   RO          302    i.main              main.o
+    0x00004fe8   0x0000001c   Code   RO          502    i.random            tunnel.o
+    0x00005004   0x0000000c   Code   RO          503    i.randomSeed        tunnel.o
+    0x00005010   0x00000037   Data   RO           25    .constdata          bsp.o
+    0x00005047   0x000002b1   Data   RO          234    .constdata          display96x16x1.o
+    0x000052f8   0x0000008b   Data   RO          304    .constdata          main.o
+    0x00005383   0x00000001   PAD
+    0x00005384   0x000000e8   Data   RO          325    .constdata          mine1.o
+    0x0000546c   0x000000e8   Data   RO          366    .constdata          mine2.o
+    0x00005554   0x00000083   Data   RO          406    .constdata          missile.o
+    0x000055d7   0x00000001   PAD
+    0x000055d8   0x000000a0   Data   RO          447    .constdata          ship.o
+    0x00005678   0x0000023e   Data   RO          505    .constdata          tunnel.o
+    0x000058b6   0x00000002   PAD
+    0x000058b8   0x0000005c   Data   RO          603    .constdata          system_lm3s.o
+    0x00005914   0x00000014   Data   RO          644    .constdata          libqp_Cortex-M3.a(qhsm_ini.o)
+    0x00005928   0x00000009   Data   RO          710    .constdata          libqp_Cortex-M3.a(qhsm_dis.o)
+    0x00005931   0x00000003   PAD
+    0x00005934   0x00000014   Data   RO          736    .constdata          libqp_Cortex-M3.a(qa_ctor.o)
+    0x00005948   0x00000007   Data   RO          757    .constdata          libqp_Cortex-M3.a(qa_sub.o)
+    0x0000594f   0x00000007   Data   RO          771    .constdata          libqp_Cortex-M3.a(qf_new.o)
+    0x00005956   0x00000008   Data   RO          786    .constdata          libqp_Cortex-M3.a(qf_pool.o)
+    0x0000595e   0x00000009   Data   RO          825    .constdata          libqp_Cortex-M3.a(qf_pspub.o)
+    0x00005967   0x00000008   Data   RO          841    .constdata          libqp_Cortex-M3.a(qf_tick.o)
+    0x0000596f   0x00000009   Data   RO          865    .constdata          libqp_Cortex-M3.a(qte_ctor.o)
+    0x00005978   0x00000008   Data   RO          879    .constdata          libqp_Cortex-M3.a(qte_arm.o)
+    0x00005980   0x00000003   Data   RO          911    .constdata          libqp_Cortex-M3.a(qk.o)
+    0x00005983   0x00000003   Data   RO          969    .constdata          libqp_Cortex-M3.a(qs.o)
+    0x00005986   0x00000010   Data   RO         1107    .constdata          libqp_Cortex-M3.a(qep.o)
+    0x00005996   0x00000008   Data   RO         1120    .constdata          libqp_Cortex-M3.a(qa_fifo.o)
+    0x0000599e   0x00000008   Data   RO         1134    .constdata          libqp_Cortex-M3.a(qa_lifo.o)
+    0x000059a6   0x00000007   Data   RO         1162    .constdata          libqp_Cortex-M3.a(qf_act.o)
+    0x000059ad   0x00000006   Data   RO         1191    .constdata          libqp_Cortex-M3.a(qf_gc.o)
+    0x000059b3   0x000000c3   Data   RO         1204    .constdata          libqp_Cortex-M3.a(qf_pwr2.o)
+    0x00005a76   0x00000008   Data   RO         1223    .constdata          libqp_Cortex-M3.a(qmp_get.o)
+    0x00005a7e   0x00000009   Data   RO         1242    .constdata          libqp_Cortex-M3.a(qmp_init.o)
+    0x00005a87   0x00000008   Data   RO         1275    .constdata          libqp_Cortex-M3.a(qa_get_.o)
+    0x00005a8f   0x00000008   Data   RO         1294    .constdata          libqp_Cortex-M3.a(qmp_put.o)
+    0x00005a97   0x00000001   PAD
+    0x00005a98   0x00000020   Data   RO         1501    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00000de0, Max: 0x00002000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x0000001b   Data   RW           26    .data               bsp.o
+    0x2000001b   0x00000001   PAD
+    0x2000001c   0x00000008   Data   RW          235    .data               display96x16x1.o
+    0x20000024   0x00000008   Data   RW          305    .data               main.o
+    0x2000002c   0x00000001   Data   RW          326    .data               mine1.o
+    0x2000002d   0x00000001   Data   RW          367    .data               mine2.o
+    0x2000002e   0x00000002   PAD
+    0x20000030   0x00000004   Data   RW          506    .data               tunnel.o
+    0x20000034   0x00000004   Data   RW          604    .data               system_lm3s.o
+    0x20000038   0x00000004   Data   RW          787    .data               libqp_Cortex-M3.a(qf_pool.o)
+    0x2000003c   0x00000008   Data   RW          806    .data               libqp_Cortex-M3.a(qf_psini.o)
+    0x20000044   0x00000002   Data   RW          912    .data               libqp_Cortex-M3.a(qk.o)
+    0x20000046   0x00000001   Data   RW         1309    .data               libqp_Cortex-M3.a(qk_mutex.o)
+    0x20000047   0x00000001   PAD
+    0x20000048   0x00000600   Zero   RW           24    .bss                bsp.o
+    0x20000648   0x0000011c   Zero   RW          303    .bss                main.o
+    0x20000764   0x00000050   Zero   RW          324    .bss                mine1.o
+    0x200007b4   0x00000050   Zero   RW          365    .bss                mine2.o
+    0x20000804   0x00000024   Zero   RW          405    .bss                missile.o
+    0x20000828   0x00000028   Zero   RW          446    .bss                ship.o
+    0x20000850   0x00000204   Zero   RW          504    .bss                tunnel.o
+    0x20000a54   0x0000003c   Zero   RW          785    .bss                libqp_Cortex-M3.a(qf_pool.o)
+    0x20000a90   0x00000020   Zero   RW          840    .bss                libqp_Cortex-M3.a(qf_tick.o)
+    0x20000ab0   0x00000009   Zero   RW          910    .bss                libqp_Cortex-M3.a(qk.o)
+    0x20000ab9   0x00000003   PAD
+    0x20000abc   0x00000040   Zero   RW          968    .bss                libqp_Cortex-M3.a(qs.o)
+    0x20000afc   0x00000084   Zero   RW         1161    .bss                libqp_Cortex-M3.a(qf_act.o)
+    0x20000b80   0x00000060   Zero   RW         1378    .bss                c_w.l(libspace.o)
+    0x20000be0   0x00000000   Zero   RW          635    HEAP                startup-qk_lm3s.o
+    0x20000be0   0x00000200   Zero   RW          634    STACK               startup-qk_lm3s.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+      2098        282         55         27       1536      67801   bsp.o
+      1294        160        689          8          0       7229   display96x16x1.o
+       404         76        139          8        284       1559   main.o
+      1088        174        232          1         80       5061   mine1.o
+      1088        174        232          1         80       5073   mine2.o
+       696        110        131          0         36       5016   missile.o
+      1012        132        160          0         40       5901   ship.o
+       352        254          0          0        512        440   startup-qk_lm3s.o
+       648         78         92          4          0       1507   system_lm3s.o
+      3564        454        574          4        516      15500   tunnel.o
+
+    ----------------------------------------------------------------------
+     12252       1894       2340         56       3084     115087   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+         8          0          4          3          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         8          0          0          0          0         68   __main.o
+        52          8          0          0          0          0   __scatter.o
+        26          0          0          0          0          0   __scatter_copy.o
+        28          0          0          0          0          0   __scatter_zi.o
+        16          0          0          0          0         68   aeabi_memset.o
+        12          0          0          0          0         72   exit.o
+         6          0          0          0          0        152   heapauxi.o
+         0          0          0          0          0          0   indicate_semi.o
+         2          0          0          0          0          0   libinit.o
+         2          0          0          0          0          0   libinit2.o
+         2          0          0          0          0          0   libshutdown.o
+         2          0          0          0          0          0   libshutdown2.o
+         8          4          0          0         96         68   libspace.o
+        68          0          0          0          0         68   rt_memclr.o
+        78          0          0          0          0         80   rt_memclr_w.o
+       138          0          0          0          0         68   rt_memcpy_v6.o
+       100          0          0          0          0         80   rt_memcpy_w.o
+       132          0          0          0          0         68   rt_memmove_v6.o
+       122          0          0          0          0         80   rt_memmove_w.o
+         0          0          0          0          0          0   rtentry.o
+        12          0          0          0          0          0   rtentry2.o
+         6          0          0          0          0          0   rtentry4.o
+         2          0          0          0          0          0   rtexit.o
+        10          0          0          0          0          0   rtexit2.o
+        12          4          0          0          0         68   sys_exit.o
+        74          0          0          0          0         80   sys_stackheap_outer.o
+         2          0          0          0          0         68   use_no_semi.o
+        24          4         20          0          0       1691   qa_ctor.o
+       384         24          8          0          0       1407   qa_fifo.o
+       300         20          8          0          0       1159   qa_get_.o
+       268         26          8          0          0       1191   qa_lifo.o
+       180         28          7          0          0       1048   qa_sub.o
+         0          0         16          0          0        443   qep.o
+        92          4          0          0          0        839   qeq_init.o
+       120         12          7          0        132       3476   qf_act.o
+       192         16          6          0          0       1024   qf_gc.o
+       188         16          7          0          0       1127   qf_new.o
+       116         14          8          4         60       1125   qf_pool.o
+        20         10          0          8          0        951   qf_psini.o
+       240         26          9          0          0       1233   qf_pspub.o
+         0          0        195          0          0        545   qf_pwr2.o
+       372         14          8          0         32       1397   qf_tick.o
+      1540         28          9          0          0       2188   qhsm_dis.o
+       400         26         20          0          0      17527   qhsm_ini.o
+         6          0          0          0          0        759   qhsm_top.o
+       176         10          3          2          9       2865   qk.o
+         0          0          0          1          0        442   qk_mutex.o
+       104         12          0          0          0        208   qk_port.o
+       296         32          0          0          0       1332   qk_sched.o
+       208          8          8          0          0       1121   qmp_get.o
+       208         10          9          0          0       1266   qmp_init.o
+       140         10          8          0          0       1077   qmp_put.o
+       472         36          3          0         64      10962   qs.o
+       616         26          0          0          0       3146   qs_.o
+        68          4          0          0          0        878   qs_blk.o
+       152          0          0          0          0       1746   qs_dict.o
+       192         12          8          0          0       1128   qte_arm.o
+        56          6          9          0          0       1037   qte_ctor.o
+       184          6          0          0          0        854   qte_darm.o
+
+    ----------------------------------------------------------------------
+      8244        456        388         16        396      68280   Library Totals
+        10          0          4          1          3          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       920         16          0          0         96       1088   c_w.l
+      7314        440        384         15        297      67192   libqp_Cortex-M3.a
+
+    ----------------------------------------------------------------------
+      8244        456        388         16        396      68280   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+     20496       2350       2728         72       3480     176815   Grand Totals
+     20496       2350       2728         72       3480     176815   ELF Image Totals
+     20496       2350       2728         72          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                23224 (  22.68kB)
+    Total RW  Size (RW Data + ZI Data)              3552 (   3.47kB)
+    Total ROM Size (Code + RO Data + RW Data)      23296 (  22.75kB)
+
+==============================================================================
+

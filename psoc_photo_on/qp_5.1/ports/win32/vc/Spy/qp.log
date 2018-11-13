@@ -1,0 +1,121 @@
+﻿Build started 10/10/2013 5:16:23 PM.
+     1>Project "D:\qp\qpc\ports\win32\vc\qp.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I. /I../../../include /I../../../qep/source /I../../../qf/source /I../../../qs/source /Zi /nologo /W4 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D Q_SPY /Gm- /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Spy\\" /Fd"Spy\vc110.pdb" /Gd /TC /wd4127 /analyze- /errorReport:prompt ..\..\..\qep\source\qep.c ..\..\..\qep\source\qfsm_dis.c ..\..\..\qep\source\qfsm_ini.c ..\..\..\qep\source\qhsm_dis.c ..\..\..\qep\source\qhsm_in.c ..\..\..\qep\source\qhsm_ini.c ..\..\..\qep\source\qhsm_top.c ..\..\..\qep\source\qmsm_dis.c ..\..\..\qep\source\qmsm_ini.c ..\..\..\qf\source\qa_ctor.c ..\..\..\qf\source\qa_defer.c ..\..\..\qf\source\qa_fifo.c ..\..\..\qf\source\qa_get_.c ..\..\..\qf\source\qa_lifo.c ..\..\..\qf\source\qa_sub.c ..\..\..\qf\source\qa_usub.c ..\..\..\qf\source\qa_usuba.c ..\..\..\qf\source\qeq_fifo.c ..\..\..\qf\source\qeq_get.c ..\..\..\qf\source\qeq_init.c ..\..\..\qf\source\qeq_lifo.c ..\..\..\qf\source\qf_act.c ..\..\..\qf\source\qf_gc.c ..\..\..\qf\source\qf_log2.c ..\..\..\qf\source\qf_new.c ..\..\..\qf\source\qf_pool.c ..\..\..\qf\source\qf_psini.c ..\..\..\qf\source\qf_pspub.c ..\..\..\qf\source\qf_pwr2.c ..\..\..\qf\source\qf_tick.c ..\..\..\qf\source\qma_ctor.c ..\..\..\qf\source\qmp_get.c ..\..\..\qf\source\qmp_init.c ..\..\..\qf\source\qmp_put.c ..\..\..\qf\source\qte_arm.c ..\..\..\qf\source\qte_ctor.c ..\..\..\qf\source\qte_ctr.c ..\..\..\qf\source\qte_darm.c ..\..\..\qf\source\qte_rarm.c ..\..\..\qs\source\qs.c ..\..\..\qs\source\qs_.c ..\..\..\qs\source\qs_blk.c ..\..\..\qs\source\qs_byte.c ..\..\..\qs\source\qs_dict.c ..\..\..\qs\source\qs_f32.c ..\..\..\qs\source\qs_f64.c ..\..\..\qs\source\qs_mem.c ..\..\..\qs\source\qs_str.c ..\..\..\qs\source\qs_u64.c qf_port.c win32_gui.c
+         qep.c
+         qfsm_dis.c
+         qfsm_ini.c
+         qhsm_dis.c
+         qhsm_in.c
+         qhsm_ini.c
+         qhsm_top.c
+         qmsm_dis.c
+         qmsm_ini.c
+         qa_ctor.c
+         qa_defer.c
+         qa_fifo.c
+         qa_get_.c
+         qa_lifo.c
+         qa_sub.c
+         qa_usub.c
+         qa_usuba.c
+         qeq_fifo.c
+         qeq_get.c
+         qeq_init.c
+         Generating Code...
+         Compiling...
+         qeq_lifo.c
+         qf_act.c
+         qf_gc.c
+         qf_log2.c
+         qf_new.c
+         qf_pool.c
+         qf_psini.c
+         qf_pspub.c
+         qf_pwr2.c
+         qf_tick.c
+         qma_ctor.c
+         qmp_get.c
+         qmp_init.c
+         qmp_put.c
+         qte_arm.c
+         qte_ctor.c
+         qte_ctr.c
+         qte_darm.c
+         qte_rarm.c
+         qs.c
+         Generating Code...
+         Compiling...
+         qs_.c
+         qs_blk.c
+         qs_byte.c
+         qs_dict.c
+         qs_f32.c
+         qs_f64.c
+         qs_mem.c
+         qs_str.c
+         qs_u64.c
+         qf_port.c
+         win32_gui.c
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"D:\qp\qpc\ports\win32\vc\Spy\qp.lib" /NOLOGO Spy\qep.obj
+         Spy\qfsm_dis.obj
+         Spy\qfsm_ini.obj
+         Spy\qhsm_dis.obj
+         Spy\qhsm_in.obj
+         Spy\qhsm_ini.obj
+         Spy\qhsm_top.obj
+         Spy\qmsm_dis.obj
+         Spy\qmsm_ini.obj
+         Spy\qa_ctor.obj
+         Spy\qa_defer.obj
+         Spy\qa_fifo.obj
+         Spy\qa_get_.obj
+         Spy\qa_lifo.obj
+         Spy\qa_sub.obj
+         Spy\qa_usub.obj
+         Spy\qa_usuba.obj
+         Spy\qeq_fifo.obj
+         Spy\qeq_get.obj
+         Spy\qeq_init.obj
+         Spy\qeq_lifo.obj
+         Spy\qf_act.obj
+         Spy\qf_gc.obj
+         Spy\qf_log2.obj
+         Spy\qf_new.obj
+         Spy\qf_pool.obj
+         Spy\qf_psini.obj
+         Spy\qf_pspub.obj
+         Spy\qf_pwr2.obj
+         Spy\qf_tick.obj
+         Spy\qma_ctor.obj
+         Spy\qmp_get.obj
+         Spy\qmp_init.obj
+         Spy\qmp_put.obj
+         Spy\qte_arm.obj
+         Spy\qte_ctor.obj
+         Spy\qte_ctr.obj
+         Spy\qte_darm.obj
+         Spy\qte_rarm.obj
+         Spy\qs.obj
+         Spy\qs_.obj
+         Spy\qs_blk.obj
+         Spy\qs_byte.obj
+         Spy\qs_dict.obj
+         Spy\qs_f32.obj
+         Spy\qs_f64.obj
+         Spy\qs_mem.obj
+         Spy\qs_str.obj
+         Spy\qs_u64.obj
+         Spy\qf_port.obj
+         Spy\win32_gui.obj
+         qp.vcxproj -> D:\qp\qpc\ports\win32\vc\Spy\qp.lib
+       PostBuildEvent:
+         del Spy\*.obj Spy\*.tlog Spy\*.lastbuildstate
+         :VCEnd
+     1>Done Building Project "D:\qp\qpc\ports\win32\vc\qp.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:13.63

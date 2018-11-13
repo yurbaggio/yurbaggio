@@ -1,0 +1,1042 @@
+Archive member included because of file (symbol)
+
+D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_top.o)
+                              spy/table.o (QHsm_top)
+D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_fifo.o)
+                              spy/philo.o (QActive_postFIFO)
+D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_sub.o)
+                              spy/table.o (QActive_subscribe)
+D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_act.o)
+                              D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_sub.o) (QF_active_)
+D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_new.o)
+                              spy/table.o (QF_new_)
+D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pool.o)
+                              spy/main.o (QF_poolInit)
+D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_psini.o)
+                              spy/main.o (QF_psInit)
+D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pspub.o)
+                              spy/table.o (QF_publish)
+D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pwr2.o)
+                              D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_fifo.o) (QF_div8Lkup)
+D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_tick.o)
+                              spy/bsp.o (QF_tick)
+D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_get.o)
+                              D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_new.o) (QMPool_get)
+D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_init.o)
+                              D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pool.o) (QMPool_init)
+D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_ctor.o)
+                              spy/philo.o (QTimeEvt_ctor)
+D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_arm.o)
+                              spy/philo.o (QTimeEvt_arm_)
+D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qvanilla.o)
+                              spy/main.o (QF_init)
+D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs.o)
+                              spy/bsp.o (QS_initBuf)
+D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_.o)
+                              D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_fifo.o) (QS_u8_)
+D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_byte.o)
+                              spy/bsp.o (QS_getByte)
+D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_str.o)
+                              spy/bsp.o (QS_str)
+D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_ini.o)
+                              D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qvanilla.o) (QHsm_init)
+D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_dis.o)
+                              D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qvanilla.o) (QHsm_dispatch)
+D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_get_.o)
+                              D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qvanilla.o) (QActive_get_)
+D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qeq_init.o)
+                              D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qvanilla.o) (QEQueue_init)
+D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_gc.o)
+                              D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pspub.o) (QF_gc)
+D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_log2.o)
+                              D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pspub.o) (QF_log2Lkup)
+D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_put.o)
+                              D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_gc.o) (QMPool_put)
+D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qep.o)
+                              D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_ini.o) (QEP_reservedEvt_)
+c:/tools/codered/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-init.o)
+                              spy/startup_LPC11xx.o (__libc_init_array)
+c:/tools/codered/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m\libgcc.a(_udivsi3.o)
+                              spy/bsp.o (__aeabi_uidiv)
+c:/tools/codered/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m\libgcc.a(_dvmd_tls.o)
+                              c:/tools/codered/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m\libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+
+Allocating common symbols
+Common symbol       size              file
+
+QF_maxSignal_       0x4               D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_psini.o)
+QS_seq_             0x1               D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs.o)
+QS_tickTime_        0x4               spy/bsp.o
+QS_teObj_           0x4               D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_.o)
+QS_chksum_          0x1               D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs.o)
+QS_eqObj_           0x4               D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_.o)
+QF_intLockNest_     0x1               D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_act.o)
+UARTBuffer          0x40              spy/uart.o
+QF_timeEvtListHead_
+                    0x4               D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_arm.o)
+QS_head_            0x2               D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs.o)
+QS_glbFilter_       0x20              D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs.o)
+QS_tickPeriod_      0x4               spy/bsp.o
+QS_aoObj_           0x4               D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_.o)
+QS_used_            0x2               D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs.o)
+QF_pool_            0x78              D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pool.o)
+QF_active_          0x84              D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_act.o)
+QS_ring_            0x4               D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs.o)
+QS_apObj_           0x4               D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_.o)
+UARTStatus          0x4               spy/uart.o
+QS_end_             0x2               D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs.o)
+QS_tickCtr_         0x4               D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_.o)
+QF_subscrList_      0x4               D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_psini.o)
+QF_maxPool_         0x1               D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pool.o)
+QS_full_            0x1               D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs.o)
+QF_readySet_        0x9               D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qvanilla.o)
+QS_smObj_           0x4               D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_.o)
+QS_mpObj_           0x4               D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_.o)
+QS_tail_            0x2               D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs.o)
+
+Discarded input sections
+
+ .ARM.attributes
+                0x00000000       0x2c c:/tools/codered/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-init.o)
+ .debug_frame   0x00000000       0x2c c:/tools/codered/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-init.o)
+ .debug_frame   0x00000000       0x20 c:/tools/codered/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m\libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x00000000       0x1e c:/tools/codered/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m\libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x00000000       0x1e c:/tools/codered/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m\libgcc.a(_dvmd_tls.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ROM              0x00000000         0x00008000         xr
+RAM              0x10000000         0x00002000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD spy/startup_LPC11xx.o
+LOAD spy/main.o
+LOAD spy/table.o
+LOAD spy/philo.o
+LOAD spy/bsp.o
+LOAD spy/no_heap.o
+LOAD spy/system_LPC11xx.o
+LOAD spy/clkconfig.o
+LOAD spy/gpio.o
+LOAD spy/timer16.o
+LOAD spy/timer32.o
+LOAD spy/uart.o
+LOAD D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a
+                0x00000200                STACK_SIZE = 0x200
+                0x00000000                HEAP_SIZE = 0x0
+
+.isr_vector     0x00000000       0xc0
+ *(.isr_vector)
+ .isr_vector    0x00000000       0xc0 spy/startup_LPC11xx.o
+                0x00000000                g_pfnVectors
+                0x000000c0                . = ALIGN (0x4)
+
+.text           0x000000c0     0x46f8
+                0x000000c0                . = ALIGN (0x4)
+ *(.text)
+ .text          0x000000c0       0x6c spy/startup_LPC11xx.o
+                0x000000c0                TIMER16_0_IRQHandler
+                0x000000c0                DebugMon_Handler
+                0x000000c0                PendSV_Handler
+                0x000000c0                NMI_Handler
+                0x000000c0                TIMER32_0_IRQHandler
+                0x000000c0                TIMER32_1_IRQHandler
+                0x000000c0                UsageFault_Handler
+                0x000000c0                PIOINT1_IRQHandler
+                0x000000c0                SSP_IRQHandler
+                0x000000c0                Spurious_Handler
+                0x000000c0                BusFault_Handler
+                0x000000c0                TIMER16_1_IRQHandler
+                0x000000c0                USB_FIQHandler
+                0x000000c0                ADC_IRQHandler
+                0x000000c0                PIOINT2_IRQHandler
+                0x000000c0                USB_IRQHandler
+                0x000000c0                BOD_IRQHandler
+                0x000000c0                WAKEUP_IRQHandler
+                0x000000c0                I2C_IRQHandler
+                0x000000c0                MemManage_Handler
+                0x000000c0                WDT_IRQHandler
+                0x000000c0                SVC_Handler
+                0x000000c0                PIOINT3_IRQHandler
+                0x000000c0                FMC_IRQHandler
+                0x000000d0                Reset_Handler
+                0x00000128                _init
+ .text          0x0000012c      0x1ac spy/main.o
+                0x0000012c                main
+ .text          0x000002d8      0x544 spy/table.o
+                0x000007e0                Table_ctor
+ .text          0x0000081c      0x4e8 spy/philo.o
+                0x00000cd0                Philo_ctor
+ .text          0x00000d04      0x398 spy/bsp.o
+                0x00000d04                SysTick_Handler
+                0x00000d30                PIOINT0_IRQHandler
+                0x00000d54                QF_onStartup
+                0x00000dc4                QF_onCleanup
+                0x00000dc8                QF_onIdle
+                0x00000df4                Q_onAssert
+                0x00000dfc                assert_failed
+                0x00000e04                BSP_displayPaused
+                0x00000e08                BSP_random
+                0x00000e20                BSP_randomSeed
+                0x00000e2c                BSP_terminate
+                0x00000e30                QS_onStartup
+                0x00000f44                QS_onCleanup
+                0x00000f48                QS_onGetTime
+                0x00000f7c                BSP_displayPhilStat
+                0x00000fec                QS_onFlush
+                0x00001014                BSP_init
+ .text          0x0000109c       0x38 spy/no_heap.o
+                0x0000109c                malloc
+                0x000010b0                free
+                0x000010c0                calloc
+ .text          0x000010d4      0x244 spy/system_LPC11xx.o
+                0x000010d4                SystemCoreClockUpdate
+                0x0000128c                SystemInit
+ .text          0x00001318       0x70 spy/clkconfig.o
+                0x00001318                WDT_CLK_Setup
+                0x00001358                CLKOUT_Setup
+ .text          0x00001388      0x54c spy/gpio.o
+                0x00001388                GPIOInit
+                0x000013b8                GPIOSetDir
+                0x000014e8                GPIOSetValue
+                0x00001548                GPIOSetInterrupt
+                0x00001718                GPIOIntEnable
+                0x00001788                GPIOIntDisable
+                0x000017f0                GPIOIntStatus
+                0x00001864                GPIOIntClear
+ .text          0x000018d4      0x1a8 spy/timer16.o
+                0x000018d4                delayMs
+                0x00001964                enable_timer16
+                0x00001984                disable_timer16
+                0x000019a4                reset_timer16
+                0x000019cc                init_timer16
+ .text          0x00001a7c      0x1a8 spy/timer32.o
+                0x00001a7c                delay32Ms
+                0x00001b0c                enable_timer32
+                0x00001b2c                disable_timer32
+                0x00001b4c                reset_timer32
+                0x00001b74                init_timer32
+ .text          0x00001c24      0x210 spy/uart.o
+                0x00001c24                UART_IRQHandler
+                0x00001cd4                ModemInit
+                0x00001d48                UARTInit
+                0x00001e10                UARTSend
+ .text          0x00001e34        0x4 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_top.o)
+                0x00001e34                QHsm_top
+ .text          0x00001e38       0xe4 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_fifo.o)
+                0x00001e38                QActive_postFIFO
+ .text          0x00001f1c       0xa8 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_sub.o)
+                0x00001f1c                QActive_subscribe
+ .text          0x00001fc4       0xe8 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_act.o)
+                0x00001fc4                QF_getVersion
+                0x00001fcc                QF_add_
+                0x0000203c                QF_remove_
+ .text          0x000020ac       0xa0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_new.o)
+                0x000020ac                QF_new_
+ .text          0x0000214c       0x68 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pool.o)
+                0x0000214c                QF_poolInit
+ .text          0x000021b4       0x14 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_psini.o)
+                0x000021b4                QF_psInit
+ .text          0x000021c8       0xfc D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pspub.o)
+                0x000021c8                QF_publish
+ .text          0x000022c4        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pwr2.o)
+ .text          0x000022c4      0x144 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_tick.o)
+                0x000022c4                QF_tick
+ .text          0x00002408       0xb4 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_get.o)
+                0x00002408                QMPool_get
+                0x00002484                QF_getPoolMargin
+ .text          0x000024bc       0xd4 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_init.o)
+                0x000024bc                QMPool_init
+ .text          0x00002590       0x2c D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_ctor.o)
+                0x00002590                QTimeEvt_ctor
+ .text          0x000025bc       0xa0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_arm.o)
+                0x000025bc                QTimeEvt_arm_
+                0x0000264c                QF_noTimeEvtsActive
+ .text          0x0000265c       0xb8 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qvanilla.o)
+                0x0000265c                QF_init
+                0x00002660                QF_stop
+                0x00002668                QF_run
+                0x000026c8                QActive_start
+                0x0000270c                QActive_stop
+ .text          0x00002714      0x8b4 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs.o)
+                0x00002714                QS_getVersion
+                0x0000271c                QS_initBuf
+                0x00002730                QS_filterOn
+                0x00002764                QS_filterOff
+                0x00002798                QS_begin
+                0x000028dc                QS_end
+                0x000029cc                QS_u8
+                0x00002b04                QS_u16
+                0x00002cd4                QS_u32
+ .text          0x00002fc8      0x588 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_.o)
+                0x00002fc8                QS_u8_
+                0x00003070                QS_u16_
+                0x000031b0                QS_u32_
+                0x00003414                QS_str_
+                0x000034b8                QS_str_ROM_
+ .text          0x00003550       0x48 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_byte.o)
+                0x00003550                QS_getByte
+ .text          0x00003598      0x198 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_str.o)
+                0x00003598                QS_str
+                0x00003664                QS_str_ROM
+ .text          0x00003730      0x18c D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_ini.o)
+                0x00003730                QHsm_init
+ .text          0x000038bc      0x578 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_dis.o)
+                0x000038bc                QHsm_dispatch
+ .text          0x00003e34      0x13c D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_get_.o)
+                0x00003e34                QActive_get_
+                0x00003f40                QF_getQueueMargin
+ .text          0x00003f70       0x50 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qeq_init.o)
+                0x00003f70                QEQueue_init
+ .text          0x00003fc0       0xac D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_gc.o)
+                0x00003fc0                QF_gc
+ .text          0x0000406c        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_log2.o)
+ .text          0x0000406c       0x7c D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_put.o)
+                0x0000406c                QMPool_put
+ .text          0x000040e8        0x8 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qep.o)
+                0x000040e8                QEP_getVersion
+ .text          0x000040f0        0x0 c:/tools/codered/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-init.o)
+ .text          0x000040f0       0x9c c:/tools/codered/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m\libgcc.a(_udivsi3.o)
+                0x000040f0                __aeabi_uidiv
+                0x000040f0                __udivsi3
+                0x00004178                __aeabi_uidivmod
+ .text          0x0000418c        0x4 c:/tools/codered/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m\libgcc.a(_dvmd_tls.o)
+                0x0000418c                __aeabi_idiv0
+                0x0000418c                __aeabi_ldiv0
+ *(.text*)
+ .text.__libc_init_array
+                0x00004190       0x44 c:/tools/codered/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-init.o)
+                0x00004190                __libc_init_array
+ *(.rodata)
+ .rodata        0x000041d4       0x84 spy/main.o
+ .rodata        0x00004258       0xd0 spy/table.o
+                0x00004324                AO_Table
+ .rodata        0x00004328      0x140 spy/philo.o
+                0x00004454                AO_Philo
+ .rodata        0x00004468       0x34 spy/bsp.o
+ .rodata        0x0000449c        0xc spy/no_heap.o
+ .rodata        0x000044a8       0x40 spy/system_LPC11xx.o
+ .rodata        0x000044e8        0x8 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_fifo.o)
+ .rodata        0x000044f0        0x8 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_sub.o)
+ .rodata        0x000044f8       0x10 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_act.o)
+ .rodata        0x00004508        0x8 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_new.o)
+ .rodata        0x00004510        0x8 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pool.o)
+ .rodata        0x00004518        0xc D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pspub.o)
+ .rodata        0x00004524       0xcc D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pwr2.o)
+                0x00004524                QF_div8Lkup
+                0x00004568                QF_invPwr2Lkup
+                0x000045ac                QF_pwr2Lkup
+ .rodata        0x000045f0        0x8 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_tick.o)
+ .rodata        0x000045f8        0x8 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_get.o)
+ .rodata        0x00004600        0xc D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_init.o)
+ .rodata        0x0000460c        0xc D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_ctor.o)
+ .rodata        0x00004618        0x8 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_arm.o)
+ .rodata        0x00004620        0xc D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qvanilla.o)
+ .rodata        0x0000462c        0x8 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs.o)
+ .rodata        0x00004634        0xc D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_ini.o)
+ .rodata        0x00004640        0xc D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_dis.o)
+ .rodata        0x0000464c        0x8 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_get_.o)
+ .rodata        0x00004654        0x8 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_gc.o)
+ .rodata        0x0000465c      0x100 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_log2.o)
+                0x0000465c                QF_log2Lkup
+ .rodata        0x0000475c        0x8 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_put.o)
+ .rodata        0x00004764       0x18 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qep.o)
+                0x0000476c                QEP_reservedEvt_
+ *(.rodata*)
+ .rodata.str1.4
+                0x0000477c       0x15 spy/startup_LPC11xx.o
+                                 0x18 (size before relaxing)
+ *fill*         0x00004791        0x3 00
+ .rodata.str1.4
+                0x00004794       0x24 spy/table.o
+ *(.init)
+ *(.fini)
+                0x000047b8                . = ALIGN (0x4)
+
+.glue_7         0x000047b8        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x000047b8        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x000047b8        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x000047b8        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.preinit_array  0x000047b8        0x0
+                0x000047b8                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array*)
+                0x000047b8                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x000047b8        0x0
+                0x000047b8                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array*)
+                0x000047b8                PROVIDE (__init_array_end, .)
+
+.fini_array     0x000047b8        0x0
+                0x000047b8                PROVIDE (__fini_array_start, .)
+ *(.fini_array*)
+ *(SORT(.fini_array.*))
+                0x000047b8                PROVIDE (__fini_array_end, .)
+                0x000047b8                _etext = .
+
+.data           0x10000000        0x8 load address 0x000047b8
+                0x000047b8                __data_load = LOADADDR (.data)
+                0x10000000                __data_start = .
+ *(.data)
+ .data          0x10000000        0x0 spy/startup_LPC11xx.o
+ .data          0x10000000        0x0 spy/main.o
+ .data          0x10000000        0x0 spy/table.o
+ .data          0x10000000        0x0 spy/philo.o
+ .data          0x10000000        0x0 spy/bsp.o
+ .data          0x10000000        0x0 spy/no_heap.o
+ .data          0x10000000        0x4 spy/system_LPC11xx.o
+                0x10000000                SystemCoreClock
+ .data          0x10000004        0x0 spy/clkconfig.o
+ .data          0x10000004        0x0 spy/gpio.o
+ .data          0x10000004        0x0 spy/timer16.o
+ .data          0x10000004        0x0 spy/timer32.o
+ .data          0x10000004        0x1 spy/uart.o
+                0x10000004                UARTTxEmpty
+ .data          0x10000005        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_top.o)
+ .data          0x10000005        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_fifo.o)
+ .data          0x10000005        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_sub.o)
+ .data          0x10000005        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_act.o)
+ .data          0x10000005        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_new.o)
+ .data          0x10000005        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pool.o)
+ .data          0x10000005        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_psini.o)
+ .data          0x10000005        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pspub.o)
+ .data          0x10000005        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pwr2.o)
+ .data          0x10000005        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_tick.o)
+ .data          0x10000005        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_get.o)
+ .data          0x10000005        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_init.o)
+ .data          0x10000005        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_ctor.o)
+ .data          0x10000005        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_arm.o)
+ .data          0x10000005        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qvanilla.o)
+ .data          0x10000005        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs.o)
+ .data          0x10000005        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_.o)
+ .data          0x10000005        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_byte.o)
+ .data          0x10000005        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_str.o)
+ .data          0x10000005        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_ini.o)
+ .data          0x10000005        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_dis.o)
+ .data          0x10000005        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_get_.o)
+ .data          0x10000005        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qeq_init.o)
+ .data          0x10000005        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_gc.o)
+ .data          0x10000005        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_log2.o)
+ .data          0x10000005        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_put.o)
+ .data          0x10000005        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qep.o)
+ .data          0x10000005        0x0 c:/tools/codered/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-init.o)
+ .data          0x10000005        0x0 c:/tools/codered/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m\libgcc.a(_udivsi3.o)
+ .data          0x10000005        0x0 c:/tools/codered/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m\libgcc.a(_dvmd_tls.o)
+ *(.data*)
+                0x10000008                . = ALIGN (0x4)
+ *fill*         0x10000005        0x3 00
+                0x10000008                __data_end__ = .
+                0x10000008                _edata = __data_end__
+
+.bss            0x10000008      0xbb4 load address 0x000047c0
+                0x10000008                __bss_start__ = .
+ *(.bss)
+ .bss           0x10000008        0x0 spy/startup_LPC11xx.o
+ .bss           0x10000008       0xe8 spy/main.o
+ .bss           0x100000f0       0x28 spy/table.o
+ .bss           0x10000118       0xe0 spy/philo.o
+ .bss           0x100001f8      0x808 spy/bsp.o
+ .bss           0x10000a00        0x0 spy/no_heap.o
+ .bss           0x10000a00        0x0 spy/system_LPC11xx.o
+ .bss           0x10000a00        0x0 spy/clkconfig.o
+ .bss           0x10000a00        0x0 spy/gpio.o
+ .bss           0x10000a00        0x0 spy/timer16.o
+ .bss           0x10000a00        0x0 spy/timer32.o
+ .bss           0x10000a00        0x4 spy/uart.o
+                0x10000a00                UARTCount
+ .bss           0x10000a04        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_top.o)
+ .bss           0x10000a04        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_fifo.o)
+ .bss           0x10000a04        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_sub.o)
+ .bss           0x10000a04        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_act.o)
+ .bss           0x10000a04        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_new.o)
+ .bss           0x10000a04        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pool.o)
+ .bss           0x10000a04        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_psini.o)
+ .bss           0x10000a04        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pspub.o)
+ .bss           0x10000a04        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pwr2.o)
+ .bss           0x10000a04        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_tick.o)
+ .bss           0x10000a04        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_get.o)
+ .bss           0x10000a04        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_init.o)
+ .bss           0x10000a04        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_ctor.o)
+ .bss           0x10000a04        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_arm.o)
+ .bss           0x10000a04        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qvanilla.o)
+ .bss           0x10000a04        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs.o)
+ .bss           0x10000a04        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_.o)
+ .bss           0x10000a04        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_byte.o)
+ .bss           0x10000a04        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_str.o)
+ .bss           0x10000a04        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_ini.o)
+ .bss           0x10000a04        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_dis.o)
+ .bss           0x10000a04        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_get_.o)
+ .bss           0x10000a04        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qeq_init.o)
+ .bss           0x10000a04        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_gc.o)
+ .bss           0x10000a04        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_log2.o)
+ .bss           0x10000a04        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_put.o)
+ .bss           0x10000a04        0x0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qep.o)
+ .bss           0x10000a04        0x0 c:/tools/codered/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-init.o)
+ .bss           0x10000a04        0x0 c:/tools/codered/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m\libgcc.a(_udivsi3.o)
+ .bss           0x10000a04        0x0 c:/tools/codered/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.6.2/armv6-m\libgcc.a(_dvmd_tls.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x10000a04        0x8 spy/bsp.o
+                0x10000a04                QS_tickTime_
+                0x10000a08                QS_tickPeriod_
+ COMMON         0x10000a0c       0x44 spy/uart.o
+                0x10000a0c                UARTBuffer
+                0x10000a4c                UARTStatus
+ COMMON         0x10000a50       0x88 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_act.o)
+                0x10000a50                QF_intLockNest_
+                0x10000a54                QF_active_
+ COMMON         0x10000ad8       0x79 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pool.o)
+                0x10000ad8                QF_pool_
+                0x10000b50                QF_maxPool_
+ *fill*         0x10000b51        0x3 00
+ COMMON         0x10000b54        0x8 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_psini.o)
+                0x10000b54                QF_maxSignal_
+                0x10000b58                QF_subscrList_
+ COMMON         0x10000b5c        0x4 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_arm.o)
+                0x10000b5c                QF_timeEvtListHead_
+ COMMON         0x10000b60        0x9 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qvanilla.o)
+                0x10000b60                QF_readySet_
+ *fill*         0x10000b69        0x3 00
+ COMMON         0x10000b6c       0x32 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs.o)
+                0x10000b6c                QS_seq_
+                0x10000b6d                QS_chksum_
+                0x10000b6e                QS_head_
+                0x10000b70                QS_glbFilter_
+                0x10000b90                QS_used_
+                0x10000b94                QS_ring_
+                0x10000b98                QS_end_
+                0x10000b9a                QS_full_
+                0x10000b9c                QS_tail_
+ *fill*         0x10000b9e        0x2 00
+ COMMON         0x10000ba0       0x1c D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_.o)
+                0x10000ba0                QS_teObj_
+                0x10000ba4                QS_eqObj_
+                0x10000ba8                QS_aoObj_
+                0x10000bac                QS_apObj_
+                0x10000bb0                QS_tickCtr_
+                0x10000bb4                QS_smObj_
+                0x10000bb8                QS_mpObj_
+                0x10000bbc                . = ALIGN (0x4)
+                0x10000bbc                _ebss = .
+                0x10000bbc                __bss_end__ = .
+                0x10000bbc                PROVIDE (end, _ebss)
+                0x10000bbc                PROVIDE (_end, _ebss)
+                0x10000bbc                PROVIDE (__end__, _ebss)
+
+.heap           0x10000bbc        0x0
+                0x10000bbc                __heap_start__ = .
+                0x10000bbc                . = (. + HEAP_SIZE)
+                0x10000bbc                . = ALIGN (0x4)
+                0x10000bbc                __heap_end__ = .
+
+.stack          0x10000bbc      0x200 load address 0x00005374
+                0x10000bbc                __stack_start__ = .
+                0x10000dbc                . = (. + STACK_SIZE)
+ *fill*         0x10000bbc      0x200 00
+                0x10000dbc                . = ALIGN (0x4)
+                0x10000dbc                __c_stack_top__ = .
+                0x10000dbc                __stack_end__ = .
+
+/DISCARD/
+ libc.a(*)
+ libm.a(*)
+ libgcc.a(*)
+OUTPUT(spy/dpp.elf elf32-littlearm)
+
+.debug_info     0x00000000     0xc647
+ .debug_info    0x00000000      0x1bf spy/startup_LPC11xx.o
+ .debug_info    0x000001bf      0x722 spy/main.o
+ .debug_info    0x000008e1      0x944 spy/table.o
+ .debug_info    0x00001225      0xa57 spy/philo.o
+ .debug_info    0x00001c7c      0xf29 spy/bsp.o
+ .debug_info    0x00002ba5      0x155 spy/no_heap.o
+ .debug_info    0x00002cfa      0x4af spy/system_LPC11xx.o
+ .debug_info    0x000031a9      0x46f spy/clkconfig.o
+ .debug_info    0x00003618      0x996 spy/gpio.o
+ .debug_info    0x00003fae      0xb3d spy/timer16.o
+ .debug_info    0x00004aeb      0xb3d spy/timer32.o
+ .debug_info    0x00005628      0xc44 spy/uart.o
+ .debug_info    0x0000626c      0x13a D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_top.o)
+ .debug_info    0x000063a6      0x5aa D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_fifo.o)
+ .debug_info    0x00006950      0x60e D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_sub.o)
+ .debug_info    0x00006f5e      0x579 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_act.o)
+ .debug_info    0x000074d7      0x455 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_new.o)
+ .debug_info    0x0000792c      0x213 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pool.o)
+ .debug_info    0x00007b3f      0x155 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_psini.o)
+ .debug_info    0x00007c94      0x5f6 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pspub.o)
+ .debug_info    0x0000828a       0xda D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pwr2.o)
+ .debug_info    0x00008364      0x582 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_tick.o)
+ .debug_info    0x000088e6      0x46a D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_get.o)
+ .debug_info    0x00008d50      0x426 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_init.o)
+ .debug_info    0x00009176      0x357 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_ctor.o)
+ .debug_info    0x000094cd      0x5ab D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_arm.o)
+ .debug_info    0x00009a78      0x48c D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qvanilla.o)
+ .debug_info    0x00009f04      0x3aa D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs.o)
+ .debug_info    0x0000a2ae      0x2b1 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_.o)
+ .debug_info    0x0000a55f      0x136 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_byte.o)
+ .debug_info    0x0000a695      0x202 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_str.o)
+ .debug_info    0x0000a897      0x4a6 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_ini.o)
+ .debug_info    0x0000ad3d      0x4dd D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_dis.o)
+ .debug_info    0x0000b21a      0x603 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_get_.o)
+ .debug_info    0x0000b81d      0x3dd D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qeq_init.o)
+ .debug_info    0x0000bbfa      0x427 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_gc.o)
+ .debug_info    0x0000c021       0xac D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_log2.o)
+ .debug_info    0x0000c0cd      0x3de D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_put.o)
+ .debug_info    0x0000c4ab      0x19c D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qep.o)
+
+.debug_abbrev   0x00000000     0x2d5e
+ .debug_abbrev  0x00000000      0x111 spy/startup_LPC11xx.o
+ .debug_abbrev  0x00000111      0x15a spy/main.o
+ .debug_abbrev  0x0000026b      0x1a1 spy/table.o
+ .debug_abbrev  0x0000040c      0x1a0 spy/philo.o
+ .debug_abbrev  0x000005ac      0x326 spy/bsp.o
+ .debug_abbrev  0x000008d2       0xb4 spy/no_heap.o
+ .debug_abbrev  0x00000986       0xe8 spy/system_LPC11xx.o
+ .debug_abbrev  0x00000a6e       0xae spy/clkconfig.o
+ .debug_abbrev  0x00000b1c      0x20a spy/gpio.o
+ .debug_abbrev  0x00000d26      0x179 spy/timer16.o
+ .debug_abbrev  0x00000e9f      0x179 spy/timer32.o
+ .debug_abbrev  0x00001018      0x1d8 spy/uart.o
+ .debug_abbrev  0x000011f0       0xb0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_top.o)
+ .debug_abbrev  0x000012a0      0x122 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_fifo.o)
+ .debug_abbrev  0x000013c2      0x15c D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_sub.o)
+ .debug_abbrev  0x0000151e      0x14c D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_act.o)
+ .debug_abbrev  0x0000166a      0x10b D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_new.o)
+ .debug_abbrev  0x00001775       0xdb D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pool.o)
+ .debug_abbrev  0x00001850       0xcc D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_psini.o)
+ .debug_abbrev  0x0000191c      0x16c D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pspub.o)
+ .debug_abbrev  0x00001a88       0x61 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pwr2.o)
+ .debug_abbrev  0x00001ae9      0x15a D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_tick.o)
+ .debug_abbrev  0x00001c43      0x11d D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_get.o)
+ .debug_abbrev  0x00001d60      0x11d D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_init.o)
+ .debug_abbrev  0x00001e7d      0x126 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_ctor.o)
+ .debug_abbrev  0x00001fa3      0x182 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_arm.o)
+ .debug_abbrev  0x00002125      0x18f D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qvanilla.o)
+ .debug_abbrev  0x000022b4      0x138 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs.o)
+ .debug_abbrev  0x000023ec       0xa3 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_.o)
+ .debug_abbrev  0x0000248f       0x79 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_byte.o)
+ .debug_abbrev  0x00002508       0xa5 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_str.o)
+ .debug_abbrev  0x000025ad      0x127 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_ini.o)
+ .debug_abbrev  0x000026d4      0x127 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_dis.o)
+ .debug_abbrev  0x000027fb      0x140 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_get_.o)
+ .debug_abbrev  0x0000293b       0xe9 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qeq_init.o)
+ .debug_abbrev  0x00002a24      0x103 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_gc.o)
+ .debug_abbrev  0x00002b27       0x61 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_log2.o)
+ .debug_abbrev  0x00002b88       0xf0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_put.o)
+ .debug_abbrev  0x00002c78       0xe6 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qep.o)
+
+.debug_loc      0x00000000     0x2a74
+ .debug_loc     0x00000000       0x5e spy/startup_LPC11xx.o
+ .debug_loc     0x0000005e       0x4b spy/main.o
+ .debug_loc     0x000000a9      0x428 spy/table.o
+ .debug_loc     0x000004d1      0x309 spy/philo.o
+ .debug_loc     0x000007da      0x242 spy/bsp.o
+ .debug_loc     0x00000a1c       0xac spy/no_heap.o
+ .debug_loc     0x00000ac8      0x185 spy/system_LPC11xx.o
+ .debug_loc     0x00000c4d       0xa7 spy/clkconfig.o
+ .debug_loc     0x00000cf4      0x531 spy/gpio.o
+ .debug_loc     0x00001225      0x16c spy/timer16.o
+ .debug_loc     0x00001391      0x16c spy/timer32.o
+ .debug_loc     0x000014fd      0x147 spy/uart.o
+ .debug_loc     0x00001644       0x13 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_top.o)
+ .debug_loc     0x00001657       0x90 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_fifo.o)
+ .debug_loc     0x000016e7       0x82 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_sub.o)
+ .debug_loc     0x00001769       0xa2 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_act.o)
+ .debug_loc     0x0000180b       0xb0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_new.o)
+ .debug_loc     0x000018bb       0x7a D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pool.o)
+ .debug_loc     0x00001935       0xd5 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pspub.o)
+ .debug_loc     0x00001a0a       0x88 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_tick.o)
+ .debug_loc     0x00001a92       0xa7 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_get.o)
+ .debug_loc     0x00001b39      0x11b D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_init.o)
+ .debug_loc     0x00001c54       0x5c D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_ctor.o)
+ .debug_loc     0x00001cb0       0x6f D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_arm.o)
+ .debug_loc     0x00001d1f      0x16f D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qvanilla.o)
+ .debug_loc     0x00001e8e      0x1f6 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs.o)
+ .debug_loc     0x00002084      0x194 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_.o)
+ .debug_loc     0x00002218       0x44 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_byte.o)
+ .debug_loc     0x0000225c       0x9c D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_str.o)
+ .debug_loc     0x000022f8      0x10f D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_ini.o)
+ .debug_loc     0x00002407      0x4b5 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_dis.o)
+ .debug_loc     0x000028bc       0x9b D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_get_.o)
+ .debug_loc     0x00002957       0x70 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qeq_init.o)
+ .debug_loc     0x000029c7       0x51 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_gc.o)
+ .debug_loc     0x00002a18       0x5c D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_put.o)
+
+.debug_aranges  0x00000000      0x4a0
+ .debug_aranges
+                0x00000000       0x20 spy/startup_LPC11xx.o
+ .debug_aranges
+                0x00000020       0x20 spy/main.o
+ .debug_aranges
+                0x00000040       0x20 spy/table.o
+ .debug_aranges
+                0x00000060       0x20 spy/philo.o
+ .debug_aranges
+                0x00000080       0x20 spy/bsp.o
+ .debug_aranges
+                0x000000a0       0x20 spy/no_heap.o
+ .debug_aranges
+                0x000000c0       0x20 spy/system_LPC11xx.o
+ .debug_aranges
+                0x000000e0       0x20 spy/clkconfig.o
+ .debug_aranges
+                0x00000100       0x20 spy/gpio.o
+ .debug_aranges
+                0x00000120       0x20 spy/timer16.o
+ .debug_aranges
+                0x00000140       0x20 spy/timer32.o
+ .debug_aranges
+                0x00000160       0x20 spy/uart.o
+ .debug_aranges
+                0x00000180       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_top.o)
+ .debug_aranges
+                0x000001a0       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_fifo.o)
+ .debug_aranges
+                0x000001c0       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_sub.o)
+ .debug_aranges
+                0x000001e0       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_act.o)
+ .debug_aranges
+                0x00000200       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_new.o)
+ .debug_aranges
+                0x00000220       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pool.o)
+ .debug_aranges
+                0x00000240       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_psini.o)
+ .debug_aranges
+                0x00000260       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pspub.o)
+ .debug_aranges
+                0x00000280       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_tick.o)
+ .debug_aranges
+                0x000002a0       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_get.o)
+ .debug_aranges
+                0x000002c0       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_init.o)
+ .debug_aranges
+                0x000002e0       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_ctor.o)
+ .debug_aranges
+                0x00000300       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_arm.o)
+ .debug_aranges
+                0x00000320       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qvanilla.o)
+ .debug_aranges
+                0x00000340       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs.o)
+ .debug_aranges
+                0x00000360       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_.o)
+ .debug_aranges
+                0x00000380       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_byte.o)
+ .debug_aranges
+                0x000003a0       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_str.o)
+ .debug_aranges
+                0x000003c0       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_ini.o)
+ .debug_aranges
+                0x000003e0       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_dis.o)
+ .debug_aranges
+                0x00000400       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_get_.o)
+ .debug_aranges
+                0x00000420       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qeq_init.o)
+ .debug_aranges
+                0x00000440       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_gc.o)
+ .debug_aranges
+                0x00000460       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_put.o)
+ .debug_aranges
+                0x00000480       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qep.o)
+
+.debug_line     0x00000000     0x3c3f
+ .debug_line    0x00000000       0x75 spy/startup_LPC11xx.o
+ .debug_line    0x00000075      0x14c spy/main.o
+ .debug_line    0x000001c1      0x28a spy/table.o
+ .debug_line    0x0000044b      0x1ec spy/philo.o
+ .debug_line    0x00000637      0x218 spy/bsp.o
+ .debug_line    0x0000084f      0x169 spy/no_heap.o
+ .debug_line    0x000009b8      0x162 spy/system_LPC11xx.o
+ .debug_line    0x00000b1a       0xf9 spy/clkconfig.o
+ .debug_line    0x00000c13      0x1b0 spy/gpio.o
+ .debug_line    0x00000dc3      0x160 spy/timer16.o
+ .debug_line    0x00000f23      0x15e spy/timer32.o
+ .debug_line    0x00001081      0x16d spy/uart.o
+ .debug_line    0x000011ee       0xf3 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_top.o)
+ .debug_line    0x000012e1      0x18a D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_fifo.o)
+ .debug_line    0x0000146b      0x17f D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_sub.o)
+ .debug_line    0x000015ea      0x18e D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_act.o)
+ .debug_line    0x00001778      0x16d D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_new.o)
+ .debug_line    0x000018e5      0x143 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pool.o)
+ .debug_line    0x00001a28      0x116 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_psini.o)
+ .debug_line    0x00001b3e      0x18e D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pspub.o)
+ .debug_line    0x00001ccc       0xba D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pwr2.o)
+ .debug_line    0x00001d86      0x1d6 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_tick.o)
+ .debug_line    0x00001f5c      0x179 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_get.o)
+ .debug_line    0x000020d5      0x17b D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_init.o)
+ .debug_line    0x00002250      0x123 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_ctor.o)
+ .debug_line    0x00002373      0x18b D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_arm.o)
+ .debug_line    0x000024fe      0x16d D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qvanilla.o)
+ .debug_line    0x0000266b      0x397 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs.o)
+ .debug_line    0x00002a02      0x2a1 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_.o)
+ .debug_line    0x00002ca3       0xf8 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_byte.o)
+ .debug_line    0x00002d9b      0x1a0 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_str.o)
+ .debug_line    0x00002f3b      0x1c7 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_ini.o)
+ .debug_line    0x00003102      0x39b D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_dis.o)
+ .debug_line    0x0000349d      0x1c5 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_get_.o)
+ .debug_line    0x00003662      0x126 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qeq_init.o)
+ .debug_line    0x00003788      0x17c D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_gc.o)
+ .debug_line    0x00003904       0xba D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_log2.o)
+ .debug_line    0x000039be      0x16c D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_put.o)
+ .debug_line    0x00003b2a      0x115 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qep.o)
+
+.debug_str      0x00000000     0x1d59
+ .debug_str     0x00000000      0x164 spy/startup_LPC11xx.o
+                                0x177 (size before relaxing)
+ .debug_str     0x00000164      0x702 spy/main.o
+                                0x7ba (size before relaxing)
+ .debug_str     0x00000866       0xbd spy/table.o
+                                0x80a (size before relaxing)
+ .debug_str     0x00000923       0xb9 spy/philo.o
+                                0x864 (size before relaxing)
+ .debug_str     0x000009dc      0x4c1 spy/bsp.o
+                                0xc99 (size before relaxing)
+ .debug_str     0x00000e9d       0x3f spy/no_heap.o
+                                0x163 (size before relaxing)
+ .debug_str     0x00000edc      0x231 spy/system_LPC11xx.o
+                                0x39a (size before relaxing)
+ .debug_str     0x0000110d       0x3e spy/clkconfig.o
+                                0x382 (size before relaxing)
+ .debug_str     0x0000114b       0xd6 spy/gpio.o
+                                0x601 (size before relaxing)
+ .debug_str     0x00001221      0x234 spy/timer16.o
+                                0x77e (size before relaxing)
+ .debug_str     0x00001455       0x5e spy/timer32.o
+                                0x780 (size before relaxing)
+ .debug_str     0x000014b3       0xa6 spy/uart.o
+                                0x7d1 (size before relaxing)
+ .debug_str     0x00001559       0x52 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_top.o)
+                                0x15c (size before relaxing)
+ .debug_str     0x000015ab       0x92 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_fifo.o)
+                                0x72e (size before relaxing)
+ .debug_str     0x0000163d       0x60 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_sub.o)
+                                0x777 (size before relaxing)
+ .debug_str     0x0000169d       0x58 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_act.o)
+                                0x704 (size before relaxing)
+ .debug_str     0x000016f5       0x83 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_new.o)
+                                0x69f (size before relaxing)
+ .debug_str     0x00001778       0x3d D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pool.o)
+                                0x1da (size before relaxing)
+ .debug_str     0x000017b5       0x35 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_psini.o)
+                                0x188 (size before relaxing)
+ .debug_str     0x000017ea       0x47 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pspub.o)
+                                0x734 (size before relaxing)
+ .debug_str     0x00001831       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pwr2.o)
+                                0x143 (size before relaxing)
+ .debug_str     0x00001851       0x57 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_tick.o)
+                                0x72e (size before relaxing)
+ .debug_str     0x000018a8       0x6d D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_get.o)
+                                0x6b6 (size before relaxing)
+ .debug_str     0x00001915       0x35 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_init.o)
+                                0x69d (size before relaxing)
+ .debug_str     0x0000194a       0x2f D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_ctor.o)
+                                0x279 (size before relaxing)
+ .debug_str     0x00001979       0x49 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_arm.o)
+                                0x76b (size before relaxing)
+ .debug_str     0x000019c2       0x6c D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qvanilla.o)
+                                0x2a7 (size before relaxing)
+ .debug_str     0x00001a2e       0xce D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs.o)
+                                0x1f9 (size before relaxing)
+ .debug_str     0x00001afc       0x5b D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_.o)
+                                0x1e2 (size before relaxing)
+ .debug_str     0x00001b57       0x2b D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_byte.o)
+                                0x159 (size before relaxing)
+ .debug_str     0x00001b82       0x31 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_str.o)
+                                0x20a (size before relaxing)
+ .debug_str     0x00001bb3       0x6e D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_ini.o)
+                                0x6ee (size before relaxing)
+ .debug_str     0x00001c21       0x30 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_dis.o)
+                                0x6f2 (size before relaxing)
+ .debug_str     0x00001c51       0x3f D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_get_.o)
+                                0x74a (size before relaxing)
+ .debug_str     0x00001c90       0x2e D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qeq_init.o)
+                                0x66e (size before relaxing)
+ .debug_str     0x00001cbe       0x24 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_gc.o)
+                                0x684 (size before relaxing)
+ .debug_str     0x00001ce2       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_log2.o)
+                                0x128 (size before relaxing)
+ .debug_str     0x00001d02       0x2b D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_put.o)
+                                0x682 (size before relaxing)
+ .debug_str     0x00001d2d       0x2c D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qep.o)
+                                0x1e0 (size before relaxing)
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 spy/startup_LPC11xx.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 spy/main.o
+ .comment       0x00000000       0x71 spy/table.o
+ .comment       0x00000000       0x71 spy/philo.o
+ .comment       0x00000000       0x71 spy/bsp.o
+ .comment       0x00000000       0x71 spy/no_heap.o
+ .comment       0x00000000       0x71 spy/system_LPC11xx.o
+ .comment       0x00000000       0x71 spy/clkconfig.o
+ .comment       0x00000000       0x71 spy/gpio.o
+ .comment       0x00000000       0x71 spy/timer16.o
+ .comment       0x00000000       0x71 spy/timer32.o
+ .comment       0x00000000       0x71 spy/uart.o
+ .comment       0x00000000       0x71 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_top.o)
+ .comment       0x00000000       0x71 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_fifo.o)
+ .comment       0x00000000       0x71 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_sub.o)
+ .comment       0x00000000       0x71 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_act.o)
+ .comment       0x00000000       0x71 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_new.o)
+ .comment       0x00000000       0x71 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pool.o)
+ .comment       0x00000000       0x71 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_psini.o)
+ .comment       0x00000000       0x71 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pspub.o)
+ .comment       0x00000000       0x71 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pwr2.o)
+ .comment       0x00000000       0x71 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_tick.o)
+ .comment       0x00000000       0x71 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_get.o)
+ .comment       0x00000000       0x71 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_init.o)
+ .comment       0x00000000       0x71 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_ctor.o)
+ .comment       0x00000000       0x71 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_arm.o)
+ .comment       0x00000000       0x71 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qvanilla.o)
+ .comment       0x00000000       0x71 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs.o)
+ .comment       0x00000000       0x71 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_.o)
+ .comment       0x00000000       0x71 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_byte.o)
+ .comment       0x00000000       0x71 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_str.o)
+ .comment       0x00000000       0x71 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_ini.o)
+ .comment       0x00000000       0x71 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_dis.o)
+ .comment       0x00000000       0x71 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_get_.o)
+ .comment       0x00000000       0x71 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qeq_init.o)
+ .comment       0x00000000       0x71 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_gc.o)
+ .comment       0x00000000       0x71 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_log2.o)
+ .comment       0x00000000       0x71 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_put.o)
+ .comment       0x00000000       0x71 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qep.o)
+
+.ARM.attributes
+                0x00000000       0x31
+ .ARM.attributes
+                0x00000000       0x31 spy/startup_LPC11xx.o
+ .ARM.attributes
+                0x00000031       0x31 spy/main.o
+ .ARM.attributes
+                0x00000062       0x31 spy/table.o
+ .ARM.attributes
+                0x00000093       0x31 spy/philo.o
+ .ARM.attributes
+                0x000000c4       0x31 spy/bsp.o
+ .ARM.attributes
+                0x000000f5       0x31 spy/no_heap.o
+ .ARM.attributes
+                0x00000126       0x31 spy/system_LPC11xx.o
+ .ARM.attributes
+                0x00000157       0x31 spy/clkconfig.o
+ .ARM.attributes
+                0x00000188       0x31 spy/gpio.o
+ .ARM.attributes
+                0x000001b9       0x31 spy/timer16.o
+ .ARM.attributes
+                0x000001ea       0x31 spy/timer32.o
+ .ARM.attributes
+                0x0000021b       0x31 spy/uart.o
+ .ARM.attributes
+                0x0000024c       0x31 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_top.o)
+ .ARM.attributes
+                0x0000027d       0x31 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_fifo.o)
+ .ARM.attributes
+                0x000002ae       0x31 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_sub.o)
+ .ARM.attributes
+                0x000002df       0x31 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_act.o)
+ .ARM.attributes
+                0x00000310       0x31 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_new.o)
+ .ARM.attributes
+                0x00000341       0x31 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pool.o)
+ .ARM.attributes
+                0x00000372       0x31 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_psini.o)
+ .ARM.attributes
+                0x000003a3       0x31 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pspub.o)
+ .ARM.attributes
+                0x000003d4       0x31 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pwr2.o)
+ .ARM.attributes
+                0x00000405       0x31 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_tick.o)
+ .ARM.attributes
+                0x00000436       0x31 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_get.o)
+ .ARM.attributes
+                0x00000467       0x31 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_init.o)
+ .ARM.attributes
+                0x00000498       0x31 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_ctor.o)
+ .ARM.attributes
+                0x000004c9       0x31 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_arm.o)
+ .ARM.attributes
+                0x000004fa       0x31 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qvanilla.o)
+ .ARM.attributes
+                0x0000052b       0x31 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs.o)
+ .ARM.attributes
+                0x0000055c       0x31 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_.o)
+ .ARM.attributes
+                0x0000058d       0x31 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_byte.o)
+ .ARM.attributes
+                0x000005be       0x31 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_str.o)
+ .ARM.attributes
+                0x000005ef       0x31 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_ini.o)
+ .ARM.attributes
+                0x00000620       0x31 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_dis.o)
+ .ARM.attributes
+                0x00000651       0x31 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_get_.o)
+ .ARM.attributes
+                0x00000682       0x31 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qeq_init.o)
+ .ARM.attributes
+                0x000006b3       0x31 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_gc.o)
+ .ARM.attributes
+                0x000006e4       0x31 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_log2.o)
+ .ARM.attributes
+                0x00000715       0x31 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_put.o)
+ .ARM.attributes
+                0x00000746       0x31 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qep.o)
+
+.debug_frame    0x00000000      0xd28
+ .debug_frame   0x00000000       0x50 spy/startup_LPC11xx.o
+ .debug_frame   0x00000050       0x30 spy/main.o
+ .debug_frame   0x00000080       0xa0 spy/table.o
+ .debug_frame   0x00000120       0x98 spy/philo.o
+ .debug_frame   0x000001b8      0x180 spy/bsp.o
+ .debug_frame   0x00000338       0x58 spy/no_heap.o
+ .debug_frame   0x00000390       0x40 spy/system_LPC11xx.o
+ .debug_frame   0x000003d0       0x40 spy/clkconfig.o
+ .debug_frame   0x00000410       0xcc spy/gpio.o
+ .debug_frame   0x000004dc       0x8c spy/timer16.o
+ .debug_frame   0x00000568       0x90 spy/timer32.o
+ .debug_frame   0x000005f8       0x78 spy/uart.o
+ .debug_frame   0x00000670       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_top.o)
+ .debug_frame   0x00000690       0x2c D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_fifo.o)
+ .debug_frame   0x000006bc       0x30 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_sub.o)
+ .debug_frame   0x000006ec       0x58 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_act.o)
+ .debug_frame   0x00000744       0x34 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_new.o)
+ .debug_frame   0x00000778       0x30 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pool.o)
+ .debug_frame   0x000007a8       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_psini.o)
+ .debug_frame   0x000007c8       0x3c D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pspub.o)
+ .debug_frame   0x00000804       0x34 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_tick.o)
+ .debug_frame   0x00000838       0x44 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_get.o)
+ .debug_frame   0x0000087c       0x38 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_init.o)
+ .debug_frame   0x000008b4       0x2c D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_ctor.o)
+ .debug_frame   0x000008e0       0x3c D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qte_arm.o)
+ .debug_frame   0x0000091c       0x94 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qvanilla.o)
+ .debug_frame   0x000009b0       0xe8 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs.o)
+ .debug_frame   0x00000a98       0xac D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_.o)
+ .debug_frame   0x00000b44       0x28 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_byte.o)
+ .debug_frame   0x00000b6c       0x5c D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qs_str.o)
+ .debug_frame   0x00000bc8       0x3c D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_ini.o)
+ .debug_frame   0x00000c04       0x3c D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_dis.o)
+ .debug_frame   0x00000c40       0x44 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qa_get_.o)
+ .debug_frame   0x00000c84       0x2c D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qeq_init.o)
+ .debug_frame   0x00000cb0       0x2c D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_gc.o)
+ .debug_frame   0x00000cdc       0x2c D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qmp_put.o)
+ .debug_frame   0x00000d08       0x20 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qep.o)
+
+.debug_ranges   0x00000000       0x78
+ .debug_ranges  0x00000000       0x30 spy/table.o
+ .debug_ranges  0x00000030       0x18 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qf_pspub.o)
+ .debug_ranges  0x00000048       0x18 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_ini.o)
+ .debug_ranges  0x00000060       0x18 D:\qp\qpc/ports/arm-cortex/vanilla/gnu/spy\libqp_cortex-m0_cr.a(qhsm_dis.o)

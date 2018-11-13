@@ -1,0 +1,741 @@
+ARM Linker, 5.03 [Build 69] [MDK-ARM Lite]
+
+==============================================================================
+
+Section Cross References
+
+    bsp.o(i.BSP_init) refers to bsp.o(i.BSP_randomSeed) for BSP_randomSeed
+    bsp.o(i.BSP_random) refers to bsp.o(.data) for l_rnd
+    bsp.o(i.BSP_randomSeed) refers to bsp.o(.data) for l_rnd
+    bsp.o(i.GPIOPortA_IRQHandler) refers to qf_new.o(i.QF_newX_) for QF_newX_
+    bsp.o(i.GPIOPortA_IRQHandler) refers to table.o(.constdata) for AO_Table
+    bsp.o(i.QF_onStartup) refers to bsp.o(i.NVIC_SetPriority) for NVIC_SetPriority
+    bsp.o(i.SysTick_Handler) refers to qf_tick.o(i.QF_tickX) for QF_tickX
+    bsp.o(i.SysTick_Handler) refers to qf_pspub.o(i.QF_publish) for QF_publish
+    bsp.o(i.SysTick_Handler) refers to bsp.o(.data) for debounce_state
+    bsp.o(i.SysTick_Handler) refers to bsp.o(.constdata) for pauseEvt
+    bsp.o(i.assert_failed) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    main.o(i.main) refers to philo.o(i.Philo_ctor) for Philo_ctor
+    main.o(i.main) refers to table.o(i.Table_ctor) for Table_ctor
+    main.o(i.main) refers to qvanilla.o(i.QF_init) for QF_init
+    main.o(i.main) refers to bsp.o(i.BSP_init) for BSP_init
+    main.o(i.main) refers to qf_psini.o(i.QF_psInit) for QF_psInit
+    main.o(i.main) refers to qf_pool.o(i.QF_poolInit) for QF_poolInit
+    main.o(i.main) refers to qvanilla.o(i.QActive_start) for QActive_start
+    main.o(i.main) refers to qvanilla.o(i.QF_run) for QF_run
+    main.o(i.main) refers to main.o(.bss) for l_subscrSto
+    main.o(i.main) refers to philo.o(.constdata) for AO_Philo
+    main.o(i.main) refers to table.o(.constdata) for AO_Table
+    philo.o(i.Philo_ctor) refers to qa_ctor.o(i.QActive_ctor) for QActive_ctor
+    philo.o(i.Philo_ctor) refers to qte_ctor.o(i.QTimeEvt_ctorX) for QTimeEvt_ctorX
+    philo.o(i.Philo_ctor) refers to philo.o(.bss) for l_philo
+    philo.o(i.Philo_ctor) refers to philo.o(i.Philo_initial) for Philo_initial
+    philo.o(i.Philo_eating) refers to bsp.o(i.BSP_random) for BSP_random
+    philo.o(i.Philo_eating) refers to qte_arm.o(i.QTimeEvt_armX) for QTimeEvt_armX
+    philo.o(i.Philo_eating) refers to qf_new.o(i.QF_newX_) for QF_newX_
+    philo.o(i.Philo_eating) refers to qf_pspub.o(i.QF_publish) for QF_publish
+    philo.o(i.Philo_eating) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    philo.o(i.Philo_eating) refers to philo.o(.bss) for l_philo
+    philo.o(i.Philo_eating) refers to philo.o(i.Philo_thinking) for Philo_thinking
+    philo.o(i.Philo_eating) refers to philo.o(.constdata) for Q_this_module_
+    philo.o(i.Philo_eating) refers to qhsm_top.o(i.QHsm_top) for QHsm_top
+    philo.o(i.Philo_hungry) refers to qf_new.o(i.QF_newX_) for QF_newX_
+    philo.o(i.Philo_hungry) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    philo.o(i.Philo_hungry) refers to philo.o(.bss) for l_philo
+    philo.o(i.Philo_hungry) refers to table.o(.constdata) for AO_Table
+    philo.o(i.Philo_hungry) refers to philo.o(i.Philo_eating) for Philo_eating
+    philo.o(i.Philo_hungry) refers to philo.o(.constdata) for Q_this_module_
+    philo.o(i.Philo_hungry) refers to qhsm_top.o(i.QHsm_top) for QHsm_top
+    philo.o(i.Philo_initial) refers to qa_sub.o(i.QActive_subscribe) for QActive_subscribe
+    philo.o(i.Philo_initial) refers to philo.o(.data) for registered
+    philo.o(i.Philo_initial) refers to philo.o(i.Philo_thinking) for Philo_thinking
+    philo.o(i.Philo_thinking) refers to bsp.o(i.BSP_random) for BSP_random
+    philo.o(i.Philo_thinking) refers to qte_arm.o(i.QTimeEvt_armX) for QTimeEvt_armX
+    philo.o(i.Philo_thinking) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    philo.o(i.Philo_thinking) refers to philo.o(i.Philo_hungry) for Philo_hungry
+    philo.o(i.Philo_thinking) refers to philo.o(.bss) for l_philo
+    philo.o(i.Philo_thinking) refers to philo.o(.constdata) for Q_this_module_
+    philo.o(i.Philo_thinking) refers to qhsm_top.o(i.QHsm_top) for QHsm_top
+    philo.o(.constdata) refers to philo.o(.bss) for l_philo
+    table.o(i.Table_active) refers to bsp.o(i.BSP_terminate) for BSP_terminate
+    table.o(i.Table_active) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    table.o(i.Table_active) refers to table.o(.constdata) for Q_this_module_
+    table.o(i.Table_active) refers to qhsm_top.o(i.QHsm_top) for QHsm_top
+    table.o(i.Table_ctor) refers to qa_ctor.o(i.QActive_ctor) for QActive_ctor
+    table.o(i.Table_ctor) refers to table.o(.bss) for l_table
+    table.o(i.Table_ctor) refers to table.o(i.Table_initial) for Table_initial
+    table.o(i.Table_initial) refers to qa_sub.o(i.QActive_subscribe) for QActive_subscribe
+    table.o(i.Table_initial) refers to bsp.o(i.BSP_displayPhilStat) for BSP_displayPhilStat
+    table.o(i.Table_initial) refers to table.o(i.Table_serving) for Table_serving
+    table.o(i.Table_paused) refers to bsp.o(i.BSP_displayPaused) for BSP_displayPaused
+    table.o(i.Table_paused) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    table.o(i.Table_paused) refers to bsp.o(i.BSP_displayPhilStat) for BSP_displayPhilStat
+    table.o(i.Table_paused) refers to table.o(i.Table_serving) for Table_serving
+    table.o(i.Table_paused) refers to table.o(.constdata) for Q_this_module_
+    table.o(i.Table_paused) refers to table.o(i.Table_active) for Table_active
+    table.o(i.Table_serving) refers to qf_new.o(i.QF_newX_) for QF_newX_
+    table.o(i.Table_serving) refers to qf_pspub.o(i.QF_publish) for QF_publish
+    table.o(i.Table_serving) refers to bsp.o(i.BSP_displayPhilStat) for BSP_displayPhilStat
+    table.o(i.Table_serving) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    table.o(i.Table_serving) refers to table.o(.constdata) for Q_this_module_
+    table.o(i.Table_serving) refers to table.o(i.Table_paused) for Table_paused
+    table.o(i.Table_serving) refers to table.o(i.Table_active) for Table_active
+    table.o(.constdata) refers to table.o(.bss) for l_table
+    startup_tm4c.o(RESET) refers to startup_tm4c.o(STACK) for StackMem
+    startup_tm4c.o(RESET) refers to bsp.o(i.SysTick_Handler) for SysTick_Handler
+    startup_tm4c.o(RESET) refers to bsp.o(i.GPIOPortA_IRQHandler) for GPIOPortA_IRQHandler
+    startup_tm4c.o(RESET) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    startup_tm4c.o(RESET) refers to bsp.o(i.assert_failed) for assert_failed
+    qa_ctor.o(i.QActive_ctor) refers to qhsm_ini.o(i.QHsm_ctor) for QHsm_ctor
+    qa_ctor.o(i.QActive_ctor) refers to qa_ctor.o(.constdata) for vtbl
+    qa_ctor.o(.constdata) refers to qhsm_ini.o(i.QHsm_init) for QHsm_init
+    qa_ctor.o(.constdata) refers to qhsm_dis.o(i.QHsm_dispatch) for QHsm_dispatch
+    qa_ctor.o(.constdata) refers to qvanilla.o(i.QActive_start) for QActive_start
+    qa_ctor.o(.constdata) refers to qa_fifo.o(i.QActive_post) for QActive_post
+    qa_ctor.o(.constdata) refers to qa_lifo.o(i.QActive_postLIFO) for QActive_postLIFO
+    qa_sub.o(i.QActive_subscribe) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qa_sub.o(i.QActive_subscribe) refers to qf_pwr2.o(.constdata) for QF_div8Lkup
+    qa_sub.o(i.QActive_subscribe) refers to qf_psini.o(.data) for QF_maxSignal_
+    qa_sub.o(i.QActive_subscribe) refers to qf_act.o(.bss) for QF_active_
+    qa_sub.o(i.QActive_subscribe) refers to qa_sub.o(.constdata) for Q_this_module_
+    qf_new.o(i.QF_newX_) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qf_new.o(i.QF_newX_) refers to qmp_get.o(i.QMPool_get) for QMPool_get
+    qf_new.o(i.QF_newX_) refers to qf_pool.o(.bss) for QF_pool_
+    qf_new.o(i.QF_newX_) refers to qf_pool.o(.data) for QF_maxPool_
+    qf_new.o(i.QF_newX_) refers to qf_new.o(.constdata) for Q_this_module_
+    qf_pool.o(i.QF_poolInit) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qf_pool.o(i.QF_poolInit) refers to qmp_init.o(i.QMPool_init) for QMPool_init
+    qf_pool.o(i.QF_poolInit) refers to qf_pool.o(.data) for QF_maxPool_
+    qf_pool.o(i.QF_poolInit) refers to qf_pool.o(.constdata) for Q_this_module_
+    qf_pool.o(i.QF_poolInit) refers to qf_pool.o(.bss) for QF_pool_
+    qf_psini.o(i.QF_psInit) refers to qf_psini.o(.data) for QF_subscrList_
+    qf_pspub.o(i.QF_publish) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qf_pspub.o(i.QF_publish) refers to qf_gc.o(i.QF_gc) for QF_gc
+    qf_pspub.o(i.QF_publish) refers to qf_psini.o(.data) for QF_maxSignal_
+    qf_pspub.o(i.QF_publish) refers to qf_pspub.o(.constdata) for Q_this_module_
+    qf_pspub.o(i.QF_publish) refers to qf_pwr2.o(.constdata) for QF_invPwr2Lkup
+    qf_pspub.o(i.QF_publish) refers to qf_act.o(.bss) for QF_active_
+    qf_tick.o(i.QF_noTimeEvtsActiveX) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qf_tick.o(i.QF_noTimeEvtsActiveX) refers to qf_tick.o(.constdata) for Q_this_module_
+    qf_tick.o(i.QF_noTimeEvtsActiveX) refers to qf_tick.o(.bss) for QF_timeEvtHead_
+    qf_tick.o(i.QF_tickX) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qf_tick.o(i.QF_tickX) refers to qf_tick.o(.bss) for QF_timeEvtHead_
+    qf_tick.o(i.QF_tickX) refers to qf_tick.o(.constdata) for Q_this_module_
+    qte_ctor.o(i.QTimeEvt_ctorX) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qte_ctor.o(i.QTimeEvt_ctorX) refers to qte_ctor.o(.constdata) for Q_this_module_
+    qte_arm.o(i.QTimeEvt_armX) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qte_arm.o(i.QTimeEvt_armX) refers to qte_arm.o(.constdata) for Q_this_module_
+    qte_arm.o(i.QTimeEvt_armX) refers to qf_tick.o(.bss) for QF_timeEvtHead_
+    qvanilla.o(i.QActive_start) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qvanilla.o(i.QActive_start) refers to qeq_init.o(i.QEQueue_init) for QEQueue_init
+    qvanilla.o(i.QActive_start) refers to qf_act.o(i.QF_add_) for QF_add_
+    qvanilla.o(i.QActive_start) refers to qvanilla.o(.constdata) for Q_this_module_
+    qvanilla.o(i.QActive_stop) refers to qf_act.o(i.QF_remove_) for QF_remove_
+    qvanilla.o(i.QF_run) refers to bsp.o(i.QF_onStartup) for QF_onStartup
+    qvanilla.o(i.QF_run) refers to qa_get_.o(i.QActive_get_) for QActive_get_
+    qvanilla.o(i.QF_run) refers to qf_gc.o(i.QF_gc) for QF_gc
+    qvanilla.o(i.QF_run) refers to bsp.o(i.QF_onIdle) for QF_onIdle
+    qvanilla.o(i.QF_run) refers to qvanilla.o(.bss) for QF_readySet_
+    qvanilla.o(i.QF_run) refers to qf_act.o(.bss) for QF_active_
+    qvanilla.o(i.QF_stop) refers to bsp.o(i.QF_onCleanup) for QF_onCleanup
+    qhsm_ini.o(i.QHsm_ctor) refers to qhsm_ini.o(.constdata) for vtbl
+    qhsm_ini.o(i.QHsm_ctor) refers to qhsm_top.o(i.QHsm_top) for QHsm_top
+    qhsm_ini.o(i.QHsm_init) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qhsm_ini.o(i.QHsm_init) refers to qhsm_top.o(i.QHsm_top) for QHsm_top
+    qhsm_ini.o(i.QHsm_init) refers to qhsm_ini.o(.constdata) for Q_this_module_
+    qhsm_ini.o(i.QHsm_init) refers to qep.o(.constdata) for QEP_reservedEvt_
+    qhsm_ini.o(.constdata) refers to qhsm_ini.o(i.QHsm_init) for QHsm_init
+    qhsm_ini.o(.constdata) refers to qhsm_dis.o(i.QHsm_dispatch) for QHsm_dispatch
+    qhsm_dis.o(i.QHsm_dispatch) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qhsm_dis.o(i.QHsm_dispatch) refers to qhsm_dis.o(.constdata) for Q_this_module_
+    qhsm_dis.o(i.QHsm_dispatch) refers to qep.o(.constdata) for QEP_reservedEvt_
+    qa_fifo.o(i.QActive_post) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qa_fifo.o(i.QActive_post) refers to qa_fifo.o(.constdata) for Q_this_module_
+    qa_fifo.o(i.QActive_post) refers to qf_pwr2.o(.constdata) for QF_div8Lkup
+    qa_fifo.o(i.QActive_post) refers to qvanilla.o(.bss) for QF_readySet_
+    qa_lifo.o(i.QActive_postLIFO) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qa_lifo.o(i.QActive_postLIFO) refers to qa_lifo.o(.constdata) for Q_this_module_
+    qa_lifo.o(i.QActive_postLIFO) refers to qf_pwr2.o(.constdata) for QF_div8Lkup
+    qa_lifo.o(i.QActive_postLIFO) refers to qvanilla.o(.bss) for QF_readySet_
+    qa_get_.o(i.QActive_get_) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qa_get_.o(i.QActive_get_) refers to qa_get_.o(.constdata) for Q_this_module_
+    qa_get_.o(i.QActive_get_) refers to qf_pwr2.o(.constdata) for QF_div8Lkup
+    qa_get_.o(i.QActive_get_) refers to qvanilla.o(.bss) for QF_readySet_
+    qa_get_.o(i.QF_getQueueMin) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qa_get_.o(i.QF_getQueueMin) refers to qf_act.o(.bss) for QF_active_
+    qa_get_.o(i.QF_getQueueMin) refers to qa_get_.o(.constdata) for Q_this_module_
+    qf_act.o(i.QF_add_) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qf_act.o(i.QF_add_) refers to qf_act.o(.bss) for QF_active_
+    qf_act.o(i.QF_add_) refers to qf_act.o(.constdata) for Q_this_module_
+    qf_act.o(i.QF_remove_) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qf_act.o(i.QF_remove_) refers to qf_act.o(.bss) for QF_active_
+    qf_act.o(i.QF_remove_) refers to qf_act.o(.constdata) for Q_this_module_
+    qf_gc.o(i.QF_gc) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qf_gc.o(i.QF_gc) refers to qmp_put.o(i.QMPool_put) for QMPool_put
+    qf_gc.o(i.QF_gc) refers to qf_pool.o(.data) for QF_maxPool_
+    qf_gc.o(i.QF_gc) refers to qf_gc.o(.constdata) for Q_this_module_
+    qf_gc.o(i.QF_gc) refers to qf_pool.o(.bss) for QF_pool_
+    qmp_get.o(i.QF_getPoolMin) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qmp_get.o(i.QF_getPoolMin) refers to qf_pool.o(.data) for QF_maxPool_
+    qmp_get.o(i.QF_getPoolMin) refers to qmp_get.o(.constdata) for Q_this_module_
+    qmp_get.o(i.QF_getPoolMin) refers to qf_pool.o(.bss) for QF_pool_
+    qmp_get.o(i.QMPool_get) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qmp_get.o(i.QMPool_get) refers to qmp_get.o(.constdata) for Q_this_module_
+    qmp_init.o(i.QMPool_init) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qmp_init.o(i.QMPool_init) refers to qmp_init.o(.constdata) for Q_this_module_
+    qmp_put.o(i.QMPool_put) refers to bsp.o(i.Q_onAssert) for Q_onAssert
+    qmp_put.o(i.QMPool_put) refers to qmp_put.o(.constdata) for Q_this_module_
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_tm4c.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_tm4c.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(i.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(i.main) for main
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing bsp.o(.rev16_text), (4 bytes).
+    Removing bsp.o(.revsh_text), (4 bytes).
+    Removing bsp.o(i.QF_onCleanup), (2 bytes).
+    Removing startup_tm4c.o(HEAP), (0 bytes).
+    Removing startup_tm4c.o(.text), (0 bytes).
+    Removing qf_tick.o(i.QF_noTimeEvtsActiveX), (60 bytes).
+    Removing qvanilla.o(i.QActive_stop), (12 bytes).
+    Removing qvanilla.o(i.QF_stop), (8 bytes).
+    Removing qa_get_.o(i.QF_getQueueMin), (60 bytes).
+    Removing qf_act.o(i.QF_remove_), (64 bytes).
+    Removing qf_act.o(.data), (1 bytes).
+    Removing qmp_get.o(i.QF_getPoolMin), (68 bytes).
+
+12 unused section(s) (total 283 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section      748  startup_tm4c.o(RESET)
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ..\..\..\..\qep\source\qep.c             0x00000000   Number         0  qep.o ABSOLUTE
+    ..\..\..\..\qep\source\qhsm_dis.c        0x00000000   Number         0  qhsm_dis.o ABSOLUTE
+    ..\..\..\..\qep\source\qhsm_ini.c        0x00000000   Number         0  qhsm_ini.o ABSOLUTE
+    ..\..\..\..\qep\source\qhsm_top.c        0x00000000   Number         0  qhsm_top.o ABSOLUTE
+    ..\..\..\..\qf\source\qa_ctor.c          0x00000000   Number         0  qa_ctor.o ABSOLUTE
+    ..\..\..\..\qf\source\qa_fifo.c          0x00000000   Number         0  qa_fifo.o ABSOLUTE
+    ..\..\..\..\qf\source\qa_get_.c          0x00000000   Number         0  qa_get_.o ABSOLUTE
+    ..\..\..\..\qf\source\qa_lifo.c          0x00000000   Number         0  qa_lifo.o ABSOLUTE
+    ..\..\..\..\qf\source\qa_sub.c           0x00000000   Number         0  qa_sub.o ABSOLUTE
+    ..\..\..\..\qf\source\qeq_init.c         0x00000000   Number         0  qeq_init.o ABSOLUTE
+    ..\..\..\..\qf\source\qf_act.c           0x00000000   Number         0  qf_act.o ABSOLUTE
+    ..\..\..\..\qf\source\qf_gc.c            0x00000000   Number         0  qf_gc.o ABSOLUTE
+    ..\..\..\..\qf\source\qf_new.c           0x00000000   Number         0  qf_new.o ABSOLUTE
+    ..\..\..\..\qf\source\qf_pool.c          0x00000000   Number         0  qf_pool.o ABSOLUTE
+    ..\..\..\..\qf\source\qf_psini.c         0x00000000   Number         0  qf_psini.o ABSOLUTE
+    ..\..\..\..\qf\source\qf_pspub.c         0x00000000   Number         0  qf_pspub.o ABSOLUTE
+    ..\..\..\..\qf\source\qf_pwr2.c          0x00000000   Number         0  qf_pwr2.o ABSOLUTE
+    ..\..\..\..\qf\source\qf_tick.c          0x00000000   Number         0  qf_tick.o ABSOLUTE
+    ..\..\..\..\qf\source\qmp_get.c          0x00000000   Number         0  qmp_get.o ABSOLUTE
+    ..\..\..\..\qf\source\qmp_init.c         0x00000000   Number         0  qmp_init.o ABSOLUTE
+    ..\..\..\..\qf\source\qmp_put.c          0x00000000   Number         0  qmp_put.o ABSOLUTE
+    ..\..\..\..\qf\source\qte_arm.c          0x00000000   Number         0  qte_arm.o ABSOLUTE
+    ..\..\..\..\qf\source\qte_ctor.c         0x00000000   Number         0  qte_ctor.o ABSOLUTE
+    ..\..\..\..\qf\source\qvanilla.c         0x00000000   Number         0  qvanilla.o ABSOLUTE
+    bsp.c                                    0x00000000   Number         0  bsp.o ABSOLUTE
+    bsp.c                                    0x00000000   Number         0  bsp.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    main.c                                   0x00000000   Number         0  main.o ABSOLUTE
+    philo.c                                  0x00000000   Number         0  philo.o ABSOLUTE
+    startup_tm4c.s                           0x00000000   Number         0  startup_tm4c.o ABSOLUTE
+    table.c                                  0x00000000   Number         0  table.o ABSOLUTE
+    $v0                                      0x0000026c   Number         0  startup_tm4c.o(RESET)
+    NMI_Handler                              0x0000027b   Thumb Code     0  startup_tm4c.o(RESET)
+    HardFault_Handler                        0x00000287   Thumb Code     0  startup_tm4c.o(RESET)
+    MemManage_Handler                        0x00000293   Thumb Code     0  startup_tm4c.o(RESET)
+    BusFault_Handler                         0x0000029f   Thumb Code     0  startup_tm4c.o(RESET)
+    UsageFault_Handler                       0x000002ab   Thumb Code     0  startup_tm4c.o(RESET)
+    SVC_Handler                              0x000002b7   Thumb Code     0  startup_tm4c.o(RESET)
+    DebugMon_Handler                         0x000002c3   Thumb Code     0  startup_tm4c.o(RESET)
+    PendSV_Handler                           0x000002cf   Thumb Code     0  startup_tm4c.o(RESET)
+    Unused_IRQHandler                        0x000002db   Thumb Code     0  startup_tm4c.o(RESET)
+    .ARM.Collect$$$$00000000                 0x000002ec   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x000002ec   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x000002f0   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x000002f4   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x000002f4   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x000002f4   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    .ARM.Collect$$$$0000000D                 0x000002fc   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x000002fc   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x000002fc   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x000002fc   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x00000300   Section       36  init.o(.text)
+    i.BSP_displayPaused                      0x00000324   Section        0  bsp.o(i.BSP_displayPaused)
+    i.BSP_displayPhilStat                    0x00000338   Section        0  bsp.o(i.BSP_displayPhilStat)
+    i.BSP_init                               0x00000350   Section        0  bsp.o(i.BSP_init)
+    i.BSP_random                             0x000003fc   Section        0  bsp.o(i.BSP_random)
+    i.BSP_randomSeed                         0x0000043c   Section        0  bsp.o(i.BSP_randomSeed)
+    i.BSP_terminate                          0x00000448   Section        0  bsp.o(i.BSP_terminate)
+    i.GPIOPortA_IRQHandler                   0x0000044c   Section        0  bsp.o(i.GPIOPortA_IRQHandler)
+    i.NVIC_SetPriority                       0x00000474   Section        0  bsp.o(i.NVIC_SetPriority)
+    NVIC_SetPriority                         0x00000475   Thumb Code    32  bsp.o(i.NVIC_SetPriority)
+    i.Philo_ctor                             0x0000049c   Section        0  philo.o(i.Philo_ctor)
+    i.Philo_eating                           0x000004d4   Section        0  philo.o(i.Philo_eating)
+    Philo_eating                             0x000004d5   Thumb Code   168  philo.o(i.Philo_eating)
+    i.Philo_hungry                           0x0000058c   Section        0  philo.o(i.Philo_hungry)
+    Philo_hungry                             0x0000058d   Thumb Code   148  philo.o(i.Philo_hungry)
+    i.Philo_initial                          0x00000634   Section        0  philo.o(i.Philo_initial)
+    Philo_initial                            0x00000635   Thumb Code    36  philo.o(i.Philo_initial)
+    i.Philo_thinking                         0x00000660   Section        0  philo.o(i.Philo_thinking)
+    Philo_thinking                           0x00000661   Thumb Code   126  philo.o(i.Philo_thinking)
+    i.QActive_ctor                           0x000006f0   Section        0  qa_ctor.o(i.QActive_ctor)
+    i.QActive_get_                           0x00000708   Section        0  qa_get_.o(i.QActive_get_)
+    i.QActive_post                           0x000007a8   Section        0  qa_fifo.o(i.QActive_post)
+    i.QActive_postLIFO                       0x0000085c   Section        0  qa_lifo.o(i.QActive_postLIFO)
+    i.QActive_start                          0x000008f4   Section        0  qvanilla.o(i.QActive_start)
+    i.QActive_subscribe                      0x00000948   Section        0  qa_sub.o(i.QActive_subscribe)
+    i.QEQueue_init                           0x000009c0   Section        0  qeq_init.o(i.QEQueue_init)
+    i.QF_add_                                0x000009d8   Section        0  qf_act.o(i.QF_add_)
+    i.QF_gc                                  0x00000a14   Section        0  qf_gc.o(i.QF_gc)
+    i.QF_init                                0x00000a74   Section        0  qvanilla.o(i.QF_init)
+    i.QF_newX_                               0x00000a78   Section        0  qf_new.o(i.QF_newX_)
+    i.QF_onIdle                              0x00000af8   Section        0  bsp.o(i.QF_onIdle)
+    i.QF_onStartup                           0x00000b30   Section        0  bsp.o(i.QF_onStartup)
+    i.QF_poolInit                            0x00000bc0   Section        0  qf_pool.o(i.QF_poolInit)
+    i.QF_psInit                              0x00000c34   Section        0  qf_psini.o(i.QF_psInit)
+    i.QF_publish                             0x00000c48   Section        0  qf_pspub.o(i.QF_publish)
+    i.QF_run                                 0x00000cf4   Section        0  qvanilla.o(i.QF_run)
+    i.QF_tickX                               0x00000d6c   Section        0  qf_tick.o(i.QF_tickX)
+    i.QHsm_ctor                              0x00000e2c   Section        0  qhsm_ini.o(i.QHsm_ctor)
+    i.QHsm_dispatch                          0x00000e40   Section        0  qhsm_dis.o(i.QHsm_dispatch)
+    i.QHsm_init                              0x00001070   Section        0  qhsm_ini.o(i.QHsm_init)
+    i.QHsm_top                               0x00001120   Section        0  qhsm_top.o(i.QHsm_top)
+    i.QMPool_get                             0x00001128   Section        0  qmp_get.o(i.QMPool_get)
+    i.QMPool_init                            0x00001170   Section        0  qmp_init.o(i.QMPool_init)
+    i.QMPool_put                             0x00001200   Section        0  qmp_put.o(i.QMPool_put)
+    i.QTimeEvt_armX                          0x0000124c   Section        0  qte_arm.o(i.QTimeEvt_armX)
+    i.QTimeEvt_ctorX                         0x000012c0   Section        0  qte_ctor.o(i.QTimeEvt_ctorX)
+    i.Q_onAssert                             0x000012f8   Section        0  bsp.o(i.Q_onAssert)
+    i.SysTick_Handler                        0x00001304   Section        0  bsp.o(i.SysTick_Handler)
+    i.Table_active                           0x000013a0   Section        0  table.o(i.Table_active)
+    Table_active                             0x000013a1   Thumb Code    52  table.o(i.Table_active)
+    i.Table_ctor                             0x000013dc   Section        0  table.o(i.Table_ctor)
+    i.Table_initial                          0x0000140c   Section        0  table.o(i.Table_initial)
+    Table_initial                            0x0000140d   Thumb Code    70  table.o(i.Table_initial)
+    i.Table_paused                           0x00001464   Section        0  table.o(i.Table_paused)
+    Table_paused                             0x00001465   Thumb Code   214  table.o(i.Table_paused)
+    i.Table_serving                          0x00001560   Section        0  table.o(i.Table_serving)
+    Table_serving                            0x00001561   Thumb Code   548  table.o(i.Table_serving)
+    i.__scatterload_copy                     0x000017b4   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x000017c2   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x000017c4   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i.assert_failed                          0x000017d2   Section        0  bsp.o(i.assert_failed)
+    i.main                                   0x000017e0   Section        0  main.o(i.main)
+    .constdata                               0x00001868   Section       14  bsp.o(.constdata)
+    Q_this_module_                           0x00001868   Data           6  bsp.o(.constdata)
+    pauseEvt                                 0x0000186e   Data           4  bsp.o(.constdata)
+    pauseEvt                                 0x00001872   Data           4  bsp.o(.constdata)
+    .constdata                               0x00001878   Section       28  philo.o(.constdata)
+    Q_this_module_                           0x00001878   Data           8  philo.o(.constdata)
+    .constdata                               0x00001894   Section       12  table.o(.constdata)
+    Q_this_module_                           0x00001894   Data           8  table.o(.constdata)
+    .constdata                               0x000018a0   Section       20  qa_ctor.o(.constdata)
+    vtbl                                     0x000018a0   Data          20  qa_ctor.o(.constdata)
+    .constdata                               0x000018b4   Section        7  qa_sub.o(.constdata)
+    Q_this_module_                           0x000018b4   Data           7  qa_sub.o(.constdata)
+    .constdata                               0x000018bb   Section        7  qf_new.o(.constdata)
+    Q_this_module_                           0x000018bb   Data           7  qf_new.o(.constdata)
+    .constdata                               0x000018c2   Section        8  qf_pool.o(.constdata)
+    Q_this_module_                           0x000018c2   Data           8  qf_pool.o(.constdata)
+    .constdata                               0x000018ca   Section        9  qf_pspub.o(.constdata)
+    Q_this_module_                           0x000018ca   Data           9  qf_pspub.o(.constdata)
+    .constdata                               0x000018d3   Section        8  qf_tick.o(.constdata)
+    Q_this_module_                           0x000018d3   Data           8  qf_tick.o(.constdata)
+    .constdata                               0x000018db   Section        9  qte_ctor.o(.constdata)
+    Q_this_module_                           0x000018db   Data           9  qte_ctor.o(.constdata)
+    .constdata                               0x000018e4   Section        8  qte_arm.o(.constdata)
+    Q_this_module_                           0x000018e4   Data           8  qte_arm.o(.constdata)
+    .constdata                               0x000018ec   Section        9  qvanilla.o(.constdata)
+    Q_this_module_                           0x000018ec   Data           9  qvanilla.o(.constdata)
+    .constdata                               0x000018f8   Section       20  qhsm_ini.o(.constdata)
+    Q_this_module_                           0x000018f8   Data           9  qhsm_ini.o(.constdata)
+    vtbl                                     0x00001904   Data           8  qhsm_ini.o(.constdata)
+    .constdata                               0x0000190c   Section        9  qhsm_dis.o(.constdata)
+    Q_this_module_                           0x0000190c   Data           9  qhsm_dis.o(.constdata)
+    .constdata                               0x00001915   Section        8  qa_fifo.o(.constdata)
+    Q_this_module_                           0x00001915   Data           8  qa_fifo.o(.constdata)
+    .constdata                               0x0000191d   Section        8  qa_lifo.o(.constdata)
+    Q_this_module_                           0x0000191d   Data           8  qa_lifo.o(.constdata)
+    .constdata                               0x00001925   Section        8  qa_get_.o(.constdata)
+    Q_this_module_                           0x00001925   Data           8  qa_get_.o(.constdata)
+    .constdata                               0x0000192d   Section        7  qf_act.o(.constdata)
+    Q_this_module_                           0x0000192d   Data           7  qf_act.o(.constdata)
+    .constdata                               0x00001934   Section        6  qf_gc.o(.constdata)
+    Q_this_module_                           0x00001934   Data           6  qf_gc.o(.constdata)
+    .constdata                               0x0000193a   Section      195  qf_pwr2.o(.constdata)
+    .constdata                               0x000019fd   Section        8  qmp_get.o(.constdata)
+    Q_this_module_                           0x000019fd   Data           8  qmp_get.o(.constdata)
+    .constdata                               0x00001a05   Section        9  qmp_init.o(.constdata)
+    Q_this_module_                           0x00001a05   Data           9  qmp_init.o(.constdata)
+    .constdata                               0x00001a0e   Section       16  qep.o(.constdata)
+    .constdata                               0x00001a1e   Section        8  qmp_put.o(.constdata)
+    Q_this_module_                           0x00001a1e   Data           8  qmp_put.o(.constdata)
+    .data                                    0x20000000   Section       12  bsp.o(.data)
+    btn_debounced                            0x20000000   Data           4  bsp.o(.data)
+    debounce_state                           0x20000004   Data           1  bsp.o(.data)
+    l_rnd                                    0x20000008   Data           4  bsp.o(.data)
+    .data                                    0x2000000c   Section        1  philo.o(.data)
+    registered                               0x2000000c   Data           1  philo.o(.data)
+    .data                                    0x20000010   Section        4  qf_pool.o(.data)
+    .data                                    0x20000014   Section        8  qf_psini.o(.data)
+    .bss                                     0x2000001c   Section      232  main.o(.bss)
+    l_tableQueueSto                          0x2000001c   Data          20  main.o(.bss)
+    l_philoQueueSto                          0x20000030   Data         100  main.o(.bss)
+    l_subscrSto                              0x20000094   Data          32  main.o(.bss)
+    l_smlPoolSto                             0x200000b4   Data          80  main.o(.bss)
+    .bss                                     0x20000104   Section      240  philo.o(.bss)
+    l_philo                                  0x20000104   Data         240  philo.o(.bss)
+    .bss                                     0x200001f4   Section       44  table.o(.bss)
+    l_table                                  0x200001f4   Data          44  table.o(.bss)
+    .bss                                     0x20000220   Section       60  qf_pool.o(.bss)
+    .bss                                     0x2000025c   Section       32  qf_tick.o(.bss)
+    .bss                                     0x2000027c   Section        9  qvanilla.o(.bss)
+    .bss                                     0x20000288   Section      132  qf_act.o(.bss)
+    STACK                                    0x20000310   Section      512  startup_tm4c.o(STACK)
+    StackMem                                 0x20000310   Data           0  startup_tm4c.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$E$P$D$K$B$S$7EM$VFPi3$EXTD16$VFPS$VFMA$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
+    __Vectors                                0x00000000   Data           0  startup_tm4c.o(RESET)
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    Reset_Handler                            0x0000026d   Thumb Code     0  startup_tm4c.o(RESET)
+    __main                                   0x000002ed   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x000002ed   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x000002f1   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x000002f5   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x000002f5   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x000002f5   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x000002f5   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x000002fd   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x000002fd   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    __scatterload                            0x00000301   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x00000301   Thumb Code     0  init.o(.text)
+    BSP_displayPaused                        0x00000325   Thumb Code    14  bsp.o(i.BSP_displayPaused)
+    BSP_displayPhilStat                      0x00000339   Thumb Code    18  bsp.o(i.BSP_displayPhilStat)
+    BSP_init                                 0x00000351   Thumb Code   140  bsp.o(i.BSP_init)
+    BSP_random                               0x000003fd   Thumb Code    46  bsp.o(i.BSP_random)
+    BSP_randomSeed                           0x0000043d   Thumb Code     6  bsp.o(i.BSP_randomSeed)
+    BSP_terminate                            0x00000449   Thumb Code     2  bsp.o(i.BSP_terminate)
+    GPIOPortA_IRQHandler                     0x0000044d   Thumb Code    34  bsp.o(i.GPIOPortA_IRQHandler)
+    Philo_ctor                               0x0000049d   Thumb Code    48  philo.o(i.Philo_ctor)
+    QActive_ctor                             0x000006f1   Thumb Code    20  qa_ctor.o(i.QActive_ctor)
+    QActive_get_                             0x00000709   Thumb Code   142  qa_get_.o(i.QActive_get_)
+    QActive_post                             0x000007a9   Thumb Code   164  qa_fifo.o(i.QActive_post)
+    QActive_postLIFO                         0x0000085d   Thumb Code   136  qa_lifo.o(i.QActive_postLIFO)
+    QActive_start                            0x000008f5   Thumb Code    78  qvanilla.o(i.QActive_start)
+    QActive_subscribe                        0x00000949   Thumb Code    96  qa_sub.o(i.QActive_subscribe)
+    QEQueue_init                             0x000009c1   Thumb Code    22  qeq_init.o(i.QEQueue_init)
+    QF_add_                                  0x000009d9   Thumb Code    52  qf_act.o(i.QF_add_)
+    QF_gc                                    0x00000a15   Thumb Code    82  qf_gc.o(i.QF_gc)
+    QF_init                                  0x00000a75   Thumb Code     2  qvanilla.o(i.QF_init)
+    QF_newX_                                 0x00000a79   Thumb Code   114  qf_new.o(i.QF_newX_)
+    QF_onIdle                                0x00000af9   Thumb Code    42  bsp.o(i.QF_onIdle)
+    QF_onStartup                             0x00000b31   Thumb Code   134  bsp.o(i.QF_onStartup)
+    QF_poolInit                              0x00000bc1   Thumb Code   102  qf_pool.o(i.QF_poolInit)
+    QF_psInit                                0x00000c35   Thumb Code    10  qf_psini.o(i.QF_psInit)
+    QF_publish                               0x00000c49   Thumb Code   150  qf_pspub.o(i.QF_publish)
+    QF_run                                   0x00000cf5   Thumb Code   110  qvanilla.o(i.QF_run)
+    QF_tickX                                 0x00000d6d   Thumb Code   184  qf_tick.o(i.QF_tickX)
+    QHsm_ctor                                0x00000e2d   Thumb Code    12  qhsm_ini.o(i.QHsm_ctor)
+    QHsm_dispatch                            0x00000e41   Thumb Code   552  qhsm_dis.o(i.QHsm_dispatch)
+    QHsm_init                                0x00001071   Thumb Code   164  qhsm_ini.o(i.QHsm_init)
+    QHsm_top                                 0x00001121   Thumb Code     6  qhsm_top.o(i.QHsm_top)
+    QMPool_get                               0x00001129   Thumb Code    68  qmp_get.o(i.QMPool_get)
+    QMPool_init                              0x00001171   Thumb Code   138  qmp_init.o(i.QMPool_init)
+    QMPool_put                               0x00001201   Thumb Code    72  qmp_put.o(i.QMPool_put)
+    QTimeEvt_armX                            0x0000124d   Thumb Code   106  qte_arm.o(i.QTimeEvt_armX)
+    QTimeEvt_ctorX                           0x000012c1   Thumb Code    50  qte_ctor.o(i.QTimeEvt_ctorX)
+    Q_onAssert                               0x000012f9   Thumb Code    10  bsp.o(i.Q_onAssert)
+    SysTick_Handler                          0x00001305   Thumb Code   136  bsp.o(i.SysTick_Handler)
+    Table_ctor                               0x000013dd   Thumb Code    38  table.o(i.Table_ctor)
+    __scatterload_copy                       0x000017b5   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x000017c3   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x000017c5   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    assert_failed                            0x000017d3   Thumb Code    12  bsp.o(i.assert_failed)
+    main                                     0x000017e1   Thumb Code   110  main.o(i.main)
+    AO_Philo                                 0x00001880   Data          20  philo.o(.constdata)
+    AO_Table                                 0x0000189c   Data           4  table.o(.constdata)
+    QF_pwr2Lkup                              0x0000193a   Data          65  qf_pwr2.o(.constdata)
+    QF_invPwr2Lkup                           0x0000197b   Data          65  qf_pwr2.o(.constdata)
+    QF_div8Lkup                              0x000019bc   Data          65  qf_pwr2.o(.constdata)
+    QEP_reservedEvt_                         0x00001a0e   Data          16  qep.o(.constdata)
+    Region$$Table$$Base                      0x00001a28   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00001a48   Number         0  anon$$obj.o(Region$$Table)
+    QF_maxPool_                              0x20000010   Data           4  qf_pool.o(.data)
+    QF_subscrList_                           0x20000014   Data           4  qf_psini.o(.data)
+    QF_maxSignal_                            0x20000018   Data           4  qf_psini.o(.data)
+    QF_pool_                                 0x20000220   Data          60  qf_pool.o(.bss)
+    QF_timeEvtHead_                          0x2000025c   Data          32  qf_tick.o(.bss)
+    QF_readySet_                             0x2000027c   Data           9  qvanilla.o(.bss)
+    QF_active_                               0x20000288   Data         132  qf_act.o(.bss)
+    __initial_sp                             0x20000510   Data           0  startup_tm4c.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x0000026d
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00001a64, Max: 0x00040000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x00001a48, Max: 0x00040000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x000002ec   Code   RO          275  * RESET               startup_tm4c.o
+    0x000002ec   0x00000000   Code   RO          743  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x000002ec   0x00000004   Code   RO          746    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x000002f0   0x00000004   Code   RO          749    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x000002f4   0x00000000   Code   RO          751    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x000002f4   0x00000000   Code   RO          753    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x000002f4   0x00000008   Code   RO          754    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x000002fc   0x00000000   Code   RO          756    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x000002fc   0x00000000   Code   RO          758    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x000002fc   0x00000004   Code   RO          747    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x00000300   0x00000024   Code   RO          760    .text               mc_w.l(init.o)
+    0x00000324   0x00000014   Code   RO            3    i.BSP_displayPaused  bsp.o
+    0x00000338   0x00000018   Code   RO            4    i.BSP_displayPhilStat  bsp.o
+    0x00000350   0x000000ac   Code   RO            5    i.BSP_init          bsp.o
+    0x000003fc   0x00000040   Code   RO            6    i.BSP_random        bsp.o
+    0x0000043c   0x0000000c   Code   RO            7    i.BSP_randomSeed    bsp.o
+    0x00000448   0x00000002   Code   RO            8    i.BSP_terminate     bsp.o
+    0x0000044a   0x00000002   PAD
+    0x0000044c   0x00000028   Code   RO            9    i.GPIOPortA_IRQHandler  bsp.o
+    0x00000474   0x00000028   Code   RO           10    i.NVIC_SetPriority  bsp.o
+    0x0000049c   0x00000038   Code   RO          192    i.Philo_ctor        philo.o
+    0x000004d4   0x000000b8   Code   RO          193    i.Philo_eating      philo.o
+    0x0000058c   0x000000a8   Code   RO          194    i.Philo_hungry      philo.o
+    0x00000634   0x0000002c   Code   RO          195    i.Philo_initial     philo.o
+    0x00000660   0x00000090   Code   RO          196    i.Philo_thinking    philo.o
+    0x000006f0   0x00000018   Code   RO          308    i.QActive_ctor      libqp_Cortex-M4.fp.a(qa_ctor.o)
+    0x00000708   0x000000a0   Code   RO          589    i.QActive_get_      libqp_Cortex-M4.fp.a(qa_get_.o)
+    0x000007a8   0x000000b4   Code   RO          561    i.QActive_post      libqp_Cortex-M4.fp.a(qa_fifo.o)
+    0x0000085c   0x00000098   Code   RO          575    i.QActive_postLIFO  libqp_Cortex-M4.fp.a(qa_lifo.o)
+    0x000008f4   0x00000054   Code   RO          484    i.QActive_start     libqp_Cortex-M4.fp.a(qvanilla.o)
+    0x00000948   0x00000078   Code   RO          345    i.QActive_subscribe  libqp_Cortex-M4.fp.a(qa_sub.o)
+    0x000009c0   0x00000016   Code   RO          609    i.QEQueue_init      libqp_Cortex-M4.fp.a(qeq_init.o)
+    0x000009d6   0x00000002   PAD
+    0x000009d8   0x0000003c   Code   RO          621    i.QF_add_           libqp_Cortex-M4.fp.a(qf_act.o)
+    0x00000a14   0x00000060   Code   RO          652    i.QF_gc             libqp_Cortex-M4.fp.a(qf_gc.o)
+    0x00000a74   0x00000002   Code   RO          486    i.QF_init           libqp_Cortex-M4.fp.a(qvanilla.o)
+    0x00000a76   0x00000002   PAD
+    0x00000a78   0x00000080   Code   RO          362    i.QF_newX_          libqp_Cortex-M4.fp.a(qf_new.o)
+    0x00000af8   0x00000038   Code   RO           12    i.QF_onIdle         bsp.o
+    0x00000b30   0x00000090   Code   RO           13    i.QF_onStartup      bsp.o
+    0x00000bc0   0x00000074   Code   RO          376    i.QF_poolInit       libqp_Cortex-M4.fp.a(qf_pool.o)
+    0x00000c34   0x00000014   Code   RO          397    i.QF_psInit         libqp_Cortex-M4.fp.a(qf_psini.o)
+    0x00000c48   0x000000ac   Code   RO          416    i.QF_publish        libqp_Cortex-M4.fp.a(qf_pspub.o)
+    0x00000cf4   0x00000078   Code   RO          487    i.QF_run            libqp_Cortex-M4.fp.a(qvanilla.o)
+    0x00000d6c   0x000000c0   Code   RO          431    i.QF_tickX          libqp_Cortex-M4.fp.a(qf_tick.o)
+    0x00000e2c   0x00000014   Code   RO          527    i.QHsm_ctor         libqp_Cortex-M4.fp.a(qhsm_ini.o)
+    0x00000e40   0x00000230   Code   RO          547    i.QHsm_dispatch     libqp_Cortex-M4.fp.a(qhsm_dis.o)
+    0x00001070   0x000000b0   Code   RO          528    i.QHsm_init         libqp_Cortex-M4.fp.a(qhsm_ini.o)
+    0x00001120   0x00000006   Code   RO          279    i.QHsm_top          libqp_Cortex-M4.fp.a(qhsm_top.o)
+    0x00001126   0x00000002   PAD
+    0x00001128   0x00000048   Code   RO          684    i.QMPool_get        libqp_Cortex-M4.fp.a(qmp_get.o)
+    0x00001170   0x00000090   Code   RO          703    i.QMPool_init       libqp_Cortex-M4.fp.a(qmp_init.o)
+    0x00001200   0x0000004c   Code   RO          729    i.QMPool_put        libqp_Cortex-M4.fp.a(qmp_put.o)
+    0x0000124c   0x00000074   Code   RO          470    i.QTimeEvt_armX     libqp_Cortex-M4.fp.a(qte_arm.o)
+    0x000012c0   0x00000038   Code   RO          456    i.QTimeEvt_ctorX    libqp_Cortex-M4.fp.a(qte_ctor.o)
+    0x000012f8   0x0000000a   Code   RO           14    i.Q_onAssert        bsp.o
+    0x00001302   0x00000002   PAD
+    0x00001304   0x0000009c   Code   RO           15    i.SysTick_Handler   bsp.o
+    0x000013a0   0x0000003c   Code   RO          233    i.Table_active      table.o
+    0x000013dc   0x00000030   Code   RO          234    i.Table_ctor        table.o
+    0x0000140c   0x00000058   Code   RO          235    i.Table_initial     table.o
+    0x00001464   0x000000fc   Code   RO          236    i.Table_paused      table.o
+    0x00001560   0x00000254   Code   RO          237    i.Table_serving     table.o
+    0x000017b4   0x0000000e   Code   RO          764    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x000017c2   0x00000002   Code   RO          765    i.__scatterload_null  mc_w.l(handlers.o)
+    0x000017c4   0x0000000e   Code   RO          766    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x000017d2   0x0000000c   Code   RO           16    i.assert_failed     bsp.o
+    0x000017de   0x00000002   PAD
+    0x000017e0   0x00000088   Code   RO          178    i.main              main.o
+    0x00001868   0x0000000e   Data   RO           17    .constdata          bsp.o
+    0x00001876   0x00000002   PAD
+    0x00001878   0x0000001c   Data   RO          198    .constdata          philo.o
+    0x00001894   0x0000000c   Data   RO          239    .constdata          table.o
+    0x000018a0   0x00000014   Data   RO          309    .constdata          libqp_Cortex-M4.fp.a(qa_ctor.o)
+    0x000018b4   0x00000007   Data   RO          346    .constdata          libqp_Cortex-M4.fp.a(qa_sub.o)
+    0x000018bb   0x00000007   Data   RO          363    .constdata          libqp_Cortex-M4.fp.a(qf_new.o)
+    0x000018c2   0x00000008   Data   RO          378    .constdata          libqp_Cortex-M4.fp.a(qf_pool.o)
+    0x000018ca   0x00000009   Data   RO          417    .constdata          libqp_Cortex-M4.fp.a(qf_pspub.o)
+    0x000018d3   0x00000008   Data   RO          433    .constdata          libqp_Cortex-M4.fp.a(qf_tick.o)
+    0x000018db   0x00000009   Data   RO          457    .constdata          libqp_Cortex-M4.fp.a(qte_ctor.o)
+    0x000018e4   0x00000008   Data   RO          471    .constdata          libqp_Cortex-M4.fp.a(qte_arm.o)
+    0x000018ec   0x00000009   Data   RO          490    .constdata          libqp_Cortex-M4.fp.a(qvanilla.o)
+    0x000018f5   0x00000003   PAD
+    0x000018f8   0x00000014   Data   RO          529    .constdata          libqp_Cortex-M4.fp.a(qhsm_ini.o)
+    0x0000190c   0x00000009   Data   RO          548    .constdata          libqp_Cortex-M4.fp.a(qhsm_dis.o)
+    0x00001915   0x00000008   Data   RO          562    .constdata          libqp_Cortex-M4.fp.a(qa_fifo.o)
+    0x0000191d   0x00000008   Data   RO          576    .constdata          libqp_Cortex-M4.fp.a(qa_lifo.o)
+    0x00001925   0x00000008   Data   RO          591    .constdata          libqp_Cortex-M4.fp.a(qa_get_.o)
+    0x0000192d   0x00000007   Data   RO          624    .constdata          libqp_Cortex-M4.fp.a(qf_act.o)
+    0x00001934   0x00000006   Data   RO          653    .constdata          libqp_Cortex-M4.fp.a(qf_gc.o)
+    0x0000193a   0x000000c3   Data   RO          666    .constdata          libqp_Cortex-M4.fp.a(qf_pwr2.o)
+    0x000019fd   0x00000008   Data   RO          685    .constdata          libqp_Cortex-M4.fp.a(qmp_get.o)
+    0x00001a05   0x00000009   Data   RO          704    .constdata          libqp_Cortex-M4.fp.a(qmp_init.o)
+    0x00001a0e   0x00000010   Data   RO          717    .constdata          libqp_Cortex-M4.fp.a(qep.o)
+    0x00001a1e   0x00000008   Data   RO          730    .constdata          libqp_Cortex-M4.fp.a(qmp_put.o)
+    0x00001a26   0x00000002   PAD
+    0x00001a28   0x00000020   Data   RO          762    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00000510, Max: 0x00008000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x0000000c   Data   RW           18    .data               bsp.o
+    0x2000000c   0x00000001   Data   RW          199    .data               philo.o
+    0x2000000d   0x00000003   PAD
+    0x20000010   0x00000004   Data   RW          379    .data               libqp_Cortex-M4.fp.a(qf_pool.o)
+    0x20000014   0x00000008   Data   RW          398    .data               libqp_Cortex-M4.fp.a(qf_psini.o)
+    0x2000001c   0x000000e8   Zero   RW          179    .bss                main.o
+    0x20000104   0x000000f0   Zero   RW          197    .bss                philo.o
+    0x200001f4   0x0000002c   Zero   RW          238    .bss                table.o
+    0x20000220   0x0000003c   Zero   RW          377    .bss                libqp_Cortex-M4.fp.a(qf_pool.o)
+    0x2000025c   0x00000020   Zero   RW          432    .bss                libqp_Cortex-M4.fp.a(qf_tick.o)
+    0x2000027c   0x00000009   Zero   RW          489    .bss                libqp_Cortex-M4.fp.a(qvanilla.o)
+    0x20000285   0x00000003   PAD
+    0x20000288   0x00000084   Zero   RW          623    .bss                libqp_Cortex-M4.fp.a(qf_act.o)
+    0x2000030c   0x00000004   PAD
+    0x20000310   0x00000200   Zero   RW          273    STACK               startup_tm4c.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       752        126         14         12          0      59790   bsp.o
+       136         26          0          0        232       1083   main.o
+       596         70         28          1        240       4275   philo.o
+       748        626          0          0        512        248   startup_tm4c.o
+      1044        142         12          0         44       4839   table.o
+
+    ----------------------------------------------------------------------
+      3282        990         88         16       1028      70235   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+         6          0          2          3          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+        24          4         20          0          0       6623   qa_ctor.o
+       180         16          8          0          0       1243   qa_fifo.o
+       160         18          8          0          0       1135   qa_get_.o
+       152         16          8          0          0       1159   qa_lifo.o
+       120         24          7          0          0       1076   qa_sub.o
+         0          0         16          0          0        451   qep.o
+        22          0          0          0          0        831   qeq_init.o
+        60          8          7          0        132       3384   qf_act.o
+        96         14          6          0          0       1036   qf_gc.o
+       128         14          7          0          0       1155   qf_new.o
+       116         14          8          4         60       1189   qf_pool.o
+        20         10          0          8          0       1015   qf_psini.o
+       172         22          9          0          0       1193   qf_pspub.o
+         0          0        195          0          0        557   qf_pwr2.o
+       192          8          8          0         32       1285   qf_tick.o
+       560          8          9          0          0       1628   qhsm_dis.o
+       196         20         20          0          0       1744   qhsm_ini.o
+         6          0          0          0          0       3631   qhsm_top.o
+        72          4          8          0          0       1105   qmp_get.o
+       144          6          9          0          0       1250   qmp_init.o
+        76          4          8          0          0       1105   qmp_put.o
+       116         10          8          0          0       1140   qte_arm.o
+        56          6          9          0          0       1097   qte_ctor.o
+       206         16          9          0          9       2342   qvanilla.o
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+
+    ----------------------------------------------------------------------
+      2966        258        392         12        240      38442   Library Totals
+         6          0          5          0          7          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+      2874        242        387         12        233      38374   libqp_Cortex-M4.fp.a
+        86         16          0          0          0         68   mc_w.l
+
+    ----------------------------------------------------------------------
+      2966        258        392         12        240      38442   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      6248       1248        480         28       1268     104477   Grand Totals
+      6248       1248        480         28       1268     104477   ELF Image Totals
+      6248       1248        480         28          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 6728 (   6.57kB)
+    Total RW  Size (RW Data + ZI Data)              1296 (   1.27kB)
+    Total ROM Size (Code + RO Data + RW Data)       6756 (   6.60kB)
+
+==============================================================================
+
